@@ -1,0 +1,28 @@
+-------------------------------------------------
+Name: Vaazid Khan
+Log Start: 2024-10-10T17:59:04.618163900
+Java Version: 21.0.3
+Operating System: Windows 11
+System Name: LAPTOP-0H4UER3T
+-------------------------------------------------
+
+2024-10-10 17:59:06.218 [main] INFO  LoginPage:28 - Waiting for username field to be visible
+2024-10-10 17:59:11.661 [main] INFO  LoginPage:30 - Username field is now visible
+-------------------------------------------------
+Log End: 2024-10-10T17:59:14.623220400
+-------------------------------------------------
+
+-------------------------------------------------
+Name: Vaazid Khan
+Log Start: 2024-10-10T18:00:10.080006400
+Java Version: 21.0.3
+Operating System: Windows 11
+System Name: LAPTOP-0H4UER3T
+-------------------------------------------------
+
+2024-10-10 18:00:11.700 [main] INFO  LoginPage:28 - Waiting for username field to be visible
+2024-10-10 18:00:14.713 [main] INFO  LoginPage:30 - Username field is now visible
+-------------------------------------------------
+Log End: 2024-10-10T18:01:17.563664900
+-------------------------------------------------
+

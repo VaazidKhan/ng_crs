@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="User_Suite">
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+        <listener class-name="utilities.LogHeaderSuiteListener"/>
+        <listener class-name="base.TestListener"/>
+    </listeners>
+
+    <test thread-count="5" name="User_Test">
+        <classes>
+            <class name="tests.BookingTest"/>  <!-- Ensure this points to the correct package/class -->
+        </classes>
+    </test>
+</suite>
