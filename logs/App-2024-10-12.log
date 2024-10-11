@@ -1,0 +1,37 @@
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-10-12T00:30:26.593000100
+Java Version: 21.0.3
+Operating System: Windows 11
+System Name: LAPTOP-0H4UER3T
+-------------------------------------------------
+
+2024-10-12 00:30:28.756 [main] INFO  BaseTest:25 - Attempting to log in with provided credentials.
+2024-10-12 00:30:28.758 [main] INFO  LoginPage:27 - Waiting for username field to be visible
+2024-10-12 00:31:28.660 [main] INFO  LoginPage:29 - Username field is now visible
+2024-10-12 00:31:29.836 [main] INFO  LoginPage:34 - Username inserted successfully
+2024-10-12 00:31:29.934 [main] INFO  LoginPage:38 - Password inserted successfully
+2024-10-12 00:31:48.688 [main] INFO  LoginPage:42 - Signed in successfully
+2024-10-12 00:31:48.707 [main] INFO  BaseTest:27 - Login successful.
+2024-10-12 00:31:52.731 [main] INFO  MenuIcon:27 - Waiting for menu icon to appear
+2024-10-12 00:31:52.858 [main] INFO  MenuIcon:29 - Menu icon clicked
+2024-10-12 00:31:52.858 [main] INFO  BaseTest:42 - Clicked on menu icon.
+2024-10-12 00:31:56.997 [main] INFO  CentralSetUp:32 - CRS RCY menu clicked
+2024-10-12 00:32:03.661 [main] INFO  CentralSetUp:47 - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-10-12 00:32:03.661 [main] INFO  BaseTest:57 - Clicked on 'CRS RCY' to open a new tab.
+2024-10-12 00:32:03.661 [main] INFO  BaseTest:58 - Switched to the new tab successfully.
+2024-10-12 00:32:06.703 [main] INFO  Agency:41 - Clicking on Agencies field.
+2024-10-12 00:32:34.154 [main] INFO  Agency:43 - Agencies field clicked successfully.
+2024-10-12 00:32:34.154 [main] INFO  BaseTest:72 - Clicked on Agnecy option
+2024-10-12 00:33:06.696 [main] ERROR Agency:92 - Error navigating pages or fetching agency data: Expected condition failed: waiting for visibility of all elements located by By.xpath: //div[@class='search-result d-flex justify-content-between align-items-center gap-2'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55722}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55722/devtoo..., se:cdpVersion: 129.0.6668.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cff99e87496c8bb87ec7568b7895bb6c
+2024-10-12 00:33:06.696 [main] INFO  Agency:98 - Total Agencies Found: 0
+2024-10-12 00:33:06.696 [main] INFO  BaseTest:81 - Agency selected from the list
+-------------------------------------------------
+Log End: 2024-10-12T00:33:07.248728
+-------------------------------------------------
+

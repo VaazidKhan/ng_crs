@@ -1,0 +1,1703 @@
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-10-11T12:51:59.466325200
+Java Version: 21.0.3
+Operating System: Windows 11
+System Name: LAPTOP-0H4UER3T
+-------------------------------------------------
+
+2024-10-11 12:52:02.193 [main] INFO  BaseTest:25 - Attempting to log in with provided credentials.
+2024-10-11 12:52:02.195 [main] INFO  LoginPage:27 - Waiting for username field to be visible
+2024-10-11 12:52:05.245 [main] INFO  LoginPage:29 - Username field is now visible
+2024-10-11 12:52:06.404 [main] INFO  LoginPage:34 - Username inserted successfully
+2024-10-11 12:52:06.498 [main] INFO  LoginPage:38 - Password inserted successfully
+2024-10-11 12:52:06.926 [main] INFO  LoginPage:42 - Signed in successfully
+2024-10-11 12:52:06.948 [main] INFO  BaseTest:27 - Login successful.
+2024-10-11 12:52:10.964 [main] INFO  MenuIcon:27 - Waiting for menu icon to appear
+2024-10-11 12:52:12.332 [main] INFO  MenuIcon:29 - Menu icon clicked
+2024-10-11 12:52:12.332 [main] INFO  BaseTest:48 - Clicked on menu icon
+2024-10-11 12:52:16.520 [main] INFO  CentralSetUp:32 - CRS RCY menu clicked
+2024-10-11 12:52:18.063 [main] INFO  CentralSetUp:47 - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-10-11 12:52:18.063 [main] INFO  BaseTest:63 - Clicked on central set up
+-------------------------------------------------
+Log End: 2024-10-11T12:52:18.895729
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-10-11T21:18:14.608506500
+Java Version: 21.0.3
+Operating System: Windows 11
+System Name: LAPTOP-0H4UER3T
+-------------------------------------------------
+
+2024-10-11 21:18:17.178 [main] INFO  BaseTest:25 - Attempting to log in with provided credentials.
+2024-10-11 21:18:17.181 [main] INFO  LoginPage:27 - Waiting for username field to be visible
+2024-10-11 21:19:06.348 [main] INFO  LoginPage:29 - Username field is now visible
+2024-10-11 21:19:07.556 [main] INFO  LoginPage:34 - Username inserted successfully
+2024-10-11 21:19:07.735 [main] INFO  LoginPage:38 - Password inserted successfully
+2024-10-11 21:19:14.855 [main] INFO  LoginPage:42 - Signed in successfully
+2024-10-11 21:19:14.855 [main] INFO  BaseTest:27 - Login successful.
+2024-10-11 21:19:18.884 [main] INFO  MenuIcon:27 - Waiting for menu icon to appear
+2024-10-11 21:19:19.034 [main] INFO  MenuIcon:29 - Menu icon clicked
+2024-10-11 21:19:19.034 [main] INFO  BaseTest:42 - Clicked on menu icon.
+2024-10-11 21:19:23.216 [main] INFO  CentralSetUp:32 - CRS RCY menu clicked
+2024-10-11 21:19:25.271 [main] INFO  CentralSetUp:47 - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-10-11 21:19:25.276 [main] INFO  BaseTest:57 - Clicked on 'CRS RCY' to open a new tab.
+2024-10-11 21:19:25.276 [main] INFO  BaseTest:58 - Switched to the new tab successfully.
+2024-10-11 21:19:29.631 [main] INFO  Agency:39 - Home field is already clicked (active).
+2024-10-11 21:19:29.763 [main] INFO  Agency:47 - Customer field is already clicked (active).
+2024-10-11 21:19:29.763 [main] INFO  Agency:53 - Clicking on Agencies field.
+2024-10-11 21:19:30.110 [main] INFO  Agency:55 - Agencies field clicked successfully.
+2024-10-11 21:19:30.111 [main] INFO  BaseTest:72 - Clicked on Agnecy option
+2024-10-11 21:19:33.042 [main] INFO  BaseTest:81 - Agency selected from the list
+-------------------------------------------------
+Log End: 2024-10-11T21:19:33.798079200
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-10-11T21:23:29.095258300
+Java Version: 21.0.3
+Operating System: Windows 11
+System Name: LAPTOP-0H4UER3T
+-------------------------------------------------
+
+2024-10-11 21:23:30.708 [main] INFO  BaseTest:25 - Attempting to log in with provided credentials.
+2024-10-11 21:23:30.710 [main] INFO  LoginPage:27 - Waiting for username field to be visible
+2024-10-11 21:23:34.935 [main] INFO  LoginPage:29 - Username field is now visible
+2024-10-11 21:23:36.030 [main] INFO  LoginPage:34 - Username inserted successfully
+2024-10-11 21:23:36.138 [main] INFO  LoginPage:38 - Password inserted successfully
+2024-10-11 21:23:36.630 [main] INFO  LoginPage:42 - Signed in successfully
+2024-10-11 21:23:36.631 [main] INFO  BaseTest:27 - Login successful.
+2024-10-11 21:23:40.667 [main] INFO  MenuIcon:27 - Waiting for menu icon to appear
+2024-10-11 21:23:41.319 [main] INFO  MenuIcon:29 - Menu icon clicked
+2024-10-11 21:23:41.319 [main] INFO  BaseTest:42 - Clicked on menu icon.
+2024-10-11 21:23:45.543 [main] INFO  CentralSetUp:32 - CRS RCY menu clicked
+2024-10-11 21:23:50.524 [main] INFO  CentralSetUp:47 - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-10-11 21:23:50.525 [main] INFO  BaseTest:57 - Clicked on 'CRS RCY' to open a new tab.
+2024-10-11 21:23:50.525 [main] INFO  BaseTest:58 - Switched to the new tab successfully.
+2024-10-11 21:23:56.336 [main] INFO  Agency:39 - Home field is already clicked (active).
+2024-10-11 21:23:56.444 [main] INFO  Agency:47 - Customer field is already clicked (active).
+2024-10-11 21:23:56.444 [main] INFO  Agency:53 - Clicking on Agencies field.
+2024-10-11 21:23:56.836 [main] INFO  Agency:55 - Agencies field clicked successfully.
+2024-10-11 21:23:56.838 [main] INFO  BaseTest:72 - Clicked on Agnecy option
+2024-10-11 21:23:59.339 [main] INFO  BaseTest:81 - Agency selected from the list
+-------------------------------------------------
+Log End: 2024-10-11T21:24:00.011638700
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-10-11T21:30:19.735414
+Java Version: 21.0.3
+Operating System: Windows 11
+System Name: LAPTOP-0H4UER3T
+-------------------------------------------------
+
+2024-10-11 21:30:21.243 [main] INFO  BaseTest:25 - Attempting to log in with provided credentials.
+2024-10-11 21:30:21.246 [main] INFO  LoginPage:27 - Waiting for username field to be visible
+2024-10-11 21:30:24.704 [main] INFO  LoginPage:29 - Username field is now visible
+2024-10-11 21:30:25.827 [main] INFO  LoginPage:34 - Username inserted successfully
+2024-10-11 21:30:25.947 [main] INFO  LoginPage:38 - Password inserted successfully
+2024-10-11 21:30:29.810 [main] INFO  LoginPage:42 - Signed in successfully
+2024-10-11 21:30:29.811 [main] INFO  BaseTest:27 - Login successful.
+2024-10-11 21:30:33.843 [main] INFO  MenuIcon:27 - Waiting for menu icon to appear
+2024-10-11 21:30:33.950 [main] INFO  MenuIcon:29 - Menu icon clicked
+2024-10-11 21:30:33.950 [main] INFO  BaseTest:42 - Clicked on menu icon.
+2024-10-11 21:30:38.063 [main] INFO  CentralSetUp:32 - CRS RCY menu clicked
+2024-10-11 21:30:44.757 [main] INFO  CentralSetUp:47 - Switched to new tab. The title of the new tab is: CruisePAL CRS - Home Page
+2024-10-11 21:30:44.757 [main] INFO  BaseTest:57 - Clicked on 'CRS RCY' to open a new tab.
+2024-10-11 21:30:44.757 [main] INFO  BaseTest:58 - Switched to the new tab successfully.
+2024-10-11 21:30:47.799 [main] INFO  Agency:38 - Clicking on Agencies field.
+2024-10-11 21:30:49.708 [main] INFO  Agency:40 - Agencies field clicked successfully.
+2024-10-11 21:30:49.709 [main] INFO  BaseTest:72 - Clicked on Agnecy option
+2024-10-11 21:30:51.816 [main] INFO  Agency:59 - Agency Found: Fore@123 Supportuser2A
+2024-10-11 21:30:51.843 [main] INFO  Agency:59 - Agency Found:  C0001231Oct23Agent1
+2024-10-11 21:30:51.869 [main] INFO  Agency:59 - Agency Found:  C0001231Oct23_2
+2024-10-11 21:30:51.886 [main] INFO  Agency:59 - Agency Found:  C0001231Oct23_3
+2024-10-11 21:30:51.899 [main] INFO  Agency:59 - Agency Found:  C0001231Oct23_4
+2024-10-11 21:30:51.915 [main] INFO  Agency:59 - Agency Found:  C0001231Oct23_5
+2024-10-11 21:30:51.934 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:51.946 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:51.959 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:51.967 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:51.985 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.003 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.017 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.030 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.044 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.057 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.066 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.234 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.254 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.277 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.292 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.312 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.329 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.344 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.365 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.382 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.399 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.416 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.433 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.447 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.468 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.482 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.494 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.502 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.518 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.527 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.551 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.572 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.596 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.604 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.615 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.630 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.646 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.662 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.678 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.694 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.709 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.709 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.725 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.746 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.758 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.773 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.789 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.805 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.821 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:52.926 [main] INFO  Agency:66 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 21:30:54.974 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:54.985 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:54.999 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.005 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.030 [main] INFO  Agency:59 - Agency Found:  C0001231Oct23_4
+2024-10-11 21:30:55.044 [main] INFO  Agency:59 - Agency Found:  C0001231Oct23_5
+2024-10-11 21:30:55.053 [main] INFO  Agency:59 - Agency Found: 123 C0001231Oct23_6
+2024-10-11 21:30:55.069 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_2 C0001231Oct23_7
+2024-10-11 21:30:55.085 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_8 C0001231Oct23_8
+2024-10-11 21:30:55.097 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_9 C0001231Oct23_9
+2024-10-11 21:30:55.101 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.121 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.134 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.155 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.165 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.182 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.184 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.197 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.214 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.261 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.277 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.293 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.293 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.309 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.324 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.324 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.351 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.357 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.372 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.388 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.404 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.419 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.419 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.435 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.451 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.467 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.469 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.482 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.498 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.498 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.514 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.530 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.551 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.565 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.577 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.593 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.593 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.609 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.635 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.645 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.657 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.673 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.690 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.701 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.705 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:55.800 [main] INFO  Agency:66 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 21:30:57.842 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:57.853 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:57.866 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:57.879 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:57.892 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:57.904 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:57.911 [main] INFO  Agency:59 - Agency Found: 123 C0001231Oct23_6
+2024-10-11 21:30:57.929 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_2 C0001231Oct23_7
+2024-10-11 21:30:57.946 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_8 C0001231Oct23_8
+2024-10-11 21:30:57.957 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_9 C0001231Oct23_9
+2024-10-11 21:30:57.957 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_10 C0001231Oct23_10
+2024-10-11 21:30:57.974 [main] INFO  Agency:59 - Agency Found: Tannu Mohit
+2024-10-11 21:30:57.988 [main] INFO  Agency:59 - Agency Found: Mohit Taanu
+2024-10-11 21:30:58.004 [main] INFO  Agency:59 - Agency Found: risi ragava
+2024-10-11 21:30:58.020 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.035 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.044 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.054 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.069 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.083 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.083 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.105 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.115 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.131 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.131 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.154 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.163 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.179 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.195 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.211 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.211 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.228 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.254 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.259 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.291 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.307 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.323 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.356 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.371 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.387 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.419 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.434 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.466 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.484 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.515 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.537 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.553 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.563 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.594 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.626 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.642 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.661 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.689 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.714 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.735 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:30:58.896 [main] INFO  Agency:66 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 21:31:00.925 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:00.930 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:00.945 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:00.960 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:00.976 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.008 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.024 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.030 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.039 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.060 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.072 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_10 C0001231Oct23_10
+2024-10-11 21:31:01.084 [main] INFO  Agency:59 - Agency Found: Tannu Mohit
+2024-10-11 21:31:01.089 [main] INFO  Agency:59 - Agency Found: Mohit Taanu
+2024-10-11 21:31:01.104 [main] INFO  Agency:59 - Agency Found: risi ragava
+2024-10-11 21:31:01.119 [main] INFO  Agency:59 - Agency Found:  jnu
+2024-10-11 21:31:01.135 [main] INFO  Agency:59 - Agency Found:  Tannu
+2024-10-11 21:31:01.151 [main] INFO  Agency:59 - Agency Found:  sanMohit
+2024-10-11 21:31:01.167 [main] INFO  Agency:59 - Agency Found:  sdf
+2024-10-11 21:31:01.183 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.199 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.231 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.247 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.276 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.298 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.311 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.335 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.349 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.371 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.376 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.400 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.421 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.455 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.468 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.493 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.501 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.523 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.537 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.580 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.595 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.626 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.642 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.660 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.674 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.690 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.705 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.721 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.735 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.743 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.760 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.768 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.784 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.800 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.800 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.831 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.847 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:01.985 [main] INFO  Agency:66 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 21:31:04.042 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.056 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.063 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.075 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.092 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.106 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.141 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.154 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.163 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.181 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.186 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.202 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.218 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.234 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.250 [main] INFO  Agency:59 - Agency Found:  jnu
+2024-10-11 21:31:04.265 [main] INFO  Agency:59 - Agency Found:  Tannu
+2024-10-11 21:31:04.281 [main] INFO  Agency:59 - Agency Found:  sanMohit
+2024-10-11 21:31:04.292 [main] INFO  Agency:59 - Agency Found:  sdf
+2024-10-11 21:31:04.297 [main] INFO  Agency:59 - Agency Found:  1122
+2024-10-11 21:31:04.313 [main] INFO  Agency:59 - Agency Found:  wwww
+2024-10-11 21:31:04.329 [main] INFO  Agency:59 - Agency Found:  www
+2024-10-11 21:31:04.333 [main] INFO  Agency:59 - Agency Found:  san
+2024-10-11 21:31:04.348 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.370 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.378 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.393 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.409 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.415 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.425 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.440 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.458 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.472 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.480 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.489 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.508 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.533 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.553 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.564 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.584 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.598 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.612 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.615 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.631 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.647 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.664 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.679 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.679 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.694 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.710 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.727 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.732 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.745 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.764 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.778 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.792 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:04.892 [main] INFO  Agency:66 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 21:31:06.917 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:06.933 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:06.950 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:06.966 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:06.981 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:06.997 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.013 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.013 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.029 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.045 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.061 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.076 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.076 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.092 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.108 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.124 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.124 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.143 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.156 [main] INFO  Agency:59 - Agency Found:  1122
+2024-10-11 21:31:07.172 [main] INFO  Agency:59 - Agency Found:  wwww
+2024-10-11 21:31:07.188 [main] INFO  Agency:59 - Agency Found:  www
+2024-10-11 21:31:07.192 [main] INFO  Agency:59 - Agency Found:  san
+2024-10-11 21:31:07.204 [main] INFO  Agency:59 - Agency Found:  testing
+2024-10-11 21:31:07.220 [main] INFO  Agency:59 - Agency Found:  eee
+2024-10-11 21:31:07.236 [main] INFO  Agency:59 - Agency Found:  gvfb
+2024-10-11 21:31:07.252 [main] INFO  Agency:59 - Agency Found:  Mohit
+2024-10-11 21:31:07.268 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.268 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.283 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.299 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.315 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.331 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.331 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.350 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.366 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.379 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.396 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.411 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.428 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.443 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.456 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.467 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.474 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.490 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.506 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.523 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.536 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.538 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.554 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.570 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.586 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.602 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.618 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.634 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.646 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:07.740 [main] INFO  Agency:66 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 21:31:09.767 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:09.775 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:09.797 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:09.810 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:09.822 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:09.822 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:09.839 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:09.854 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:09.870 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:09.884 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:09.901 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:09.906 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:09.917 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:09.949 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:09.949 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:09.981 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:09.997 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.014 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.029 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.045 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.060 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.076 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.108 [main] INFO  Agency:59 - Agency Found:  testing
+2024-10-11 21:31:10.124 [main] INFO  Agency:59 - Agency Found:  eee
+2024-10-11 21:31:10.140 [main] INFO  Agency:59 - Agency Found:  gvfb
+2024-10-11 21:31:10.157 [main] INFO  Agency:59 - Agency Found:  Mohit
+2024-10-11 21:31:10.173 [main] INFO  Agency:59 - Agency Found:  vbb
+2024-10-11 21:31:10.187 [main] INFO  Agency:59 - Agency Found:  dfer
+2024-10-11 21:31:10.203 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 21:31:10.220 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 21:31:10.235 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.251 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.283 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.299 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.324 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.346 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.361 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.374 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.384 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.409 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.425 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.457 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.482 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.504 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.522 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.541 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.557 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.571 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.584 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.599 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.608 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.630 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.637 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.658 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.672 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:10.829 [main] INFO  Agency:66 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 21:31:12.901 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:12.914 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:12.925 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:12.939 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:12.949 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:12.955 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:12.978 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.007 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.015 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.028 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.039 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.057 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.069 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.079 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.087 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.107 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.118 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.118 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.134 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.150 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.166 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.182 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.198 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.213 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.239 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.246 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.279 [main] INFO  Agency:59 - Agency Found:  vbb
+2024-10-11 21:31:13.293 [main] INFO  Agency:59 - Agency Found:  dfer
+2024-10-11 21:31:13.318 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 21:31:13.344 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 21:31:13.358 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 21:31:13.373 [main] INFO  Agency:59 - Agency Found: Pooja Gavali
+2024-10-11 21:31:13.404 [main] INFO  Agency:59 - Agency Found: suresh kumar
+2024-10-11 21:31:13.422 [main] INFO  Agency:59 - Agency Found: prasantaa sadana
+2024-10-11 21:31:13.435 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.451 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.479 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.499 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.516 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.548 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.564 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.580 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.597 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.627 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.643 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.678 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.690 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.706 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.738 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.753 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.772 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.785 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.802 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.827 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.833 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:13.953 [main] INFO  Agency:66 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 21:31:16.006 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.017 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.028 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.044 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.076 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.091 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.122 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.141 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.154 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.185 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.189 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.206 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.216 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.232 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.248 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.264 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.285 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.296 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.311 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.347 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.359 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.366 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.392 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.407 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.438 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.469 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.485 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.516 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.532 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.564 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.586 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 21:31:16.596 [main] INFO  Agency:59 - Agency Found: Pooja Gavali
+2024-10-11 21:31:16.602 [main] INFO  Agency:59 - Agency Found: suresh kumar
+2024-10-11 21:31:16.620 [main] INFO  Agency:59 - Agency Found: prasantaa sadana
+2024-10-11 21:31:16.632 [main] INFO  Agency:59 - Agency Found:  priyaka
+2024-10-11 21:31:16.644 [main] INFO  Agency:59 - Agency Found:  mohit
+2024-10-11 21:31:16.654 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.659 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.667 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.686 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.691 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.691 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.708 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.723 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.723 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.739 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.758 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.771 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.784 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.795 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.850 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.850 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.866 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.886 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.898 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:16.992 [main] INFO  Agency:66 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 21:31:19.029 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.059 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.069 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.084 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.107 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.131 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.162 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.179 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.210 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.226 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.242 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.274 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.321 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.337 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.353 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.368 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.400 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.416 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.416 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.432 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.463 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.479 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.495 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.504 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.514 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.533 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.543 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.559 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.574 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.593 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.622 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.638 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.670 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.693 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.713 [main] INFO  Agency:59 - Agency Found:  priyaka
+2024-10-11 21:31:19.717 [main] INFO  Agency:59 - Agency Found:  mohit
+2024-10-11 21:31:19.733 [main] INFO  Agency:59 - Agency Found:  Mohit123
+2024-10-11 21:31:19.749 [main] INFO  Agency:59 - Agency Found:  John12
+2024-10-11 21:31:19.765 [main] INFO  Agency:59 - Agency Found:  fgf
+2024-10-11 21:31:19.780 [main] INFO  Agency:59 - Agency Found:  dippp
+2024-10-11 21:31:19.798 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.813 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.829 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.845 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.858 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.872 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.887 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.901 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.914 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.933 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.950 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.966 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.978 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:19.993 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:20.003 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:20.071 [main] INFO  Agency:66 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 21:31:22.124 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.139 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.155 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.170 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.197 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.202 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.234 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.249 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.265 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.280 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.312 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.328 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.359 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.375 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.407 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.438 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.453 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.485 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.501 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.532 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.548 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.564 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.579 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.598 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.610 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.626 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.642 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.657 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.673 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.689 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.705 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.720 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.736 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.752 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.767 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.783 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.799 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.814 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.830 [main] INFO  Agency:59 - Agency Found:  fgf
+2024-10-11 21:31:22.830 [main] INFO  Agency:59 - Agency Found:  dippp
+2024-10-11 21:31:22.846 [main] INFO  Agency:59 - Agency Found:  Immu
+2024-10-11 21:31:22.861 [main] INFO  Agency:59 - Agency Found:  san
+2024-10-11 21:31:22.884 [main] INFO  Agency:59 - Agency Found:  san
+2024-10-11 21:31:22.896 [main] INFO  Agency:59 - Agency Found:  san
+2024-10-11 21:31:22.899 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.909 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.924 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.940 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.956 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.971 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.987 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:22.999 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:23.003 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:23.019 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:23.034 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:23.155 [main] INFO  Agency:66 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 21:31:25.185 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.216 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.232 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.263 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.295 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.311 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.342 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.358 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.373 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.389 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.420 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.436 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.451 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.467 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.483 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.483 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.509 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.517 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.530 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.545 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.561 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.576 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.592 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.608 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.624 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.639 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.655 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.671 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.686 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.702 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.705 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.749 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.765 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.780 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.796 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.812 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.843 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.859 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.890 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.890 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.917 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.928 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:25.937 [main] INFO  Agency:59 - Agency Found:  san
+2024-10-11 21:31:25.953 [main] INFO  Agency:59 - Agency Found:  san
+2024-10-11 21:31:25.968 [main] INFO  Agency:59 - Agency Found:  san
+2024-10-11 21:31:25.984 [main] INFO  Agency:59 - Agency Found:  san
+2024-10-11 21:31:26.005 [main] INFO  Agency:59 - Agency Found:  444
+2024-10-11 21:31:26.016 [main] INFO  Agency:59 - Agency Found:  666
+2024-10-11 21:31:26.031 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:26.047 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:26.063 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:26.078 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:26.094 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:26.110 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:26.126 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:26.259 [main] INFO  Agency:66 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 21:31:28.310 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.321 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.351 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.369 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.385 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.416 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.432 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.463 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.479 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.511 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.526 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.605 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.621 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.636 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.659 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.684 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.716 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.732 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.747 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.763 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.779 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.794 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.810 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.811 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.826 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.842 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.857 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.873 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.904 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.920 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.936 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.952 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:28.967 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:29.009 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:29.017 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:29.033 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:29.049 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:29.058 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:29.073 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:29.089 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:29.112 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:29.121 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:29.136 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:29.152 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:29.152 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:29.168 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:29.183 [main] INFO  Agency:59 - Agency Found:  444
+2024-10-11 21:31:29.199 [main] INFO  Agency:59 - Agency Found:  666
+2024-10-11 21:31:29.215 [main] INFO  Agency:59 - Agency Found:  Testing223
+2024-10-11 21:31:29.215 [main] INFO  Agency:59 - Agency Found:  Test12
+2024-10-11 21:31:29.231 [main] INFO  Agency:59 - Agency Found:  santer
+2024-10-11 21:31:29.247 [main] INFO  Agency:59 - Agency Found:  wer
+2024-10-11 21:31:29.262 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:29.278 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:29.278 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:29.413 [main] INFO  Agency:66 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 21:31:31.461 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.474 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.488 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.512 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.520 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.544 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.561 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.575 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.590 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.607 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.624 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.643 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.658 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.663 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.679 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.698 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.714 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.727 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.741 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.757 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.772 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.779 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.797 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.811 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.823 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.837 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.840 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.862 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.869 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.886 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.903 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.918 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.934 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.950 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.966 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.972 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:31.996 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:32.013 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:32.030 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:32.045 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:32.058 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:32.061 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:32.078 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:32.093 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:32.115 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:32.125 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:32.143 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:32.156 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:32.170 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:32.186 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:32.189 [main] INFO  Agency:59 - Agency Found:  santer
+2024-10-11 21:31:32.205 [main] INFO  Agency:59 - Agency Found:  wer
+2024-10-11 21:31:32.222 [main] INFO  Agency:59 - Agency Found: Fore@123 Supportuser2A
+2024-10-11 21:31:32.234 [main] INFO  Agency:59 - Agency Found:  MohitTannu
+2024-10-11 21:31:32.238 [main] INFO  Agency:59 - Agency Found: Fore@123 SriAgent15Jul_1
+2024-10-11 21:31:32.325 [main] INFO  Agency:66 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 21:31:34.371 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.383 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.393 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.409 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.425 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.441 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.474 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.489 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.506 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.522 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.553 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.559 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.570 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.601 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.617 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.633 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.633 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.649 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.665 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.682 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.707 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.723 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.729 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.808 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.824 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.840 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.855 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.871 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.886 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.902 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.934 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.950 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.966 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:34.998 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:35.013 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:35.030 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:35.062 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:35.077 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:35.105 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:35.124 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:35.142 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:35.157 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:35.170 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:35.182 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:35.186 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:35.210 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:35.225 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:35.234 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:35.250 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:35.268 [main] INFO  Agency:59 - Agency Found: 
+2024-10-11 21:31:35.290 [main] INFO  Agency:59 - Agency Found:  santer
+2024-10-11 21:31:35.306 [main] INFO  Agency:59 - Agency Found:  wer
+2024-10-11 21:31:35.320 [main] INFO  Agency:59 - Agency Found: Fore@123 Supportuser2A
+2024-10-11 21:31:35.341 [main] INFO  Agency:59 - Agency Found:  MohitTannu
+2024-10-11 21:31:35.361 [main] INFO  Agency:59 - Agency Found: Fore@123 SriAgent15Jul_1
+2024-10-11 21:32:05.520 [main] WARN  Agency:70 - No more pages available, reached the last set of agencies.
+2024-10-11 21:32:05.534 [main] INFO  BaseTest:81 - Agency selected from the list
+-------------------------------------------------
+Log End: 2024-10-11T21:32:06.358298100
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-10-11T23:16:35.497258400
+Java Version: 21.0.3
+Operating System: Windows 11
+System Name: LAPTOP-0H4UER3T
+-------------------------------------------------
+
+2024-10-11 23:16:37.563 [main] INFO  BaseTest:25 - Attempting to log in with provided credentials.
+2024-10-11 23:16:37.564 [main] INFO  LoginPage:27 - Waiting for username field to be visible
+2024-10-11 23:17:25.002 [main] INFO  LoginPage:29 - Username field is now visible
+2024-10-11 23:17:26.194 [main] INFO  LoginPage:34 - Username inserted successfully
+2024-10-11 23:17:26.302 [main] INFO  LoginPage:38 - Password inserted successfully
+2024-10-11 23:17:36.635 [main] INFO  LoginPage:42 - Signed in successfully
+2024-10-11 23:17:36.635 [main] INFO  BaseTest:27 - Login successful.
+2024-10-11 23:17:40.670 [main] INFO  MenuIcon:27 - Waiting for menu icon to appear
+2024-10-11 23:17:40.882 [main] INFO  MenuIcon:29 - Menu icon clicked
+2024-10-11 23:17:40.883 [main] INFO  BaseTest:42 - Clicked on menu icon.
+2024-10-11 23:17:44.992 [main] INFO  CentralSetUp:32 - CRS RCY menu clicked
+2024-10-11 23:17:48.260 [main] INFO  CentralSetUp:47 - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-10-11 23:17:48.265 [main] INFO  BaseTest:57 - Clicked on 'CRS RCY' to open a new tab.
+2024-10-11 23:17:48.265 [main] INFO  BaseTest:58 - Switched to the new tab successfully.
+2024-10-11 23:17:51.297 [main] INFO  Agency:38 - Clicking on Agencies field.
+2024-10-11 23:18:16.635 [main] INFO  Agency:40 - Agencies field clicked successfully.
+2024-10-11 23:18:16.635 [main] INFO  BaseTest:72 - Clicked on Agnecy option
+2024-10-11 23:18:18.694 [main] INFO  Agency:59 - Agency Found: Fore@123 Supportuser2A
+2024-10-11 23:18:18.711 [main] INFO  Agency:59 - Agency Found: C0001231Oct23Agent1
+2024-10-11 23:18:18.741 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_2
+2024-10-11 23:18:18.760 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_3
+2024-10-11 23:18:18.773 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_4
+2024-10-11 23:18:18.789 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_5
+2024-10-11 23:18:18.820 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:18.836 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:18.868 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:18.916 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:18.942 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:18.963 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:18.980 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:18.995 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.011 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.027 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.046 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.061 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.077 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.090 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.111 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.123 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.139 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.154 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.171 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.171 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.186 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.211 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.225 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.234 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.250 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.266 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.267 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.282 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.298 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.314 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.314 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.330 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.345 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.362 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.377 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.393 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.411 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.425 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.425 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.442 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.456 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.472 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.473 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.493 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.519 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.537 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.567 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.582 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.598 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:19.726 [main] INFO  Agency:69 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:18:21.778 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:21.809 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:21.856 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:21.872 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:21.888 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_4
+2024-10-11 23:18:21.903 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_5
+2024-10-11 23:18:21.916 [main] INFO  Agency:59 - Agency Found: 123 C0001231Oct23_6
+2024-10-11 23:18:21.919 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_2 C0001231Oct23_7
+2024-10-11 23:18:21.935 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_8 C0001231Oct23_8
+2024-10-11 23:18:21.950 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_9 C0001231Oct23_9
+2024-10-11 23:18:21.966 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:21.982 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:21.997 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:21.997 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.016 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.116 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.139 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.155 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.170 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.186 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.202 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.218 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.233 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.265 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.280 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.280 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.296 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.317 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.327 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.343 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.359 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.376 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.417 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.422 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.438 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.453 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.469 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.485 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.500 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.500 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.517 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.532 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.548 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.548 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.563 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.579 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.626 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.642 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.657 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.673 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.695 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.709 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.724 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.739 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.755 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:22.863 [main] INFO  Agency:69 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:18:24.932 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:24.962 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:24.977 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:24.988 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:24.995 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.015 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.023 [main] INFO  Agency:59 - Agency Found: 123 C0001231Oct23_6
+2024-10-11 23:18:25.035 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_2 C0001231Oct23_7
+2024-10-11 23:18:25.050 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_8 C0001231Oct23_8
+2024-10-11 23:18:25.066 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_9 C0001231Oct23_9
+2024-10-11 23:18:25.066 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_10 C0001231Oct23_10
+2024-10-11 23:18:25.081 [main] INFO  Agency:59 - Agency Found: Tannu Mohit
+2024-10-11 23:18:25.100 [main] INFO  Agency:59 - Agency Found: Mohit Taanu
+2024-10-11 23:18:25.129 [main] INFO  Agency:59 - Agency Found: risi ragava
+2024-10-11 23:18:25.145 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.161 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.176 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.193 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.193 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.208 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.224 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.240 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.256 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.271 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.287 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.319 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.335 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.335 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.355 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.366 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.388 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.398 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.414 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.429 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.433 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.446 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.464 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.477 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.500 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.512 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.525 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.525 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.540 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.556 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.556 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.573 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.592 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.604 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.608 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.622 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.668 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.683 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.699 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.722 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.746 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:25.876 [main] INFO  Agency:69 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:18:27.926 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:27.944 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:27.956 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:27.972 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:27.988 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.004 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.067 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.083 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.099 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.114 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.130 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_10 C0001231Oct23_10
+2024-10-11 23:18:28.147 [main] INFO  Agency:59 - Agency Found: Tannu Mohit
+2024-10-11 23:18:28.162 [main] INFO  Agency:59 - Agency Found: Mohit Taanu
+2024-10-11 23:18:28.178 [main] INFO  Agency:59 - Agency Found: risi ragava
+2024-10-11 23:18:28.212 [main] INFO  Agency:59 - Agency Found: jnu
+2024-10-11 23:18:28.230 [main] INFO  Agency:59 - Agency Found: Tannu
+2024-10-11 23:18:28.242 [main] INFO  Agency:59 - Agency Found: sanMohit
+2024-10-11 23:18:28.257 [main] INFO  Agency:59 - Agency Found: sdf
+2024-10-11 23:18:28.257 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.274 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.289 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.305 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.326 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.344 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.353 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.369 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.373 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.385 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.401 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.401 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.419 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.432 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.448 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.453 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.465 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.473 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.482 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.501 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.511 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.520 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.529 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.542 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.558 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.558 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.575 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.592 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.610 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.637 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.653 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.669 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.701 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.893 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.920 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:28.979 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:29.000 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:29.222 [main] INFO  Agency:69 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:18:31.444 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:31.494 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:31.508 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:31.522 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:31.538 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:31.556 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:31.573 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:31.589 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:31.605 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:31.622 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:31.639 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:31.656 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:31.676 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:31.692 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:31.716 [main] INFO  Agency:59 - Agency Found: jnu
+2024-10-11 23:18:31.748 [main] INFO  Agency:59 - Agency Found: Tannu
+2024-10-11 23:18:31.780 [main] INFO  Agency:59 - Agency Found: sanMohit
+2024-10-11 23:18:31.815 [main] INFO  Agency:59 - Agency Found: sdf
+2024-10-11 23:18:31.844 [main] INFO  Agency:59 - Agency Found: 1122
+2024-10-11 23:18:31.871 [main] INFO  Agency:59 - Agency Found: wwww
+2024-10-11 23:18:31.899 [main] INFO  Agency:59 - Agency Found: www
+2024-10-11 23:18:32.124 [main] INFO  Agency:59 - Agency Found: san
+2024-10-11 23:18:32.150 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.173 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.194 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.214 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.236 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.255 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.274 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.291 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.309 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.327 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.343 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.366 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.385 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.403 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.422 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.443 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.468 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.501 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.536 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.565 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.588 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.609 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.629 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.649 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.673 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.694 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.714 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.732 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.753 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.772 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.791 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.810 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:32.830 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:33.018 [main] INFO  Agency:69 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:18:35.319 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.343 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.361 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.380 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.399 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.416 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.436 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.454 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.473 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.491 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.508 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.526 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.545 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.614 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.781 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.807 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.847 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.885 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:35.911 [main] INFO  Agency:59 - Agency Found: 1122
+2024-10-11 23:18:35.935 [main] INFO  Agency:59 - Agency Found: wwww
+2024-10-11 23:18:35.960 [main] INFO  Agency:59 - Agency Found: www
+2024-10-11 23:18:35.985 [main] INFO  Agency:59 - Agency Found: san
+2024-10-11 23:18:36.006 [main] INFO  Agency:59 - Agency Found: testing
+2024-10-11 23:18:36.049 [main] INFO  Agency:59 - Agency Found: eee
+2024-10-11 23:18:36.073 [main] INFO  Agency:59 - Agency Found: gvfb
+2024-10-11 23:18:36.097 [main] INFO  Agency:59 - Agency Found: Mohit
+2024-10-11 23:18:36.122 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.143 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.164 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.185 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.202 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.218 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.234 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.250 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.267 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.283 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.300 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.315 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.332 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.348 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.365 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.380 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.395 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.413 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.429 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.445 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.459 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.477 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.493 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.509 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.524 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.539 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.555 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.576 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.592 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:36.736 [main] INFO  Agency:69 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:18:39.278 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.337 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.375 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.405 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.427 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.447 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.468 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.483 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.500 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.517 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.535 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.550 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.567 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.583 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.601 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.620 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.637 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.651 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.670 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.688 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.708 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.725 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.740 [main] INFO  Agency:59 - Agency Found: testing
+2024-10-11 23:18:39.757 [main] INFO  Agency:59 - Agency Found: eee
+2024-10-11 23:18:39.774 [main] INFO  Agency:59 - Agency Found: gvfb
+2024-10-11 23:18:39.791 [main] INFO  Agency:59 - Agency Found: Mohit
+2024-10-11 23:18:39.807 [main] INFO  Agency:59 - Agency Found: vbb
+2024-10-11 23:18:39.827 [main] INFO  Agency:59 - Agency Found: dfer
+2024-10-11 23:18:39.844 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 23:18:39.878 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 23:18:39.922 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.949 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.971 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:39.990 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.010 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.026 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.044 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.063 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.081 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.099 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.134 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.155 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.173 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.192 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.211 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.230 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.248 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.267 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.284 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.354 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.500 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.535 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.582 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.618 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.644 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:40.858 [main] INFO  Agency:69 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:18:43.161 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.181 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.196 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.216 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.230 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.251 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.271 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.301 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.338 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.366 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.396 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.423 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.448 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.469 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.490 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.512 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.534 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.558 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.583 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.603 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.621 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.640 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.660 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.680 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.699 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.717 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:43.734 [main] INFO  Agency:59 - Agency Found: vbb
+2024-10-11 23:18:43.751 [main] INFO  Agency:59 - Agency Found: dfer
+2024-10-11 23:18:43.773 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 23:18:43.791 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 23:18:43.807 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 23:18:43.826 [main] INFO  Agency:59 - Agency Found: Pooja Gavali
+2024-10-11 23:18:43.846 [main] INFO  Agency:59 - Agency Found: suresh kumar
+2024-10-11 23:18:44.045 [main] INFO  Agency:59 - Agency Found: prasantaa sadana
+2024-10-11 23:18:44.082 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.120 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.147 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.169 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.183 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.205 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.224 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.242 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.261 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.282 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.300 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.317 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.334 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.352 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.372 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.388 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.405 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.422 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.440 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.459 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.475 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:44.675 [main] INFO  Agency:69 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:18:47.178 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.199 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.219 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.237 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.257 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.273 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.293 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.312 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.329 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.346 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.361 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.377 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.397 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.413 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.429 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.446 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.465 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.638 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.686 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.720 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.759 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.784 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.800 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.836 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.904 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.922 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.939 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:47.972 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.003 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.032 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.057 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 23:18:48.081 [main] INFO  Agency:59 - Agency Found: Pooja Gavali
+2024-10-11 23:18:48.112 [main] INFO  Agency:59 - Agency Found: suresh kumar
+2024-10-11 23:18:48.145 [main] INFO  Agency:59 - Agency Found: prasantaa sadana
+2024-10-11 23:18:48.186 [main] INFO  Agency:59 - Agency Found: priyaka
+2024-10-11 23:18:48.218 [main] INFO  Agency:59 - Agency Found: mohit
+2024-10-11 23:18:48.237 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.273 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.355 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.372 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.390 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.479 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.504 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.528 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.545 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.560 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.580 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.598 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.630 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.665 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.698 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.731 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.770 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.792 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:48.810 [main] WARN  Agency:61 - Empty or invalid agency record found.
+2024-10-11 23:18:49.239 [main] INFO  Agency:69 - Clicked the 'Move Right' button to view more agencies.
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-10-11T23:19:16.450341
+Java Version: 21.0.3
+Operating System: Windows 11
+System Name: LAPTOP-0H4UER3T
+-------------------------------------------------
+
+2024-10-11 23:19:18.074 [main] INFO  BaseTest:25 - Attempting to log in with provided credentials.
+2024-10-11 23:19:18.077 [main] INFO  LoginPage:27 - Waiting for username field to be visible
+2024-10-11 23:19:20.862 [main] INFO  LoginPage:29 - Username field is now visible
+2024-10-11 23:19:21.979 [main] INFO  LoginPage:34 - Username inserted successfully
+2024-10-11 23:19:22.069 [main] INFO  LoginPage:38 - Password inserted successfully
+2024-10-11 23:19:22.603 [main] INFO  LoginPage:42 - Signed in successfully
+2024-10-11 23:19:22.603 [main] INFO  BaseTest:27 - Login successful.
+2024-10-11 23:19:26.633 [main] INFO  MenuIcon:27 - Waiting for menu icon to appear
+2024-10-11 23:19:26.741 [main] INFO  MenuIcon:29 - Menu icon clicked
+2024-10-11 23:19:26.742 [main] INFO  BaseTest:42 - Clicked on menu icon.
+2024-10-11 23:19:30.873 [main] INFO  CentralSetUp:32 - CRS RCY menu clicked
+2024-10-11 23:19:33.345 [main] INFO  CentralSetUp:47 - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-10-11 23:19:33.345 [main] INFO  BaseTest:57 - Clicked on 'CRS RCY' to open a new tab.
+2024-10-11 23:19:33.345 [main] INFO  BaseTest:58 - Switched to the new tab successfully.
+2024-10-11 23:19:36.392 [main] INFO  Agency:38 - Clicking on Agencies field.
+2024-10-11 23:19:38.797 [main] INFO  Agency:40 - Agencies field clicked successfully.
+2024-10-11 23:19:38.797 [main] INFO  BaseTest:72 - Clicked on Agnecy option
+2024-10-11 23:19:40.845 [main] INFO  Agency:59 - Agency Found: Fore@123 Supportuser2A
+2024-10-11 23:19:40.852 [main] INFO  Agency:59 - Agency Found: C0001231Oct23Agent1
+2024-10-11 23:19:40.869 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_2
+2024-10-11 23:19:40.877 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_3
+2024-10-11 23:19:40.884 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_4
+2024-10-11 23:19:40.900 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_5
+2024-10-11 23:19:41.586 [main] INFO  Agency:67 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:19:43.684 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_4
+2024-10-11 23:19:43.700 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_5
+2024-10-11 23:19:43.716 [main] INFO  Agency:59 - Agency Found: 123 C0001231Oct23_6
+2024-10-11 23:19:43.716 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_2 C0001231Oct23_7
+2024-10-11 23:19:43.731 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_8 C0001231Oct23_8
+2024-10-11 23:19:43.750 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_9 C0001231Oct23_9
+2024-10-11 23:19:44.296 [main] INFO  Agency:67 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:19:46.409 [main] INFO  Agency:59 - Agency Found: 123 C0001231Oct23_6
+2024-10-11 23:19:46.420 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_2 C0001231Oct23_7
+2024-10-11 23:19:46.430 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_8 C0001231Oct23_8
+2024-10-11 23:19:46.440 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_9 C0001231Oct23_9
+2024-10-11 23:19:46.450 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_10 C0001231Oct23_10
+2024-10-11 23:19:46.460 [main] INFO  Agency:59 - Agency Found: Tannu Mohit
+2024-10-11 23:19:46.471 [main] INFO  Agency:59 - Agency Found: Mohit Taanu
+2024-10-11 23:19:46.480 [main] INFO  Agency:59 - Agency Found: risi ragava
+2024-10-11 23:19:47.037 [main] INFO  Agency:67 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:19:49.189 [main] INFO  Agency:59 - Agency Found: C0001231Oct23_10 C0001231Oct23_10
+2024-10-11 23:19:49.196 [main] INFO  Agency:59 - Agency Found: Tannu Mohit
+2024-10-11 23:19:49.212 [main] INFO  Agency:59 - Agency Found: Mohit Taanu
+2024-10-11 23:19:49.227 [main] INFO  Agency:59 - Agency Found: risi ragava
+2024-10-11 23:19:49.238 [main] INFO  Agency:59 - Agency Found: jnu
+2024-10-11 23:19:49.247 [main] INFO  Agency:59 - Agency Found: Tannu
+2024-10-11 23:19:49.256 [main] INFO  Agency:59 - Agency Found: sanMohit
+2024-10-11 23:19:49.264 [main] INFO  Agency:59 - Agency Found: sdf
+2024-10-11 23:19:49.743 [main] INFO  Agency:67 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:19:51.964 [main] INFO  Agency:59 - Agency Found: jnu
+2024-10-11 23:19:51.996 [main] INFO  Agency:59 - Agency Found: Tannu
+2024-10-11 23:19:52.026 [main] INFO  Agency:59 - Agency Found: sanMohit
+2024-10-11 23:19:52.049 [main] INFO  Agency:59 - Agency Found: sdf
+2024-10-11 23:19:52.060 [main] INFO  Agency:59 - Agency Found: 1122
+2024-10-11 23:19:52.078 [main] INFO  Agency:59 - Agency Found: wwww
+2024-10-11 23:19:52.092 [main] INFO  Agency:59 - Agency Found: www
+2024-10-11 23:19:52.108 [main] INFO  Agency:59 - Agency Found: san
+2024-10-11 23:19:52.766 [main] INFO  Agency:67 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:19:55.250 [main] INFO  Agency:59 - Agency Found: 1122
+2024-10-11 23:19:55.263 [main] INFO  Agency:59 - Agency Found: wwww
+2024-10-11 23:19:55.308 [main] INFO  Agency:59 - Agency Found: www
+2024-10-11 23:19:55.333 [main] INFO  Agency:59 - Agency Found: san
+2024-10-11 23:19:55.345 [main] INFO  Agency:59 - Agency Found: testing
+2024-10-11 23:19:55.368 [main] INFO  Agency:59 - Agency Found: eee
+2024-10-11 23:19:55.381 [main] INFO  Agency:59 - Agency Found: gvfb
+2024-10-11 23:19:55.393 [main] INFO  Agency:59 - Agency Found: Mohit
+2024-10-11 23:19:56.010 [main] INFO  Agency:67 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:19:58.638 [main] INFO  Agency:59 - Agency Found: testing
+2024-10-11 23:19:58.649 [main] INFO  Agency:59 - Agency Found: eee
+2024-10-11 23:19:58.654 [main] INFO  Agency:59 - Agency Found: gvfb
+2024-10-11 23:19:58.676 [main] INFO  Agency:59 - Agency Found: Mohit
+2024-10-11 23:19:58.688 [main] INFO  Agency:59 - Agency Found: vbb
+2024-10-11 23:19:58.703 [main] INFO  Agency:59 - Agency Found: dfer
+2024-10-11 23:19:58.731 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 23:19:58.763 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 23:19:59.243 [main] INFO  Agency:67 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:20:01.853 [main] INFO  Agency:59 - Agency Found: vbb
+2024-10-11 23:20:01.876 [main] INFO  Agency:59 - Agency Found: dfer
+2024-10-11 23:20:01.898 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 23:20:01.955 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 23:20:01.976 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 23:20:01.995 [main] INFO  Agency:59 - Agency Found: Pooja Gavali
+2024-10-11 23:20:02.020 [main] INFO  Agency:59 - Agency Found: suresh kumar
+2024-10-11 23:20:02.046 [main] INFO  Agency:59 - Agency Found: prasantaa sadana
+2024-10-11 23:20:03.084 [main] INFO  Agency:67 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:20:05.810 [main] INFO  Agency:59 - Agency Found: Pooja Zingoni
+2024-10-11 23:20:05.827 [main] INFO  Agency:59 - Agency Found: Pooja Gavali
+2024-10-11 23:20:05.844 [main] INFO  Agency:59 - Agency Found: suresh kumar
+2024-10-11 23:20:05.868 [main] INFO  Agency:59 - Agency Found: prasantaa sadana
+2024-10-11 23:20:05.900 [main] INFO  Agency:59 - Agency Found: priyaka
+2024-10-11 23:20:05.969 [main] INFO  Agency:59 - Agency Found: mohit
+2024-10-11 23:20:06.651 [main] INFO  Agency:67 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:20:09.345 [main] INFO  Agency:59 - Agency Found: priyaka
+2024-10-11 23:20:09.360 [main] INFO  Agency:59 - Agency Found: mohit
+2024-10-11 23:20:09.375 [main] INFO  Agency:59 - Agency Found: Mohit123
+2024-10-11 23:20:09.390 [main] INFO  Agency:59 - Agency Found: John12
+2024-10-11 23:20:09.405 [main] INFO  Agency:59 - Agency Found: fgf
+2024-10-11 23:20:09.420 [main] INFO  Agency:59 - Agency Found: dippp
+2024-10-11 23:20:09.803 [main] INFO  Agency:67 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:20:12.411 [main] INFO  Agency:59 - Agency Found: fgf
+2024-10-11 23:20:12.427 [main] INFO  Agency:59 - Agency Found: dippp
+2024-10-11 23:20:12.474 [main] INFO  Agency:59 - Agency Found: Immu
+2024-10-11 23:20:12.490 [main] INFO  Agency:59 - Agency Found: san
+2024-10-11 23:20:12.521 [main] INFO  Agency:59 - Agency Found: san
+2024-10-11 23:20:12.537 [main] INFO  Agency:59 - Agency Found: san
+2024-10-11 23:20:12.799 [main] INFO  Agency:67 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:20:15.311 [main] INFO  Agency:59 - Agency Found: san
+2024-10-11 23:20:15.327 [main] INFO  Agency:59 - Agency Found: san
+2024-10-11 23:20:15.346 [main] INFO  Agency:59 - Agency Found: san
+2024-10-11 23:20:15.359 [main] INFO  Agency:59 - Agency Found: san
+2024-10-11 23:20:15.359 [main] INFO  Agency:59 - Agency Found: 444
+2024-10-11 23:20:15.382 [main] INFO  Agency:59 - Agency Found: 666
+2024-10-11 23:20:15.657 [main] INFO  Agency:67 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:20:18.264 [main] INFO  Agency:59 - Agency Found: 444
+2024-10-11 23:20:18.269 [main] INFO  Agency:59 - Agency Found: 666
+2024-10-11 23:20:18.283 [main] INFO  Agency:59 - Agency Found: Testing223
+2024-10-11 23:20:18.296 [main] INFO  Agency:59 - Agency Found: Test12
+2024-10-11 23:20:18.296 [main] INFO  Agency:59 - Agency Found: santer
+2024-10-11 23:20:18.312 [main] INFO  Agency:59 - Agency Found: wer
+2024-10-11 23:20:18.425 [main] INFO  Agency:67 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:20:21.357 [main] INFO  Agency:59 - Agency Found: santer
+2024-10-11 23:20:21.391 [main] INFO  Agency:59 - Agency Found: wer
+2024-10-11 23:20:21.414 [main] INFO  Agency:59 - Agency Found: Fore@123 Supportuser2A
+2024-10-11 23:20:21.432 [main] INFO  Agency:59 - Agency Found: MohitTannu
+2024-10-11 23:20:21.448 [main] INFO  Agency:59 - Agency Found: Fore@123 SriAgent15Jul_1
+2024-10-11 23:20:21.606 [main] INFO  Agency:67 - Clicked the 'Move Right' button to view more agencies.
+2024-10-11 23:20:24.566 [main] INFO  Agency:59 - Agency Found: santer
+2024-10-11 23:20:24.594 [main] INFO  Agency:59 - Agency Found: wer
+2024-10-11 23:20:24.598 [main] INFO  Agency:59 - Agency Found: Fore@123 Supportuser2A
+2024-10-11 23:20:24.630 [main] INFO  Agency:59 - Agency Found: MohitTannu
+2024-10-11 23:20:24.645 [main] INFO  Agency:59 - Agency Found: Fore@123 SriAgent15Jul_1
+2024-10-11 23:20:54.658 [main] WARN  Agency:70 - No more pages available, reached the last set of agencies.
+2024-10-11 23:20:54.664 [main] INFO  BaseTest:81 - Agency selected from the list
+-------------------------------------------------
+Log End: 2024-10-11T23:20:55.756526500
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-10-11T23:52:00.826191300
+Java Version: 21.0.3
+Operating System: Windows 11
+System Name: LAPTOP-0H4UER3T
+-------------------------------------------------
+
+2024-10-11 23:52:03.025 [main] INFO  BaseTest:25 - Attempting to log in with provided credentials.
+2024-10-11 23:52:03.027 [main] INFO  LoginPage:27 - Waiting for username field to be visible
+2024-10-11 23:52:48.137 [main] INFO  LoginPage:29 - Username field is now visible
+2024-10-11 23:52:49.297 [main] INFO  LoginPage:34 - Username inserted successfully
+2024-10-11 23:52:49.388 [main] INFO  LoginPage:38 - Password inserted successfully
+2024-10-11 23:53:00.200 [main] INFO  LoginPage:42 - Signed in successfully
+2024-10-11 23:53:00.202 [main] INFO  BaseTest:27 - Login successful.
+2024-10-11 23:53:04.230 [main] INFO  MenuIcon:27 - Waiting for menu icon to appear
+2024-10-11 23:53:04.356 [main] INFO  MenuIcon:29 - Menu icon clicked
+2024-10-11 23:53:04.356 [main] INFO  BaseTest:42 - Clicked on menu icon.
+2024-10-11 23:53:08.481 [main] INFO  CentralSetUp:32 - CRS RCY menu clicked
+2024-10-11 23:53:10.564 [main] INFO  CentralSetUp:47 - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-10-11 23:53:10.565 [main] INFO  BaseTest:57 - Clicked on 'CRS RCY' to open a new tab.
+2024-10-11 23:53:10.566 [main] INFO  BaseTest:58 - Switched to the new tab successfully.
+2024-10-11 23:53:13.599 [main] INFO  Agency:38 - Clicking on Agencies field.
+2024-10-11 23:53:38.848 [main] ERROR Agency:42 - Error in agency method: element click intercepted: Element <i _ngcontent-fpo-c632="" class="icon icon-agencies"></i> is not clickable at point (276, 197). Other element would receive the click: <div _ngcontent-fpo-c462="" class="ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=129.0.6668.100)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6e9e389c1e40f78c6f964abcf2f73718, clickElement {id=f.92A76930CF768DCB9AC69DE320AC60B4.d.781FCF9D24E5854EDE1C6211C911F9D5.e.155}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54510}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54510/devtoo..., se:cdpVersion: 129.0.6668.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6e9e389c1e40f78c6f964abcf2f73718)] -> xpath: //i[@class='icon icon-agencies']]
+Session ID: 6e9e389c1e40f78c6f964abcf2f73718
+2024-10-11 23:53:38.848 [main] INFO  BaseTest:72 - Clicked on Agnecy option
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-10-11T23:54:11.674962100
+Java Version: 21.0.3
+Operating System: Windows 11
+System Name: LAPTOP-0H4UER3T
+-------------------------------------------------
+
+2024-10-11 23:54:13.316 [main] INFO  BaseTest:25 - Attempting to log in with provided credentials.
+2024-10-11 23:54:13.319 [main] INFO  LoginPage:27 - Waiting for username field to be visible
+2024-10-11 23:54:16.946 [main] INFO  LoginPage:29 - Username field is now visible
+2024-10-11 23:54:18.052 [main] INFO  LoginPage:34 - Username inserted successfully
+2024-10-11 23:54:18.141 [main] INFO  LoginPage:38 - Password inserted successfully
+2024-10-11 23:54:18.547 [main] INFO  LoginPage:42 - Signed in successfully
+2024-10-11 23:54:18.547 [main] INFO  BaseTest:27 - Login successful.
+2024-10-11 23:54:22.569 [main] INFO  MenuIcon:27 - Waiting for menu icon to appear
+2024-10-11 23:54:24.930 [main] INFO  MenuIcon:29 - Menu icon clicked
+2024-10-11 23:54:24.930 [main] INFO  BaseTest:42 - Clicked on menu icon.
+2024-10-11 23:54:29.056 [main] INFO  CentralSetUp:32 - CRS RCY menu clicked
+2024-10-11 23:54:32.724 [main] INFO  CentralSetUp:47 - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-10-11 23:54:32.724 [main] INFO  BaseTest:57 - Clicked on 'CRS RCY' to open a new tab.
+2024-10-11 23:54:32.724 [main] INFO  BaseTest:58 - Switched to the new tab successfully.
+2024-10-11 23:54:35.747 [main] INFO  Agency:38 - Clicking on Agencies field.
+2024-10-11 23:54:38.276 [main] INFO  Agency:40 - Agencies field clicked successfully.
+2024-10-11 23:54:38.276 [main] INFO  BaseTest:72 - Clicked on Agnecy option
+2024-10-11 23:55:10.649 [main] ERROR Agency:75 - Error navigating pages or fetching agency data: Expected condition failed: waiting for visibility of all elements located by By.xpath: //div[@class='search-result d-flex justify-content-between align-items-center gap-2'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54595/devtoo..., se:cdpVersion: 129.0.6668.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 94186ab197ad02f3a1c98611905d92ae
+2024-10-11 23:55:10.650 [main] INFO  Agency:81 - Total Agencies Found: 0
+2024-10-11 23:55:10.650 [main] INFO  BaseTest:81 - Agency selected from the list
+-------------------------------------------------
+Log End: 2024-10-11T23:55:11.221806100
+-------------------------------------------------
+

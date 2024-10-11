@@ -4,6 +4,7 @@ import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import pages.Agency;
 import pages.CentralSetUp;
 import pages.LoginPage;
 import pages.MenuIcon;
@@ -12,9 +13,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class BookingTest extends BaseTest {
-	
-	private static final Logger log = LogManager.getLogger(BaseTest.class);
-
+    
+    private static final Logger log = LogManager.getLogger(BaseTest.class);
 
     @Test
     public void login() {
@@ -25,46 +25,64 @@ public class BookingTest extends BaseTest {
             log.info("Attempting to log in with provided credentials.");
             loginPage.login(config.getProperty("username"), config.getProperty("password"));
             log.info("Login successful.");
-            // ExtentReportManager handles report, no need to call test.pass()
-
-            // You can add booking steps here
-            // log.info("Performing booking.");
-            // bookingPage.makeBooking();
-            // test.pass("Booking completed.");
         } catch (Exception e) {
-            log.error("Login failed at: " + e.getMessage());
+            log.error("Login failed at: " + e.getMessage(), e);
             Assert.fail("Test failed at login: " + e.getMessage());
         }
     }
    
     @Test(dependsOnMethods = "login")
     public void menu() {
-    	MenuIcon menuicon = new MenuIcon(driver);
-    	
-    	//click on menu icon
-    	try {
-    		Thread.sleep(4000);
-    		menuicon.menu();
-    		log.info("Clicked on menu icon");
-    	}catch (Exception e) {
-    		log.error("Menu icon interaction failed at :"+e.getMessage());
-    		Assert.fail("Test failed at Menu Icon: "+e.getMessage());
-    	}
+        MenuIcon menuicon = new MenuIcon(driver);
+        
+        // Click on menu icon
+        try {
+            Thread.sleep(4000);
+            menuicon.menu();
+            log.info("Clicked on menu icon.");
+        } catch (Exception e) {
+            log.error("Menu icon interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at Menu Icon: " + e.getMessage());
+        }
     }
     
     @Test(dependsOnMethods = "menu")
     public void csu() {
-    	CentralSetUp centralsetup = new CentralSetUp(driver);
-    	
-    	//click on csu
-    	try {
-    		Thread.sleep(4000);
-    		centralsetup.csu();
-    		log.info("Clicked on central set up");
-    	}catch (Exception e) {
-    		log.error("Central Set Up interaction failed at :"+e.getMessage());
-    		Assert.fail("Test failed at Central Setu Up: "+e.getMessage());
-    	}	
+        CentralSetUp centralsetup = new CentralSetUp(driver);
+        
+        // Click on Central Set Up (CRS RCY)
+        try {
+            Thread.sleep(4000);
+            centralsetup.csu();
+            log.info("Clicked on 'CRS RCY' to open a new tab.");
+            log.info("Switched to the new tab successfully.");
+        } catch (Exception e) {
+            log.error("Central Set Up interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at Central Set Up: " + e.getMessage());
+        }
     }
     
+    @Test(dependsOnMethods = "csu")
+    public void  agent() {
+    	Agency agency = new Agency(driver);
+    	
+    	try {
+    		Thread.sleep(3000);
+    		agency.agency();
+    		log.info("Clicked on Agnecy option");
+    	}catch(Exception e) {
+    		log.error("Agency interaction failed at : "+e.getMessage(),e);
+    		Assert.fail("Test failed at agencies button : "+e.getMessage());
+    	}
+    	
+    	try {
+    		Thread.sleep(2000);
+    		agency.selectAgency();
+    		log.info("Agency selected from the list");
+    		
+    	}catch(Exception e) {
+    		log.error("Agency selection interaction failed at : "+e.getMessage(),e);
+    		Assert.fail("Test failed at agency selection : "+e.getMessage());
+    	}
+    }
 }
