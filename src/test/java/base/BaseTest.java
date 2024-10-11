@@ -20,7 +20,7 @@ public class BaseTest {
         return driver;
     }
 
-    @BeforeMethod
+    @BeforeClass
     public void setup() throws IOException {
         // Initialize logger
         log = Logger.getLogger(BaseTest.class);
@@ -46,7 +46,7 @@ public class BaseTest {
         log.info("Driver initialized and application launched");
     }
 
-    @AfterMethod
+    @AfterClass
     public void teardown() {
         if (driver != null) {
             driver.quit();

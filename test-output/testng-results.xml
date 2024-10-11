@@ -1,74 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-10T18:00:10 IST" name="User_Suite" finished-at="2024-10-10T18:01:17 IST" duration-ms="67274">
+  <suite started-at="2024-10-10T23:48:13 IST" name="User_Suite" finished-at="2024-10-10T23:48:29 IST" duration-ms="16106">
     <groups>
     </groups>
-    <test started-at="2024-10-10T18:00:10 IST" name="User_Test" finished-at="2024-10-10T18:01:17 IST" duration-ms="67274">
+    <test started-at="2024-10-10T23:48:13 IST" name="User_Test" finished-at="2024-10-10T23:48:29 IST" duration-ms="16106">
       <class name="tests.BookingTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookingTest@ba2f4ec]" started-at="2024-10-10T18:00:10 IST" name="setup" finished-at="2024-10-10T18:00:11 IST" duration-ms="1461" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookingTest@686449f9]" started-at="2024-10-10T23:48:13 IST" name="setup" finished-at="2024-10-10T23:48:15 IST" duration-ms="1528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginAndBook()[pri:0, instance:tests.BookingTest@ba2f4ec]" started-at="2024-10-10T18:00:11 IST" name="loginAndBook" finished-at="2024-10-10T18:01:15 IST" duration-ms="64329" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Test failed at login: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='SGN IN']"}
-  (Session info: chrome=129.0.6668.90)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9b0904a6671378bf3228dbf339814175, findElement {using=xpath, value=//input[@value='SGN IN']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.91 (b00bc8b76d60..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56862}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56862/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9b0904a6671378bf3228dbf339814175]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test failed at login: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@value='SGN IN']"}
-  (Session info: chrome=129.0.6668.90)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9b0904a6671378bf3228dbf339814175, findElement {using=xpath, value=//input[@value='SGN IN']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.91 (b00bc8b76d60..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56862}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56862/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9b0904a6671378bf3228dbf339814175
-at org.testng.Assert.fail(Assert.java:111)
-at tests.BookingTest.loginAndBook(BookingTest.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="login()[pri:0, instance:tests.BookingTest@686449f9]" started-at="2024-10-10T23:48:15 IST" name="login" finished-at="2024-10-10T23:48:19 IST" duration-ms="4187" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginAndBook -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.BookingTest@ba2f4ec]" started-at="2024-10-10T18:01:17 IST" name="teardown" finished-at="2024-10-10T18:01:17 IST" duration-ms="274" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="menu()[pri:0, instance:tests.BookingTest@686449f9]" started-at="2024-10-10T23:48:19 IST" name="menu" finished-at="2024-10-10T23:48:23 IST" depends-on-methods="tests.BookingTest.login" duration-ms="4175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menu -->
+        <test-method signature="csu()[pri:0, instance:tests.BookingTest@686449f9]" started-at="2024-10-10T23:48:23 IST" name="csu" finished-at="2024-10-10T23:48:28 IST" depends-on-methods="tests.BookingTest.menu" duration-ms="4171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- csu -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.BookingTest@686449f9]" started-at="2024-10-10T23:48:28 IST" name="teardown" finished-at="2024-10-10T23:48:29 IST" duration-ms="1885" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

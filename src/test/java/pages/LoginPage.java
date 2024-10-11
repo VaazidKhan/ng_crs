@@ -24,7 +24,6 @@ public class LoginPage {
     By loginButton = By.xpath("//input[@value='SIGN IN']");
 
     public void login(String username, String password) throws Exception {
-        // Log the waiting for the username field
         logger.info("Waiting for username field to be visible");
         wait.until(ExpectedConditions.visibilityOfElementLocated(usernameField));
         logger.info("Username field is now visible");
@@ -36,7 +35,7 @@ public class LoginPage {
 
         // Wait for password field to be clickable and then send keys
         wait.until(ExpectedConditions.elementToBeClickable(passwordField)).sendKeys(password);
-        logger.info("Password inserted se/uccessfully");
+        logger.info("Password inserted successfully");
 
         // Click on login button
         driver.findElement(loginButton).click();
