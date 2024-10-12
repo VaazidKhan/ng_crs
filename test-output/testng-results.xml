@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-12T00:30:26 IST" name="User_Suite" finished-at="2024-10-12T00:33:07 IST" duration-ms="160427">
+  <suite started-at="2024-10-12T22:45:47 IST" name="User_Suite" finished-at="2024-10-12T22:47:18 IST" duration-ms="91575">
     <groups>
     </groups>
-    <test started-at="2024-10-12T00:30:26 IST" name="User_Test" finished-at="2024-10-12T00:33:07 IST" duration-ms="160427">
+    <test started-at="2024-10-12T22:45:47 IST" name="User_Test" finished-at="2024-10-12T22:47:18 IST" duration-ms="91575">
       <class name="tests.BookingTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookingTest@665df3c6]" started-at="2024-10-12T00:30:26 IST" name="setup" finished-at="2024-10-12T00:30:28 IST" duration-ms="1996" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookingTest@665df3c6]" started-at="2024-10-12T22:45:47 IST" name="setup" finished-at="2024-10-12T22:45:48 IST" duration-ms="1500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:tests.BookingTest@665df3c6]" started-at="2024-10-12T00:30:28 IST" name="login" finished-at="2024-10-12T00:31:48 IST" duration-ms="79965" status="PASS">
+        <test-method signature="login()[pri:0, instance:tests.BookingTest@665df3c6]" started-at="2024-10-12T22:45:48 IST" name="login" finished-at="2024-10-12T22:46:00 IST" duration-ms="12125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="menu()[pri:0, instance:tests.BookingTest@665df3c6]" started-at="2024-10-12T00:31:48 IST" name="menu" finished-at="2024-10-12T00:31:52 IST" depends-on-methods="tests.BookingTest.login" duration-ms="4136" status="PASS">
+        <test-method signature="menu()[pri:0, instance:tests.BookingTest@665df3c6]" started-at="2024-10-12T22:46:00 IST" name="menu" finished-at="2024-10-12T22:46:05 IST" depends-on-methods="tests.BookingTest.login" duration-ms="4121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- menu -->
-        <test-method signature="csu()[pri:0, instance:tests.BookingTest@665df3c6]" started-at="2024-10-12T00:31:52 IST" name="csu" finished-at="2024-10-12T00:32:03 IST" depends-on-methods="tests.BookingTest.menu" duration-ms="10800" status="PASS">
+        <test-method signature="csu()[pri:0, instance:tests.BookingTest@665df3c6]" started-at="2024-10-12T22:46:05 IST" name="csu" finished-at="2024-10-12T22:46:14 IST" depends-on-methods="tests.BookingTest.menu" duration-ms="9572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- csu -->
-        <test-method signature="agent()[pri:0, instance:tests.BookingTest@665df3c6]" started-at="2024-10-12T00:32:03 IST" name="agent" finished-at="2024-10-12T00:33:06 IST" depends-on-methods="tests.BookingTest.csu" duration-ms="63030" status="PASS">
+        <test-method signature="agent()[pri:0, instance:tests.BookingTest@665df3c6]" started-at="2024-10-12T22:46:14 IST" name="agent" finished-at="2024-10-12T22:47:18 IST" depends-on-methods="tests.BookingTest.csu" duration-ms="63876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- agent -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.BookingTest@665df3c6]" started-at="2024-10-12T00:33:06 IST" name="teardown" finished-at="2024-10-12T00:33:07 IST" duration-ms="312" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.BookingTest@665df3c6]" started-at="2024-10-12T22:47:18 IST" name="teardown" finished-at="2024-10-12T22:47:18 IST" duration-ms="222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

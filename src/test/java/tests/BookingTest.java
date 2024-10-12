@@ -77,12 +77,23 @@ public class BookingTest extends BaseTest {
     	
     	try {
     		Thread.sleep(2000);
-    		agency.selectAgency();
-    		log.info("Agency selected from the list");
+    		agency.agent();
+    		log.info("Agencies listed");
     		
     	}catch(Exception e) {
-    		log.error("Agency selection interaction failed at : "+e.getMessage(),e);
-    		Assert.fail("Test failed at agency selection : "+e.getMessage());
+    		log.error("Agency list interaction failed at : "+e.getMessage(),e);
+    		Assert.fail("Test failed at agency list : "+e.getMessage());
     	}
+    	try {
+    		Thread.sleep(2000);
+    		agency.selectAgent(config.getProperty("agent"));
+    		log.info("Agent selected ");
+    		
+    	}catch(Exception e) {
+    		log.error("Agent selection interaction failed at : "+e.getMessage(),e);
+    		Assert.fail("Test failed at agent selection : "+e.getMessage());
+    	
     }
+    }
+    
 }

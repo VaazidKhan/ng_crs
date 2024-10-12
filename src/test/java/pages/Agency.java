@@ -1,24 +1,29 @@
 package pages;
 
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import java.time.Duration;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
+
 import base.BaseTest;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Agency extends BaseTest {
     WebDriver driver;
     WebDriverWait wait;
     private static final Logger log = LogManager.getLogger(Agency.class);
+
+    // Store the list of agents as a class-level variable
+    List<String> allAgents = new ArrayList<>();
 
     // Constructor to initialize WebDriver and WebDriverWait
     public Agency(WebDriver driver) {
@@ -27,77 +32,121 @@ public class Agency extends BaseTest {
     }
 
     // Locators for various elements
-    By homeField = By.xpath("//a[@class='side-btn active']"); // Verify it's clicked by default
-    By customerField = By.xpath("//button[contains(text(),'Customer')]"); // Verify it's clicked by default
     By agenciesField = By.xpath("//i[@class='icon icon-agencies']");
-    By agentsList = By.xpath("//div[@class='search-result d-flex justify-content-between align-items-center gap-2']");
-    By totalAgents = By.xpath("//a[@class='fs-12 ng-star-inserted']"); // Extracting the total number of agents to compare
+    By agentsList = By.xpath("//label[@class='fs-14 text-truncate']");
+    By totalAgents = By.xpath("//a[@class='fs-12 ng-star-inserted']");
     By moveRightButton = By.xpath("//a[@class='move-btn move-right']");
-    By moveLeftButton = By.xpath("//a[@class='move-btn move-left']");
+
+    int totalAgentCount;
 
     // Method to click on 'Agencies' field
     public void agency() {
         try {
             log.info("Clicking on Agencies field.");
-            wait.until(ExpectedConditions.elementToBeClickable(agenciesField)).click();
+            WebElement agenciesElement = wait.until(ExpectedConditions.elementToBeClickable(agenciesField));
+            agenciesElement.click();
             log.info("Agencies field clicked successfully.");
         } catch (Exception e) {
-            log.error("Error in agency method: " + e.getMessage());
+            log.error("Error in agency method: " + e.getMessage(), e);
+            Assert.fail("Failed to click on Agencies field: " + e.getMessage());
         }
     }
 
-    // Method to select agencies and log all unique agency names
-    public void selectAgency() {
-        Set<String> allAgencyNames = new HashSet<>(); // Use Set to store unique agency names
-        boolean isLastPage = false;
+    // Method to get all agents and store them in the class-level variable 'allAgents'
+ // Method to retrieve agents in batches
+    private boolean isElementPresent(By locator) {
+        return !driver.findElements(locator).isEmpty();
+    }
 
-        while (!isLastPage) {
-            try {
-                // Get the list of currently visible agents
-                List<WebElement> searchResults = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(agentsList));
+    public void agent() {
+        try {
+            log.info("Extracting total agents and retrieving agent names.");
 
-                // Loop through the list of elements and store their text
-                for (WebElement result : searchResults) {
-                    String agencyText = result.getText().trim(); // Trim to remove extra spaces
-                    if (!agencyText.isEmpty() && allAgencyNames.add(agencyText)) { // Only add non-empty and unique names
-                        log.info("Agency Found: " + agencyText);
+            // Get the total number of agents from the text
+            WebElement totalAgentsElement = wait.until(ExpectedConditions.visibilityOfElementLocated(totalAgents));
+            String totalAgentsText = totalAgentsElement.getText();
+
+            // Extract the number of total agents using regex
+            Pattern pattern = Pattern.compile("\\d+");
+            Matcher matcher = pattern.matcher(totalAgentsText);
+            if (matcher.find()) {
+                totalAgentCount = Integer.parseInt(matcher.group());
+            } else {
+                log.error("Could not extract total agent count from the text.");
+                Assert.fail("Failed to extract total agent count.");
+            }
+
+            log.info("Total agents found: " + totalAgentCount);
+
+            // Retrieve agents in batches
+            while (allAgents.size() < totalAgentCount) {
+                List<WebElement> displayedAgents = driver.findElements(agentsList);
+
+                for (WebElement agentElement : displayedAgents) {
+                    String agentName = agentElement.getText().trim();
+                    if (!allAgents.contains(agentName)) {
+                        allAgents.add(agentName);
+                        log.info("Retrieved agent: " + agentName);
                     }
                 }
-                
-                // Extract the number of agents from WebElement
-                WebElement totalAgentsElement = wait.until(ExpectedConditions.visibilityOfElementLocated(totalAgents));
-                String totalAgentsText = totalAgentsElement.getText();
-                
-                // Use a regex pattern to extract the numeric value
-                Pattern pattern = Pattern.compile("\\d+");
-                Matcher matcher = pattern.matcher(totalAgentsText);
-                if (matcher.find()) {
-                    String numberOfAgents = matcher.group();  // Extract the numeric part
-                    log.info("Total number of agents found: " + numberOfAgents);
-                } else {
-                    log.warn("No numeric value found in the total agents element.");
-                }
 
-                // Check if the "move right" button is clickable
-                WebElement nextButton = wait.until(ExpectedConditions.elementToBeClickable(moveRightButton));
-                if (nextButton.isDisplayed()) {
-                    nextButton.click();
-                    log.info("Clicked the 'Move Right' button to view more agencies.");
-                } else {
-                    log.warn("No more pages available, reached the last set of agencies.");
-                    isLastPage = true;
+                // If more agents need to be loaded, check if 'Move Right' button is visible
+                if (allAgents.size() < totalAgentCount) {
+                    if (isElementPresent(moveRightButton)) {
+                        try {
+                            WebElement moveRight = wait.until(ExpectedConditions.elementToBeClickable(moveRightButton));
+                            moveRight.click();
+                            log.info("Clicked the 'Move Right' button to load more agents.");
+                        } catch (Exception e) {
+                            log.error("Failed to click 'Move Right' button: " + e.getMessage());
+                            break; // Exit the loop if the button is not clickable after retries
+                        }
+                    } else {
+                        log.info("No more agents to load or 'Move Right' button is not available.");
+                        break; // Exit loop if no more agents can be loaded
+                    }
                 }
-                
-            } catch (Exception e) {
-                log.error("Error navigating pages or fetching agency data: " + e.getMessage());
-                isLastPage = true; // If any error occurs, exit the loop
             }
-        }
 
-        // Print out all the agency names after collecting them
-        log.info("Total Agencies Found: " + allAgencyNames.size());
-        for (String agency : allAgencyNames) {
-            log.info("Agency: " + agency);
+            log.info("All agents retrieved successfully. Total agents: " + allAgents.size());
+
+        } catch (Exception e) {
+            log.error("Error in agent method: " + e.getMessage(), e);
+            Assert.fail("Failed to retrieve agents: " + e.getMessage());
+        }
+    }
+
+
+    // Method to select an agent from the list of already retrieved agents
+    public void selectAgent(String agent) {
+        try {
+            log.info("Attempting to select agent: " + agent);
+
+            // Check if the agent list has been populated and the agent exists
+            if (allAgents.isEmpty()) {
+                log.error("Agent list is empty. Ensure 'agent()' method is called before 'selectAgent()'.");
+                Assert.fail("Agent list is empty. Call 'agent()' before trying to select an agent.");
+            }
+
+            if (allAgents.contains(agent)) {
+                // Locate the WebElement corresponding to the agent and click it
+                List<WebElement> agentElements = driver.findElements(agentsList);
+                for (WebElement agentElement : agentElements) {
+                    String agentName = agentElement.getText();
+                    if (agentName.equalsIgnoreCase(agent)) {
+                        agentElement.click();
+                        log.info("Selected agent: " + agentName);
+                        return; // Exit after selecting the agent
+                    }
+                }
+            } else {
+                log.error("Agent '" + agent + "' not found in the list.");
+                Assert.fail("Agent '" + agent + "' not found.");
+            }
+
+        } catch (Exception e) {
+            log.error("Error in selectAgent method: " + e.getMessage(), e);
+            Assert.fail("Failed to select the agent: " + e.getMessage());
         }
     }
 }
