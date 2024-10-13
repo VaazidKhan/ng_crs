@@ -10,10 +10,11 @@
     <classes>
       <class name="tests.BookingTest">
         <methods>
-          <include name="csu"/>
           <include name="setup"/>
-          <include name="teardown"/>
+          <include name="csu"/>
+          <include name="newBooking"/>
           <include name="agent"/>
+          <include name="cruises"/>
           <include name="menu"/>
           <include name="login"/>
         </methods>

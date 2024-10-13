@@ -6,8 +6,12 @@ import org.testng.annotations.Test;
 
 import pages.Agency;
 import pages.CentralSetUp;
+import pages.CruiseBooking;
 import pages.LoginPage;
 import pages.MenuIcon;
+import pages.NewBooking;
+
+import static org.testng.Assert.assertEquals;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -94,6 +98,44 @@ public class BookingTest extends BaseTest {
     		Assert.fail("Test failed at agent selection : "+e.getMessage());
     	
     }
+    }
+    
+    @Test(dependsOnMethods = "agent")
+    public void newBooking() {
+    	NewBooking newbooking = new NewBooking(driver);
+    	
+    	try {
+    		newbooking.booking();
+    		log.info("Clicked on New Booking");
+    		log.info("Clicked on Search Button");
+    	}catch (Exception e) {
+    		log.error("New booking button interaction failed at : "+e.getMessage(), e);
+    		Assert.fail("Test failed at new booking : "+e.getMessage());
+    	}
+    	
+    }
+    
+    @Test(dependsOnMethods = "newBooking")
+    public void cruises() {
+    	CruiseBooking cruisebooking = new CruiseBooking(driver);
+    	
+    	try {
+    		cruisebooking.voyage();
+    		log.info("Random Cruise selected");
+    		
+    	}catch(Exception e) {
+    		log.error("Cruise selection interaction failed at : "+e.getMessage(),e);
+    		Assert.fail("Test failed at CruiseBooking : "+e.getMessage());
+    	}
+    	
+    	try {
+    		cruisebooking.packages();
+    		log.info("Random Package or suite selected");
+    		
+    	}catch(Exception e) {
+    		log.error("Package selection interaction failed at : "+e.getMessage(),e);
+    		Assert.fail("Test failed at package sleection : "+e.getMessage());
+    	}
     }
     
 }

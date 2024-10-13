@@ -46,7 +46,7 @@ public class BaseTest {
         log.info("Driver initialized and application launched");
     }
 
-    @AfterClass
+  //  @AfterClass
     public void teardown() {
         if (driver != null) {
             driver.quit();
