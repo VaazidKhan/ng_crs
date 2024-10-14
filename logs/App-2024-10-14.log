@@ -2781,3 +2781,233 @@ Session ID: adc5f126ef447440dc7c2574f569b5ab
 Log End: 2024-10-14T21:16:59.488770300
 -------------------------------------------------
 
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-10-14T21:43:35.093705700
+Java Version: 21.0.3
+Operating System: Windows 11
+System Name: LAPTOP-0H4UER3T
+-------------------------------------------------
+
+2024-10-14 21:43:36.693 [main] INFO  BaseTest:27 - Attempting to log in with provided credentials.
+2024-10-14 21:43:36.696 [main] INFO  LoginPage:27 - Waiting for username field to be visible
+2024-10-14 21:44:18.754 [main] ERROR BaseTest:31 - Login failed at: Error communicating with the remote browser. It may have died.
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [efd6fce658fe04d411ebcb5ea82e2f7d, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60114}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60114/devtoo..., se:cdpVersion: 129.0.6668.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: efd6fce658fe04d411ebcb5ea82e2f7d
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [efd6fce658fe04d411ebcb5ea82e2f7d, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60114}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60114/devtoo..., se:cdpVersion: 129.0.6668.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: efd6fce658fe04d411ebcb5ea82e2f7d
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194) ~[selenium-support-4.25.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190) ~[selenium-support-4.25.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203) ~[selenium-support-4.25.0.jar:?]
+	at pages.LoginPage.login(LoginPage.java:28) ~[test-classes/:?]
+	at tests.BookingTest.login(BookingTest.java:28) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.0.jar:7.10.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.0.jar:7.10.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.0.jar:7.10.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.0.jar:7.10.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.0.jar:7.10.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.0.jar:7.10.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.0.jar:7.10.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.0.jar:7.10.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.0.jar:7.10.0]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.0.jar:7.10.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.0.jar:7.10.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.0.jar:7.10.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.0.jar:7.10.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.0.jar:7.10.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.0.jar:7.10.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.0.jar:7.10.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.0.jar:7.10.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.0.jar:7.10.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.0.jar:7.10.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.0.jar:7.10.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:458) ~[selenium-http-4.25.0.jar:?]
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42) ~[selenium-http-4.25.0.jar:?]
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55) ~[selenium-http-4.25.0.jar:?]
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:374) ~[selenium-http-4.25.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.25.0.jar:?]
+	... 35 more
+Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
+	at jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:388) ~[java.net.http:?]
+	at jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:590) ~[java.net.http:?]
+	at jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302) ~[java.net.http:?]
+	at jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207) ~[java.net.http:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
+	at jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178) ~[java.net.http:?]
+	at jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841) ~[java.net.http:?]
+	at jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280) ~[java.net.http:?]
+	at jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233) ~[java.net.http:?]
+	at jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782) ~[java.net.http:?]
+	at jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965) ~[java.net.http:?]
+	at jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253) ~[java.net.http:?]
+	at jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1467) ~[java.net.http:?]
+	at jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1412) ~[java.net.http:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?]
+	at jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1412) ~[java.net.http:?]
+-------------------------------------------------
+Log End: 2024-10-14T21:44:19.036470800
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-10-14T21:44:29.261352400
+Java Version: 21.0.3
+Operating System: Windows 11
+System Name: LAPTOP-0H4UER3T
+-------------------------------------------------
+
+2024-10-14 21:44:30.848 [main] INFO  BaseTest:27 - Attempting to log in with provided credentials.
+2024-10-14 21:44:30.850 [main] INFO  LoginPage:27 - Waiting for username field to be visible
+2024-10-14 21:44:33.914 [main] INFO  LoginPage:29 - Username field is now visible
+2024-10-14 21:44:35.075 [main] INFO  LoginPage:34 - Username inserted successfully
+2024-10-14 21:44:35.144 [main] INFO  LoginPage:38 - Password inserted successfully
+2024-10-14 21:44:41.628 [main] INFO  LoginPage:42 - Signed in successfully
+2024-10-14 21:44:41.629 [main] INFO  BaseTest:29 - Login successful.
+2024-10-14 21:44:45.672 [main] INFO  MenuIcon:27 - Waiting for menu icon to appear
+2024-10-14 21:44:45.790 [main] INFO  MenuIcon:29 - Menu icon clicked
+2024-10-14 21:44:45.790 [main] INFO  BaseTest:44 - Clicked on menu icon.
+2024-10-14 21:44:49.938 [main] INFO  CentralSetUp:32 - CRS RCY menu clicked
+2024-10-14 21:45:00.330 [main] INFO  CentralSetUp:47 - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-10-14 21:45:00.330 [main] INFO  BaseTest:59 - Clicked on 'CRS RCY' to open a new tab.
+2024-10-14 21:45:00.330 [main] INFO  BaseTest:60 - Switched to the new tab successfully.
+2024-10-14 21:45:03.342 [main] INFO  Agency:45 - Clicking on Agencies field.
+2024-10-14 21:45:07.769 [main] INFO  Agency:48 - Agencies field clicked successfully.
+2024-10-14 21:45:07.769 [main] INFO  BaseTest:74 - Clicked on Agency option.
+2024-10-14 21:45:09.776 [main] INFO  Agency:63 - Extracting total agents and retrieving agent names.
+2024-10-14 21:45:09.838 [main] INFO  Agency:79 - Total agents found: 55
+2024-10-14 21:45:09.871 [main] INFO  Agency:89 - Retrieved agent: Fore@123 Supportuser2A
+2024-10-14 21:45:09.887 [main] INFO  Agency:89 - Retrieved agent: C0001231Oct23Agent1
+2024-10-14 21:45:09.890 [main] INFO  Agency:89 - Retrieved agent: C0001231Oct23_2
+2024-10-14 21:45:09.906 [main] INFO  Agency:89 - Retrieved agent: C0001231Oct23_3
+2024-10-14 21:45:09.915 [main] INFO  Agency:89 - Retrieved agent: C0001231Oct23_4
+2024-10-14 21:45:09.922 [main] INFO  Agency:89 - Retrieved agent: C0001231Oct23_5
+2024-10-14 21:45:09.927 [main] INFO  Agency:89 - Retrieved agent: 
+2024-10-14 21:45:10.483 [main] INFO  Agency:99 - Clicked the 'Move Right' button to load more agents.
+2024-10-14 21:45:11.414 [main] INFO  Agency:89 - Retrieved agent: 123 C0001231Oct23_6
+2024-10-14 21:45:11.427 [main] INFO  Agency:89 - Retrieved agent: C0001231Oct23_2 C0001231Oct23_7
+2024-10-14 21:45:11.438 [main] INFO  Agency:89 - Retrieved agent: C0001231Oct23_8 C0001231Oct23_8
+2024-10-14 21:45:11.444 [main] INFO  Agency:89 - Retrieved agent: C0001231Oct23_9 C0001231Oct23_9
+2024-10-14 21:45:11.874 [main] INFO  Agency:99 - Clicked the 'Move Right' button to load more agents.
+2024-10-14 21:45:12.790 [main] INFO  Agency:89 - Retrieved agent: C0001231Oct23_10 C0001231Oct23_10
+2024-10-14 21:45:12.812 [main] INFO  Agency:89 - Retrieved agent: Tannu Mohit
+2024-10-14 21:45:12.822 [main] INFO  Agency:89 - Retrieved agent: Mohit Taanu
+2024-10-14 21:45:12.838 [main] INFO  Agency:89 - Retrieved agent: risi ragava
+2024-10-14 21:45:13.443 [main] INFO  Agency:99 - Clicked the 'Move Right' button to load more agents.
+2024-10-14 21:45:14.483 [main] INFO  Agency:89 - Retrieved agent: jnu
+2024-10-14 21:45:14.499 [main] INFO  Agency:89 - Retrieved agent: Tannu
+2024-10-14 21:45:14.527 [main] INFO  Agency:89 - Retrieved agent: sanMohit
+2024-10-14 21:45:14.542 [main] INFO  Agency:89 - Retrieved agent: sdf
+2024-10-14 21:45:15.194 [main] INFO  Agency:99 - Clicked the 'Move Right' button to load more agents.
+2024-10-14 21:45:16.153 [main] INFO  Agency:89 - Retrieved agent: 1122
+2024-10-14 21:45:16.171 [main] INFO  Agency:89 - Retrieved agent: wwww
+2024-10-14 21:45:16.182 [main] INFO  Agency:89 - Retrieved agent: www
+2024-10-14 21:45:16.194 [main] INFO  Agency:89 - Retrieved agent: san
+2024-10-14 21:45:16.996 [main] INFO  Agency:99 - Clicked the 'Move Right' button to load more agents.
+2024-10-14 21:45:18.210 [main] INFO  Agency:89 - Retrieved agent: testing
+2024-10-14 21:45:18.226 [main] INFO  Agency:89 - Retrieved agent: eee
+2024-10-14 21:45:18.226 [main] INFO  Agency:89 - Retrieved agent: gvfb
+2024-10-14 21:45:18.242 [main] INFO  Agency:89 - Retrieved agent: Mohit
+2024-10-14 21:45:18.667 [main] INFO  Agency:99 - Clicked the 'Move Right' button to load more agents.
+2024-10-14 21:45:19.615 [main] INFO  Agency:89 - Retrieved agent: vbb
+2024-10-14 21:45:19.615 [main] INFO  Agency:89 - Retrieved agent: dfer
+2024-10-14 21:45:19.631 [main] INFO  Agency:89 - Retrieved agent: Pooja Zingoni
+2024-10-14 21:45:19.946 [main] INFO  Agency:99 - Clicked the 'Move Right' button to load more agents.
+2024-10-14 21:45:21.113 [main] INFO  Agency:89 - Retrieved agent: Pooja Gavali
+2024-10-14 21:45:21.121 [main] INFO  Agency:89 - Retrieved agent: suresh kumar
+2024-10-14 21:45:21.137 [main] INFO  Agency:89 - Retrieved agent: prasantaa sadana
+2024-10-14 21:45:21.502 [main] INFO  Agency:99 - Clicked the 'Move Right' button to load more agents.
+2024-10-14 21:45:22.616 [main] INFO  Agency:89 - Retrieved agent: priyaka
+2024-10-14 21:45:22.626 [main] INFO  Agency:89 - Retrieved agent: mohit
+2024-10-14 21:45:22.893 [main] INFO  Agency:99 - Clicked the 'Move Right' button to load more agents.
+2024-10-14 21:45:23.992 [main] INFO  Agency:89 - Retrieved agent: Mohit123
+2024-10-14 21:45:24.009 [main] INFO  Agency:89 - Retrieved agent: John12
+2024-10-14 21:45:24.015 [main] INFO  Agency:89 - Retrieved agent: fgf
+2024-10-14 21:45:24.026 [main] INFO  Agency:89 - Retrieved agent: dippp
+2024-10-14 21:45:24.294 [main] INFO  Agency:99 - Clicked the 'Move Right' button to load more agents.
+2024-10-14 21:45:25.458 [main] INFO  Agency:89 - Retrieved agent: Immu
+2024-10-14 21:45:25.738 [main] INFO  Agency:99 - Clicked the 'Move Right' button to load more agents.
+2024-10-14 21:45:27.163 [main] INFO  Agency:89 - Retrieved agent: 444
+2024-10-14 21:45:27.170 [main] INFO  Agency:89 - Retrieved agent: 666
+2024-10-14 21:45:27.408 [main] INFO  Agency:99 - Clicked the 'Move Right' button to load more agents.
+2024-10-14 21:45:28.538 [main] INFO  Agency:89 - Retrieved agent: Testing223
+2024-10-14 21:45:28.563 [main] INFO  Agency:89 - Retrieved agent: Test12
+2024-10-14 21:45:28.572 [main] INFO  Agency:89 - Retrieved agent: santer
+2024-10-14 21:45:28.577 [main] INFO  Agency:89 - Retrieved agent: wer
+2024-10-14 21:45:28.806 [main] INFO  Agency:99 - Clicked the 'Move Right' button to load more agents.
+2024-10-14 21:45:30.027 [main] INFO  Agency:89 - Retrieved agent: MohitTannu
+2024-10-14 21:45:30.039 [main] INFO  Agency:89 - Retrieved agent: Fore@123 SriAgent15Jul_1
+2024-10-14 21:45:30.124 [main] INFO  Agency:99 - Clicked the 'Move Right' button to load more agents.
+2024-10-14 21:45:32.431 [main] INFO  Agency:99 - Clicked the 'Move Right' button to load more agents.
+2024-10-14 21:46:03.350 [main] ERROR Agency:101 - Failed to click 'Move Right' button: Expected condition failed: waiting for element to be clickable: By.xpath: //a[@class='move-btn move-right'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.100, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60260}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60260/devtoo..., se:cdpVersion: 129.0.6668.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 24f993d92b03cbe4951d9b194d2419c7
+2024-10-14 21:46:03.350 [main] INFO  Agency:111 - All agents retrieved successfully. Total agents: 48
+2024-10-14 21:46:03.350 [main] INFO  BaseTest:83 - Agencies listed.
+2024-10-14 21:46:05.360 [main] INFO  Agency:123 - Attempting to select agent: Fore@123 Supportuser2A
+2024-10-14 21:46:06.337 [main] INFO  Agency:138 - Selected agent: Fore@123 Supportuser2A
+2024-10-14 21:46:06.337 [main] INFO  BaseTest:92 - Agent selected.
+2024-10-14 21:46:06.337 [main] INFO  NewBooking:36 - Clicking on New Booking.
+2024-10-14 21:46:06.605 [main] INFO  NewBooking:39 - New booking button clicked successfully.
+2024-10-14 21:46:06.605 [main] INFO  BaseTest:105 - Clicked on New Booking.
+2024-10-14 21:46:06.634 [main] INFO  CruiseBooking:43 - Clicking on available cruise.
+2024-10-14 21:46:10.313 [main] INFO  CruiseBooking:46 - Cruise selected successfully.
+2024-10-14 21:46:10.313 [main] INFO  BaseTest:119 - Random Cruise selected.
+2024-10-14 21:46:10.313 [main] INFO  CruiseBooking:60 - Checking if any packages are available.
+2024-10-14 21:46:12.545 [main] WARN  CruiseBooking:81 - Encountered StaleElementReferenceException, retrying... Attempt 1
+2024-10-14 21:46:12.545 [main] INFO  CruiseBooking:60 - Checking if any packages are available.
+2024-10-14 21:46:12.850 [main] INFO  CruiseBooking:71 - Package selected successfully.
+2024-10-14 21:46:12.851 [main] INFO  BaseTest:127 - Random Package or suite selected.
+2024-10-14 21:46:14.858 [main] INFO  CruiseBooking:98 - Waiting for the Select Suite button to be clickable.
+2024-10-14 21:46:14.959 [main] INFO  CruiseBooking:101 - Select Suite button clicked successfully.
+2024-10-14 21:46:14.959 [main] INFO  BaseTest:135 - Select Suite clicked.
+2024-10-14 21:46:18.965 [main] INFO  CruiseBooking:115 - Checking available suites.
+2024-10-14 21:46:20.483 [main] INFO  CruiseBooking:128 - First available suite selected successfully.
+2024-10-14 21:46:20.483 [main] INFO  BaseTest:144 - Suite Selected.
+2024-10-14 21:46:22.485 [main] INFO  CruiseBooking:98 - Waiting for the Select Suite button to be clickable.
+2024-10-14 21:46:22.608 [main] INFO  CruiseBooking:101 - Select Suite button clicked successfully.
+2024-10-14 21:46:22.608 [main] INFO  BaseTest:153 - Select Suite clicked.
+2024-10-14 21:46:27.616 [main] INFO  CruiseBooking:163 - Item/Option selected successfully.
+2024-10-14 21:46:27.617 [main] INFO  BaseTest:162 - Item/Option selected.
+2024-10-14 21:46:29.792 [main] INFO  CruiseBooking:184 - Clicked on Proceed to booking button
+2024-10-14 21:46:29.792 [main] INFO  BaseTest:170 - Proceed to Booking button selected.
+-------------------------------------------------
+Log End: 2024-10-14T21:46:30.247011900
+-------------------------------------------------
+

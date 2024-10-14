@@ -35,6 +35,7 @@ public class CruiseBooking extends BaseTest {
     By suiteAvailability = By.xpath("//span[@title='Available']"); //list
     //preview/options
     By optionsField = By.xpath("//div[@class='preview-item']");
+    By proccedToBookingField = By.xpath("//button[@class='btn btn-primary text-nowrap']");
 
     // Method to select a voyage
     public void voyage() {
@@ -149,6 +150,38 @@ public class CruiseBooking extends BaseTest {
     
     public void options() {
     	
+        boolean itemSelected = false;
+        try {
+    	//locate all items
+        List<WebElement> optionsElement = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(optionsField));
+        if (!optionsElement.isEmpty()) {
+            // Click the first available suite
+            WebElement availableOptions = optionsElement.get(0);
+            
+            if (availableOptions.isDisplayed() && availableOptions.isEnabled()) {
+                availableOptions.click();
+                log.info("Item/Option selected successfully.");
+                itemSelected = true; // Exit loop once successful
+            } else {
+                log.warn("Item/Option found but it is not clickable.");
+            }
+        } else {
+            log.info("No Item/Option available, proceeding to proceed booking.");
+            itemSelected = true; // Exit loop if no packages are found
+        }
+    	
+    }catch (Exception e) {
+    	log.error("Error selecting item/option: " + e.getMessage(), e);
+        Assert.fail("Failed to select a item/option: " + e.getMessage());
     }
-
+        
+    }
+    
+ public void proceedToBooking() throws Exception {
+	 Thread.sleep(2000);
+	 WebElement ptb = wait.until(ExpectedConditions.elementToBeClickable(proccedToBookingField));
+	 ptb.click();
+	 log.info("Clicked on Proceed to booking button");
+    	
+    }
 }

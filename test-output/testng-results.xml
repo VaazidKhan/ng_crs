@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-14T21:15:24 IST" name="User_Suite" finished-at="2024-10-14T21:16:58 IST" duration-ms="94918">
+  <suite started-at="2024-10-14T21:44:29 IST" name="User_Suite" finished-at="2024-10-14T21:46:29 IST" duration-ms="120534">
     <groups>
     </groups>
-    <test started-at="2024-10-14T21:15:24 IST" name="User_Test" finished-at="2024-10-14T21:16:58 IST" duration-ms="94918">
+    <test started-at="2024-10-14T21:44:29 IST" name="User_Test" finished-at="2024-10-14T21:46:29 IST" duration-ms="120534">
       <class name="tests.BookingTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookingTest@68b6f0d6]" started-at="2024-10-14T21:15:24 IST" name="setup" finished-at="2024-10-14T21:15:25 IST" duration-ms="1544" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookingTest@68b6f0d6]" started-at="2024-10-14T21:44:29 IST" name="setup" finished-at="2024-10-14T21:44:30 IST" duration-ms="1408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:tests.BookingTest@68b6f0d6]" started-at="2024-10-14T21:15:25 IST" name="login" finished-at="2024-10-14T21:15:30 IST" duration-ms="5100" status="PASS">
+        <test-method signature="login()[pri:0, instance:tests.BookingTest@68b6f0d6]" started-at="2024-10-14T21:44:30 IST" name="login" finished-at="2024-10-14T21:44:41 IST" duration-ms="10799" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="menu()[pri:0, instance:tests.BookingTest@68b6f0d6]" started-at="2024-10-14T21:15:30 IST" name="menu" finished-at="2024-10-14T21:15:35 IST" depends-on-methods="tests.BookingTest.login" duration-ms="4643" status="PASS">
+        <test-method signature="menu()[pri:0, instance:tests.BookingTest@68b6f0d6]" started-at="2024-10-14T21:44:41 IST" name="menu" finished-at="2024-10-14T21:44:45 IST" depends-on-methods="tests.BookingTest.login" duration-ms="4129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- menu -->
-        <test-method signature="csu()[pri:0, instance:tests.BookingTest@68b6f0d6]" started-at="2024-10-14T21:15:35 IST" name="csu" finished-at="2024-10-14T21:15:41 IST" depends-on-methods="tests.BookingTest.menu" duration-ms="6545" status="PASS">
+        <test-method signature="csu()[pri:0, instance:tests.BookingTest@68b6f0d6]" started-at="2024-10-14T21:44:45 IST" name="csu" finished-at="2024-10-14T21:45:00 IST" depends-on-methods="tests.BookingTest.menu" duration-ms="14530" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- csu -->
-        <test-method signature="agent()[pri:0, instance:tests.BookingTest@68b6f0d6]" started-at="2024-10-14T21:15:41 IST" name="agent" finished-at="2024-10-14T21:16:42 IST" depends-on-methods="tests.BookingTest.csu" duration-ms="60071" status="PASS">
+        <test-method signature="agent()[pri:0, instance:tests.BookingTest@68b6f0d6]" started-at="2024-10-14T21:45:00 IST" name="agent" finished-at="2024-10-14T21:46:06 IST" depends-on-methods="tests.BookingTest.csu" duration-ms="65999" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- agent -->
-        <test-method signature="newBooking()[pri:0, instance:tests.BookingTest@68b6f0d6]" started-at="2024-10-14T21:16:42 IST" name="newBooking" finished-at="2024-10-14T21:16:42 IST" depends-on-methods="tests.BookingTest.agent" duration-ms="292" status="PASS">
+        <test-method signature="newBooking()[pri:0, instance:tests.BookingTest@68b6f0d6]" started-at="2024-10-14T21:46:06 IST" name="newBooking" finished-at="2024-10-14T21:46:06 IST" depends-on-methods="tests.BookingTest.agent" duration-ms="268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newBooking -->
-        <test-method signature="cruises()[pri:0, instance:tests.BookingTest@68b6f0d6]" started-at="2024-10-14T21:16:42 IST" name="cruises" finished-at="2024-10-14T21:16:58 IST" depends-on-methods="tests.BookingTest.newBooking" duration-ms="16548" status="PASS">
+        <test-method signature="cruises()[pri:0, instance:tests.BookingTest@68b6f0d6]" started-at="2024-10-14T21:46:06 IST" name="cruises" finished-at="2024-10-14T21:46:29 IST" depends-on-methods="tests.BookingTest.newBooking" duration-ms="23171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cruises -->

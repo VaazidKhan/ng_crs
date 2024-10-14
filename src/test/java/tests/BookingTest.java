@@ -155,5 +155,22 @@ public class BookingTest extends BaseTest {
             log.error("Suite button interaction failed at: " + e.getMessage(), e);
             Assert.fail("Test failed at select suite button in package: " + e.getMessage());
         }
+        
+        Thread.sleep(2000);
+        try {
+            cruisebooking.options();
+            log.info("Item/Option selected.");
+        } catch (Exception e) {
+            log.error("Item/Option interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at selecting item in options: " + e.getMessage());
+        }
+        
+        try {
+            cruisebooking.proceedToBooking();
+            log.info("Proceed to Booking button selected.");
+        } catch (Exception e) {
+            log.error("Proceed to Booking button interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at Proceed to Booking: " + e.getMessage());
+        }
     }
 }
