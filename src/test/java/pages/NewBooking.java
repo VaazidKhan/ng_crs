@@ -42,26 +42,26 @@ public class NewBooking extends BaseTest {
 	            Assert.fail("Failed to click on new booking button: " + e.getMessage());
 	        }
 	        
-	        Thread.sleep(5000);
-	        // Clicking the 'Search' button
-	        try {
-	            log.info("Waiting for Search button to become clickable.");
-	            
-	            // Add more checks before clicking the search button
-	            WebElement searchButton = wait.until(ExpectedConditions.visibilityOfElementLocated(searchbuttonField)); // Ensure the element is visible
-	            wait.until(ExpectedConditions.elementToBeClickable(searchbuttonField)); // Ensure it is clickable
-	            searchButton.click();
-	            
-	            log.info("Search button clicked successfully.");
-	        } catch (Exception e) {
-	            log.error("Error in booking method at search button: " + e.getMessage(), e);
-	            
-	            // Debugging additional details
-	            log.error("Additional Debug Info: Page Title: " + driver.getTitle());
-	            log.error("Additional Debug Info: Current URL: " + driver.getCurrentUrl());
-	            
-	            Assert.fail("Failed to click on search button: " + e.getMessage());
-	        }
+//	        Thread.sleep(5000);
+//	        // Clicking the 'Search' button
+//	        try {
+//	            log.info("Waiting for Search button to become clickable.");
+//	            
+//	            // Add more checks before clicking the search button
+//	            WebElement searchButton = wait.until(ExpectedConditions.visibilityOfElementLocated(searchbuttonField)); // Ensure the element is visible
+//	            wait.until(ExpectedConditions.elementToBeClickable(searchbuttonField)); // Ensure it is clickable
+//	            searchButton.click();
+//	            
+//	            log.info("Search button clicked successfully.");
+//	        } catch (Exception e) {
+//	            log.error("Error in booking method at search button: " + e.getMessage(), e);
+//	            
+//	            // Debugging additional details
+//	            log.error("Additional Debug Info: Page Title: " + driver.getTitle());
+//	            log.error("Additional Debug Info: Current URL: " + driver.getCurrentUrl());
+//	            
+//	            Assert.fail("Failed to click on search button: " + e.getMessage());
+//	        }
 	    }
 
 

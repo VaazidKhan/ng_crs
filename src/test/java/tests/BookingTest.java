@@ -11,13 +11,11 @@ import pages.LoginPage;
 import pages.MenuIcon;
 import pages.NewBooking;
 
-import static org.testng.Assert.assertEquals;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class BookingTest extends BaseTest {
-    
+
     private static final Logger log = LogManager.getLogger(BaseTest.class);
 
     @Test
@@ -34,11 +32,11 @@ public class BookingTest extends BaseTest {
             Assert.fail("Test failed at login: " + e.getMessage());
         }
     }
-   
+
     @Test(dependsOnMethods = "login")
     public void menu() {
         MenuIcon menuicon = new MenuIcon(driver);
-        
+
         // Click on menu icon
         try {
             Thread.sleep(4000);
@@ -49,11 +47,11 @@ public class BookingTest extends BaseTest {
             Assert.fail("Test failed at Menu Icon: " + e.getMessage());
         }
     }
-    
+
     @Test(dependsOnMethods = "menu")
     public void csu() {
         CentralSetUp centralsetup = new CentralSetUp(driver);
-        
+
         // Click on Central Set Up (CRS RCY)
         try {
             Thread.sleep(4000);
@@ -65,77 +63,97 @@ public class BookingTest extends BaseTest {
             Assert.fail("Test failed at Central Set Up: " + e.getMessage());
         }
     }
-    
+
     @Test(dependsOnMethods = "csu")
-    public void  agent() {
-    	Agency agency = new Agency(driver);
-    	
-    	try {
-    		Thread.sleep(3000);
-    		agency.agency();
-    		log.info("Clicked on Agnecy option");
-    	}catch(Exception e) {
-    		log.error("Agency interaction failed at : "+e.getMessage(),e);
-    		Assert.fail("Test failed at agencies button : "+e.getMessage());
-    	}
-    	
-    	try {
-    		Thread.sleep(2000);
-    		agency.agent();
-    		log.info("Agencies listed");
-    		
-    	}catch(Exception e) {
-    		log.error("Agency list interaction failed at : "+e.getMessage(),e);
-    		Assert.fail("Test failed at agency list : "+e.getMessage());
-    	}
-    	try {
-    		Thread.sleep(2000);
-    		agency.selectAgent(config.getProperty("agent"));
-    		log.info("Agent selected ");
-    		
-    	}catch(Exception e) {
-    		log.error("Agent selection interaction failed at : "+e.getMessage(),e);
-    		Assert.fail("Test failed at agent selection : "+e.getMessage());
-    	
+    public void agent() {
+        Agency agency = new Agency(driver);
+
+        try {
+            Thread.sleep(3000);
+            agency.agency();
+            log.info("Clicked on Agency option.");
+        } catch (Exception e) {
+            log.error("Agency interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at agency button: " + e.getMessage());
+        }
+
+        try {
+            Thread.sleep(2000);
+            agency.agent();
+            log.info("Agencies listed.");
+        } catch (Exception e) {
+            log.error("Agency list interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at agency list: " + e.getMessage());
+        }
+
+        try {
+            Thread.sleep(2000);
+            agency.selectAgent(config.getProperty("agent"));
+            log.info("Agent selected.");
+        } catch (Exception e) {
+            log.error("Agent selection interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at agent selection: " + e.getMessage());
+        }
     }
-    }
-    
+
     @Test(dependsOnMethods = "agent")
     public void newBooking() {
-    	NewBooking newbooking = new NewBooking(driver);
-    	
-    	try {
-    		newbooking.booking();
-    		log.info("Clicked on New Booking");
-    		log.info("Clicked on Search Button");
-    	}catch (Exception e) {
-    		log.error("New booking button interaction failed at : "+e.getMessage(), e);
-    		Assert.fail("Test failed at new booking : "+e.getMessage());
-    	}
-    	
+        NewBooking newbooking = new NewBooking(driver);
+
+        try {
+            newbooking.booking();
+            log.info("Clicked on New Booking.");
+          //  log.info("Clicked on Search Button.");
+        } catch (Exception e) {
+            log.error("New booking button interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at new booking: " + e.getMessage());
+        }
     }
-    
+
     @Test(dependsOnMethods = "newBooking")
-    public void cruises() {
-    	CruiseBooking cruisebooking = new CruiseBooking(driver);
-    	
-    	try {
-    		cruisebooking.voyage();
-    		log.info("Random Cruise selected");
-    		
-    	}catch(Exception e) {
-    		log.error("Cruise selection interaction failed at : "+e.getMessage(),e);
-    		Assert.fail("Test failed at CruiseBooking : "+e.getMessage());
-    	}
-    	
-    	try {
-    		cruisebooking.packages();
-    		log.info("Random Package or suite selected");
-    		
-    	}catch(Exception e) {
-    		log.error("Package selection interaction failed at : "+e.getMessage(),e);
-    		Assert.fail("Test failed at package sleection : "+e.getMessage());
-    	}
+    public void cruises() throws Exception {
+        CruiseBooking cruisebooking = new CruiseBooking(driver);
+
+        try {
+            cruisebooking.voyage();
+            log.info("Random Cruise selected.");
+        } catch (Exception e) {
+            log.error("Cruise selection interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at CruiseBooking: " + e.getMessage());
+        }
+
+        try {
+            cruisebooking.packages();
+            log.info("Random Package or suite selected.");
+        } catch (Exception e) {
+            log.error("Package selection interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at package selection: " + e.getMessage());
+        }
+        Thread.sleep(2000);
+        try {
+            cruisebooking.selectSuite();
+            log.info("Select Suite clicked.");
+        } catch (Exception e) {
+            log.error("Suite button interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at select suite button in package: " + e.getMessage());
+        }
+        
+        Thread.sleep(4000);
+        try {
+            cruisebooking.suites();
+            log.info("Suite Selected.");
+        } catch (Exception e) {
+            log.error("Suite selection interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at suite selection in sutes: " + e.getMessage());
+        }
+        
+        Thread.sleep(2000);
+        try {
+            cruisebooking.selectSuite();
+            log.info("Select Suite clicked.");
+        } catch (Exception e) {
+            log.error("Suite button interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at select suite button in package: " + e.getMessage());
+        }
     }
-    
 }

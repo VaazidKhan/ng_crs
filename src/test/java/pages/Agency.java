@@ -99,11 +99,11 @@ public class Agency extends BaseTest {
                             log.info("Clicked the 'Move Right' button to load more agents.");
                         } catch (Exception e) {
                             log.error("Failed to click 'Move Right' button: " + e.getMessage());
-                            break; // Exit the loop if the button is not clickable after retries
+                            break; // Exit the loop if the button is not clickable
                         }
                     } else {
-                        log.info("No more agents to load or 'Move Right' button is not available.");
-                        break; // Exit loop if no more agents can be loaded
+                        log.info("'Move Right' button is not available.");
+                        break; // Exit loop if 'Move Right' button is not present
                     }
                 }
             }
