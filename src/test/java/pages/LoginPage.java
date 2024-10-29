@@ -14,14 +14,16 @@ public class LoginPage {
     WebDriverWait wait;
     private static final Logger logger = LogManager.getLogger(LoginPage.class);
 
+    By usernameField = By.xpath("//input[@id='Username']");
+    By passwordField = By.xpath("//input[@id='Password']");
+    By loginButton = By.xpath("//input[@value='SIGN IN']");
+    By errorMsg = By.xpath("//div[@class='error-message']");
+    By dashboardPage = By.xpath("//span[@class='dash-tab-name']");
+
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(60)); // Explicit wait
     }
-
-    By usernameField = By.xpath("//input[@id='Username']");
-    By passwordField = By.xpath("//input[@id='Password']");
-    By loginButton = By.xpath("//input[@value='SIGN IN']");
 
     public void login(String username, String password) throws Exception {
         logger.info("Waiting for username field to be visible");
@@ -30,7 +32,6 @@ public class LoginPage {
 
         // Wait for username field to be clickable and then send keys
         wait.until(ExpectedConditions.elementToBeClickable(usernameField)).sendKeys(username);
-        Thread.sleep(1000);
         logger.info("Username inserted successfully");
 
         // Wait for password field to be clickable and then send keys
@@ -38,8 +39,32 @@ public class LoginPage {
         logger.info("Password inserted successfully");
 
         // Click on login button
-        driver.findElement(loginButton).click();
-        logger.info("Signed in successfully");
+        wait.until(ExpectedConditions.elementToBeClickable(loginButton)).click();
+        logger.info("Login button clicked");
 
+        // Wait for redirection or dashboard page after successful login
+        try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(dashboardPage));
+            logger.info("Signed in successfully, redirected to dashboard.");
+        } catch (Exception e) {
+            // If no dashboard is loaded, check if an error message is displayed
+            if (isElementPresent(errorMsg)) {
+                logger.error("Login failed: Error message displayed");
+                throw new Exception("Login failed due to incorrect credentials.");
+            } else {
+                logger.error("Login failed: Unknown issue, no redirection or error message.");
+                throw new Exception("Login failed due to an unknown issue.");
+            }
+        }
+    }
+
+    // Utility method to check if an element is present
+    public boolean isElementPresent(By locator) {
+        try {
+            driver.findElement(locator);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 }

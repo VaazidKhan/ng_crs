@@ -32,12 +32,24 @@ public class Agency extends BaseTest {
     }
 
     // Locators for various elements
-    By agenciesField = By.xpath("//i[@class='icon icon-agencies']");
+    By agenciesField = By.xpath("(//div[@class='d-flex align-items-center flex-column tab-link gap-2'])[3]");
     By agentsList = By.xpath("//label[@class='fs-14 text-truncate']");
     By totalAgents = By.xpath("//a[@class='fs-12 ng-star-inserted']");
     By moveRightButton = By.xpath("//a[@class='move-btn move-right']");
 
     int totalAgentCount;
+    
+    By overlay = By.xpath("//div[contains(@class,'ngx-spinner-overlay')]");
+
+    public void waitForOverlayToDisappear() {
+        try {
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(overlay));
+            log.info("Overlay disappeared.");
+        } catch (Exception e) {
+            log.warn("Overlay might still be visible or not found.");
+        }
+    }
+
 
     // Method to click on 'Agencies' field
     public void agency() {
@@ -118,35 +130,35 @@ public class Agency extends BaseTest {
 
 
     // Method to select an agent from the list of already retrieved agents
-    public void selectAgent(String agent) {
-        try {
-            log.info("Attempting to select agent: " + agent);
-
-            // Check if the agent list has been populated and the agent exists
-            if (allAgents.isEmpty()) {
-                log.error("Agent list is empty. Ensure 'agent()' method is called before 'selectAgent()'.");
-                Assert.fail("Agent list is empty. Call 'agent()' before trying to select an agent.");
-            }
-
-            if (allAgents.contains(agent)) {
-                // Locate the WebElement corresponding to the agent and click it
-                List<WebElement> agentElements = driver.findElements(agentsList);
-                for (WebElement agentElement : agentElements) {
-                    String agentName = agentElement.getText();
-                    if (agentName.equalsIgnoreCase(agent)) {
-                        agentElement.click();
-                        log.info("Selected agent: " + agentName);
-                        return; // Exit after selecting the agent
-                    }
-                }
-            } else {
-                log.error("Agent '" + agent + "' not found in the list.");
-                Assert.fail("Agent '" + agent + "' not found.");
-            }
-
-        } catch (Exception e) {
-            log.error("Error in selectAgent method: " + e.getMessage(), e);
-            Assert.fail("Failed to select the agent: " + e.getMessage());
-        }
-    }
+//    public void selectAgent(String agent) {
+//        try {
+//            log.info("Attempting to select agent: " + agent);
+//
+//            // Check if the agent list has been populated and the agent exists
+//            if (allAgents.isEmpty()) {
+//                log.error("Agent list is empty. Ensure 'agent()' method is called before 'selectAgent()'.");
+//                Assert.fail("Agent list is empty. Call 'agent()' before trying to select an agent.");
+//            }
+//
+//            if (allAgents.contains(agent)) {
+//                // Locate the WebElement corresponding to the agent and click it
+//                List<WebElement> agentElements = driver.findElements(agentsList);
+//                for (WebElement agentElement : agentElements) {
+//                    String agentName = agentElement.getText();
+//                    if (agentName.equalsIgnoreCase(agent)) {
+//                        agentElement.click();
+//                        log.info("Selected agent: " + agentName);
+//                        return; // Exit after selecting the agent
+//                    }
+//                }
+//            } else {
+//                log.error("Agent '" + agent + "' not found in the list.");
+//                Assert.fail("Agent '" + agent + "' not found.");
+//            }
+//
+//        } catch (Exception e) {
+//            log.error("Error in selectAgent method: " + e.getMessage(), e);
+//            Assert.fail("Failed to select the agent: " + e.getMessage());
+//        }
+//   }
 }

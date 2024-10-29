@@ -9,15 +9,30 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">User_Suite</th></tr>
-<tr><td><a href="#t0">User_Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">120,534</td><td></td><td></td></tr>
+<tr><td><a href="#t0">User_Test</a></td><td class="num">3</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">161,539</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">User_Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">User_Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">tests.BookingTest</td><td><a href="#m0">agent</a></td><td rowspan="1">1728922500338</td><td rowspan="1">65999</td></tr><tr class="passedeven"><td><a href="#m1">cruises</a></td><td rowspan="1">1728922566621</td><td rowspan="1">23171</td></tr><tr class="passedeven"><td><a href="#m2">csu</a></td><td rowspan="1">1728922485800</td><td rowspan="1">14530</td></tr><tr class="passedeven"><td><a href="#m3">login</a></td><td rowspan="1">1728922470830</td><td rowspan="1">10799</td></tr><tr class="passedeven"><td><a href="#m4">menu</a></td><td rowspan="1">1728922481664</td><td rowspan="1">4129</td></tr><tr class="passedeven"><td><a href="#m5">newBooking</a></td><td rowspan="1">1728922566337</td><td rowspan="1">268</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">User_Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">User_Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.BookingTest</td><td><a href="#m0">agent</a></td><td rowspan="1">1730195173427</td><td rowspan="1">132963</td></tr><tr><th colspan="4">User_Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">tests.BookingTest</td><td><a href="#m1">cruises</a></td><td rowspan="1">1730195306705</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m2">newBooking</a></td><td rowspan="1">1730195306704</td><td rowspan="1">0</td></tr><tr><th colspan="4">User_Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">tests.BookingTest</td><td><a href="#m3">csu</a></td><td rowspan="1">1730195161439</td><td rowspan="1">11988</td></tr><tr class="passedeven"><td><a href="#m4">login</a></td><td rowspan="1">1730195147682</td><td rowspan="1">9625</td></tr><tr class="passedeven"><td><a href="#m5">menu</a></td><td rowspan="1">1730195157308</td><td rowspan="1">4122</td></tr></tbody>
 </table>
-<h2>User_Test</h2><h3 id="m0">tests.BookingTest#agent</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.BookingTest#cruises</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.BookingTest#csu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.BookingTest#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.BookingTest#menu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tests.BookingTest#newBooking</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>User_Test</h2><h3 id="m0">tests.BookingTest#agent</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failed to retrieve agents: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@class=&apos;fs-12 ng-star-inserted&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.70, chrome: {chromedriverVersion: 130.0.6723.69 (3ec172b971b9..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53347}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53347/devtoo..., se:cdpVersion: 130.0.6723.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cd17455286eabbb62a961a25771565b3
+	at pages.Agency.agent(Agency.java:127)
+	at tests.BookingTest.agent(BookingTest.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.BookingTest#cruises</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method tests.BookingTest.cruises() on instance tests.BookingTest@2bb7bd00 depends on not successfully finished methods 
+[tests.BookingTest.newBooking() on instance tests.BookingTest@2bb7bd00]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.BookingTest#newBooking</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method tests.BookingTest.newBooking() on instance tests.BookingTest@2bb7bd00 depends on not successfully finished methods 
+[tests.BookingTest.agent() on instance tests.BookingTest@2bb7bd00]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.BookingTest#csu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.BookingTest#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.BookingTest#menu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

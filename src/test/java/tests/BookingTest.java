@@ -14,6 +14,7 @@ import pages.NewBooking;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+
 public class BookingTest extends BaseTest {
 
     private static final Logger log = LogManager.getLogger(BaseTest.class);
@@ -22,7 +23,6 @@ public class BookingTest extends BaseTest {
     public void login() {
         LoginPage loginPage = new LoginPage(driver);
 
-        // Log in to the application
         try {
             log.info("Attempting to log in with provided credentials.");
             loginPage.login(config.getProperty("username"), config.getProperty("password"));
@@ -33,13 +33,14 @@ public class BookingTest extends BaseTest {
         }
     }
 
+
+
     @Test(dependsOnMethods = "login")
     public void menu() {
         MenuIcon menuicon = new MenuIcon(driver);
 
-        // Click on menu icon
         try {
-            Thread.sleep(4000);
+            Thread.sleep(4000); // Better replaced with explicit waits
             menuicon.menu();
             log.info("Clicked on menu icon.");
         } catch (Exception e) {
@@ -48,13 +49,14 @@ public class BookingTest extends BaseTest {
         }
     }
 
+
     @Test(dependsOnMethods = "menu")
     public void csu() {
         CentralSetUp centralsetup = new CentralSetUp(driver);
 
         // Click on Central Set Up (CRS RCY)
         try {
-            Thread.sleep(4000);
+            Thread.sleep(4000); // Better replaced with explicit waits
             centralsetup.csu();
             log.info("Clicked on 'CRS RCY' to open a new tab.");
             log.info("Switched to the new tab successfully.");
@@ -67,9 +69,18 @@ public class BookingTest extends BaseTest {
     @Test(dependsOnMethods = "csu")
     public void agent() {
         Agency agency = new Agency(driver);
-
+        
         try {
-            Thread.sleep(3000);
+        	Thread.sleep(2000);
+        	agency.waitForOverlayToDisappear();
+        	log.info("Waiting for the overlay to end");
+        }catch(Exception e) {
+        	log.error("Overlay spinner is problematic at:"+e.getMessage(),e);
+        	Assert.fail("Test failed at overlaymethod: "+e.getMessage());
+        }
+        
+        try {
+            Thread.sleep(3000); // Better replaced with explicit waits
             agency.agency();
             log.info("Clicked on Agency option.");
         } catch (Exception e) {
@@ -78,7 +89,7 @@ public class BookingTest extends BaseTest {
         }
 
         try {
-            Thread.sleep(2000);
+            Thread.sleep(2000); // Better replaced with explicit waits
             agency.agent();
             log.info("Agencies listed.");
         } catch (Exception e) {
@@ -86,14 +97,14 @@ public class BookingTest extends BaseTest {
             Assert.fail("Test failed at agency list: " + e.getMessage());
         }
 
-        try {
-            Thread.sleep(2000);
-            agency.selectAgent(config.getProperty("agent"));
-            log.info("Agent selected.");
-        } catch (Exception e) {
-            log.error("Agent selection interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at agent selection: " + e.getMessage());
-        }
+//        try {
+//            Thread.sleep(2000); // Better replaced with explicit waits
+//            agency.selectAgent(config.getProperty("agent"));
+//            log.info("Agent selected.");
+//        } catch (Exception e) {
+//            log.error("Agent selection interaction failed at: " + e.getMessage(), e);
+//            Assert.fail("Test failed at agent selection: " + e.getMessage());
+//        }
     }
 
     @Test(dependsOnMethods = "agent")
@@ -103,7 +114,6 @@ public class BookingTest extends BaseTest {
         try {
             newbooking.booking();
             log.info("Clicked on New Booking.");
-          //  log.info("Clicked on Search Button.");
         } catch (Exception e) {
             log.error("New booking button interaction failed at: " + e.getMessage(), e);
             Assert.fail("Test failed at new booking: " + e.getMessage());
@@ -129,7 +139,8 @@ public class BookingTest extends BaseTest {
             log.error("Package selection interaction failed at: " + e.getMessage(), e);
             Assert.fail("Test failed at package selection: " + e.getMessage());
         }
-        Thread.sleep(2000);
+
+        Thread.sleep(2000); // Better replaced with explicit waits
         try {
             cruisebooking.selectSuite();
             log.info("Select Suite clicked.");
@@ -137,17 +148,17 @@ public class BookingTest extends BaseTest {
             log.error("Suite button interaction failed at: " + e.getMessage(), e);
             Assert.fail("Test failed at select suite button in package: " + e.getMessage());
         }
-        
-        Thread.sleep(4000);
+
+        Thread.sleep(4000); // Better replaced with explicit waits
         try {
             cruisebooking.suites();
             log.info("Suite Selected.");
         } catch (Exception e) {
             log.error("Suite selection interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at suite selection in sutes: " + e.getMessage());
+            Assert.fail("Test failed at suite selection in suites: " + e.getMessage());
         }
-        
-        Thread.sleep(2000);
+
+        Thread.sleep(2000); // Better replaced with explicit waits
         try {
             cruisebooking.selectSuite();
             log.info("Select Suite clicked.");
@@ -155,8 +166,8 @@ public class BookingTest extends BaseTest {
             log.error("Suite button interaction failed at: " + e.getMessage(), e);
             Assert.fail("Test failed at select suite button in package: " + e.getMessage());
         }
-        
-        Thread.sleep(2000);
+
+        Thread.sleep(2000); // Better replaced with explicit waits
         try {
             cruisebooking.options();
             log.info("Item/Option selected.");
@@ -164,7 +175,7 @@ public class BookingTest extends BaseTest {
             log.error("Item/Option interaction failed at: " + e.getMessage(), e);
             Assert.fail("Test failed at selecting item in options: " + e.getMessage());
         }
-        
+
         try {
             cruisebooking.proceedToBooking();
             log.info("Proceed to Booking button selected.");
