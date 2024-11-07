@@ -32,6 +32,10 @@ public class Agency extends BaseTest {
     }
 
     // Locators for various elements
+    By homeButton = By.xpath("(//i[@class='icon icon-customer'])[1]");
+    By agencyButton = By.xpath("//button[contains(text(),'Agency')]");
+    By alert = By.xpath("//h3[contains(text(),'Warning')]");
+    By yesButton = By.xpath("//button[contains(text(),'Yes')]");
     By agenciesField = By.xpath("(//div[@class='d-flex align-items-center flex-column tab-link gap-2'])[3]");
     By agentsList = By.xpath("//label[@class='fs-14 text-truncate']");
     By totalAgents = By.xpath("//a[@class='fs-12 ng-star-inserted']");
@@ -49,10 +53,52 @@ public class Agency extends BaseTest {
             log.warn("Overlay might still be visible or not found.");
         }
     }
+    
+    //Method to click on Home field and Agency
+    public void agency() {
+        try {
+            // Wait for the home button to be visible
+            WebElement home = wait.until(ExpectedConditions.visibilityOfElementLocated(homeButton));
+            
+            // Check if the home button is already clicked (you may need to adjust this based on actual behavior)
+            if (home.isSelected() || home.getAttribute("class").contains("active")) {
+                log.info("Home button is already clicked.");
+                
+                // Click on the agency button
+                WebElement agency = wait.until(ExpectedConditions.visibilityOfElementLocated(agencyButton));
+                agency.click();
+                log.info("Clicked on Agency button.");
+            } else {
+                log.info("Home button is not clicked. Clicking on Home button.");
+                
+                // Click the home button
+                home.click();
+                
+                Thread.sleep(2000);
+             // Click on the agency button
+                WebElement agency = wait.until(ExpectedConditions.visibilityOfElementLocated(agencyButton));
+                agency.click();
+                log.info("Clicked on Agency button.");
+            }
+        } catch (Exception e) {
+            log.error("Error occurred in the agency method: " + e.getMessage());
+        }
+    }
+    
+    public void warning() {
+    	try {
+            WebElement home = wait.until(ExpectedConditions.visibilityOfElementLocated(alert));
 
+    		
+    	}catch (Exception e) {
+    		
+    	}
+    }
+
+    
 
     // Method to click on 'Agencies' field
-    public void agency() {
+    public void customer() {
         try {
             log.info("Clicking on Agencies field.");
             WebElement agenciesElement = wait.until(ExpectedConditions.elementToBeClickable(agenciesField));

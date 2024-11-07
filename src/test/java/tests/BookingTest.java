@@ -33,8 +33,6 @@ public class BookingTest extends BaseTest {
         }
     }
 
-
-
     @Test(dependsOnMethods = "login")
     public void menu() {
         MenuIcon menuicon = new MenuIcon(driver);
@@ -48,7 +46,6 @@ public class BookingTest extends BaseTest {
             Assert.fail("Test failed at Menu Icon: " + e.getMessage());
         }
     }
-
 
     @Test(dependsOnMethods = "menu")
     public void csu() {
