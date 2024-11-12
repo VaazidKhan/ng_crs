@@ -1,0 +1,6 @@
+2024-11-12 13:14:15.641 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
+2024-11-12 13:14:15.643 [main] INFO  pages.LoginPage - Waiting for username field to be visible
+2024-11-12 13:14:18.795 [main] INFO  pages.LoginPage - Username field is now visible
+2024-11-12 13:14:18.906 [main] INFO  pages.LoginPage - Username inserted successfully
+2024-11-12 13:14:19.012 [main] INFO  pages.LoginPage - Password inserted successfully
+2024-11-12 13:14:19.193 [main] INFO  pages.LoginPage - Login button clicked

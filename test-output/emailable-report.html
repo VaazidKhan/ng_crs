@@ -9,24 +9,33 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">User_Suite</th></tr>
-<tr><td><a href="#t0">User_Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">286,962</td><td></td><td></td></tr>
+<tr><td><a href="#t0">User_Test</a></td><td class="num">0</td><td class="num attn">5</td><td class="num">0</td><td class="num attn">1</td><td class="num">66,824</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">User_Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">User_Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.BookingTest</td><td><a href="#m0">cruises</a></td><td rowspan="1">1730453413207</td><td rowspan="1">60054</td></tr><tr><th colspan="4">User_Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">tests.BookingTest</td><td><a href="#m1">agent</a></td><td rowspan="1">1730453223763</td><td rowspan="1">189242</td></tr><tr class="passedeven"><td><a href="#m2">csu</a></td><td rowspan="1">1730453209210</td><td rowspan="1">14549</td></tr><tr class="passedeven"><td><a href="#m3">login</a></td><td rowspan="1">1730453188263</td><td rowspan="1">16734</td></tr><tr class="passedeven"><td><a href="#m4">menu</a></td><td rowspan="1">1730453205016</td><td rowspan="1">4187</td></tr><tr class="passedeven"><td><a href="#m5">newBooking</a></td><td rowspan="1">1730453413011</td><td rowspan="1">191</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">User_Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">User_Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.BookingTest</td><td><a href="#m0">login</a></td><td rowspan="1">1731397455625</td><td rowspan="1">63780</td></tr><tr><th colspan="4">User_Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="5">tests.BookingTest</td><td><a href="#m1">agent</a></td><td rowspan="1">1731397520711</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">cruises</a></td><td rowspan="1">1731397520717</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">csu</a></td><td rowspan="1">1731397520705</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">menu</a></td><td rowspan="1">1731397520702</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m5">newBooking</a></td><td rowspan="1">1731397520714</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>User_Test</h2><h3 id="m0">tests.BookingTest#cruises</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failed to click on new booking button: Expected condition failed: waiting for element to be clickable: By.xpath: (//i[@class=&apos;icon icon-right-arrow m-l-2&apos;])[1] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.91, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62360}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62360/devtoo..., se:cdpVersion: 130.0.6723.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 92188883fea015eb0a7de2c065ff94a4
-	at pages.CruiseBooking.voyage(CruiseBooking.java:49)
-	at tests.BookingTest.cruises(BookingTest.java:125)
+<h2>User_Test</h2><h3 id="m0">tests.BookingTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test failed at login: Login failed due to incorrect credentials.
+	at tests.BookingTest.login(BookingTest.java:34)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.BookingTest#agent</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.BookingTest#csu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.BookingTest#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.BookingTest#menu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tests.BookingTest#newBooking</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.BookingTest#agent</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method tests.BookingTest.agent() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
+[tests.BookingTest.csu() on instance tests.BookingTest@3fffff43]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.BookingTest#cruises</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method tests.BookingTest.cruises() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
+[tests.BookingTest.newBooking() on instance tests.BookingTest@3fffff43]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.BookingTest#csu</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method tests.BookingTest.csu() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
+[tests.BookingTest.menu() on instance tests.BookingTest@3fffff43]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.BookingTest#menu</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method tests.BookingTest.menu() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
+[tests.BookingTest.login() on instance tests.BookingTest@3fffff43]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.BookingTest#newBooking</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method tests.BookingTest.newBooking() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
+[tests.BookingTest.agent() on instance tests.BookingTest@3fffff43]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

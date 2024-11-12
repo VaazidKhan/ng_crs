@@ -21,6 +21,8 @@ public class Agency extends BaseTest {
     WebDriver driver;
     WebDriverWait wait;
     private static final Logger log = LogManager.getLogger(Agency.class);
+    private static final Logger errorLogger = LogManager.getLogger("com.demo.ng_crs.error"); // For ERROR logs
+
 
     // Store the list of agents as a class-level variable
     List<String> allAgents = new ArrayList<>();
@@ -81,7 +83,7 @@ public class Agency extends BaseTest {
                 log.info("Clicked on Agency button.");
             }
         } catch (Exception e) {
-            log.error("Error occurred in the agency method: " + e.getMessage());
+            errorLogger.error("Error occurred in the agency method: " + e.getMessage());
         }
     }
     
@@ -105,7 +107,7 @@ public class Agency extends BaseTest {
             agenciesElement.click();
             log.info("Agencies field clicked successfully.");
         } catch (Exception e) {
-            log.error("Error in agency method: " + e.getMessage(), e);
+        	errorLogger.error("Error in agency method: " + e.getMessage(), e);
             Assert.fail("Failed to click on Agencies field: " + e.getMessage());
         }
     }
@@ -130,7 +132,7 @@ public class Agency extends BaseTest {
             if (matcher.find()) {
                 totalAgentCount = Integer.parseInt(matcher.group());
             } else {
-                log.error("Could not extract total agent count from the text.");
+            	errorLogger.error("Could not extract total agent count from the text.");
                 Assert.fail("Failed to extract total agent count.");
             }
 
@@ -156,7 +158,7 @@ public class Agency extends BaseTest {
                             moveRight.click();
                             log.info("Clicked the 'Move Right' button to load more agents.");
                         } catch (Exception e) {
-                            log.error("Failed to click 'Move Right' button: " + e.getMessage());
+                        	errorLogger.error("Failed to click 'Move Right' button: " + e.getMessage());
                             break; // Exit the loop if the button is not clickable
                         }
                     } else {
@@ -169,7 +171,7 @@ public class Agency extends BaseTest {
             log.info("All agents retrieved successfully. Total agents: " + allAgents.size());
 
         } catch (Exception e) {
-            log.error("Error in agent method: " + e.getMessage(), e);
+        	errorLogger.error("Error in agent method: " + e.getMessage(), e);
             Assert.fail("Failed to retrieve agents: " + e.getMessage());
         }
     }
@@ -182,7 +184,7 @@ public class Agency extends BaseTest {
 //
 //            // Check if the agent list has been populated and the agent exists
 //            if (allAgents.isEmpty()) {
-//                log.error("Agent list is empty. Ensure 'agent()' method is called before 'selectAgent()'.");
+//                errorLogger.error("Agent list is empty. Ensure 'agent()' method is called before 'selectAgent()'.");
 //                Assert.fail("Agent list is empty. Call 'agent()' before trying to select an agent.");
 //            }
 //
@@ -198,12 +200,12 @@ public class Agency extends BaseTest {
 //                    }
 //                }
 //            } else {
-//                log.error("Agent '" + agent + "' not found in the list.");
+//                errorLogger.error("Agent '" + agent + "' not found in the list.");
 //                Assert.fail("Agent '" + agent + "' not found.");
 //            }
 //
 //        } catch (Exception e) {
-//            log.error("Error in selectAgent method: " + e.getMessage(), e);
+//            errorLogger.error("Error in selectAgent method: " + e.getMessage(), e);
 //            Assert.fail("Failed to select the agent: " + e.getMessage());
 //        }
 //   }

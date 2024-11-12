@@ -3,36 +3,46 @@
     <Appenders>
         <!-- Console Appender -->
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
-
-        <!-- Rolling File Appender -->
-        <RollingFile name="FileAppender"
-                     fileName="logs/App-${date:yyyy-MM-dd}.log"
-                     filePattern="logs/App-%d{yyyy-MM-dd}.log">
-            <PatternLayout>
-                <!-- Enhanced log format to include system information -->
-                <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c{1}:%L - %m%n</pattern>
-            </PatternLayout>
+ 
+        <!-- Rolling File Appender for INFO logs -->
+        <RollingFile name="InfoFile" fileName="logs/info.log"
+                     filePattern="logs/info-%d{yyyy-MM-dd}-%i.log" append="false">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
             <Policies>
-                <!-- Log rotation policies: daily and based on size -->
-                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
                 <SizeBasedTriggeringPolicy size="10MB"/>
             </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+ 
+        <!-- Rolling File Appender for ERROR logs -->
+        <RollingFile name="ErrorFile" fileName="logs/error.log"
+                     filePattern="logs/error-%d{yyyy-MM-dd}-%i.log" append="false">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
         </RollingFile>
     </Appenders>
-
+ 
     <Loggers>
-        <!-- Application-specific logger -->
+<!-- Logger for application-specific INFO and higher logs, excluding ERROR -->
         <Logger name="com.demo.ng_crs" level="info" additivity="false">
             <AppenderRef ref="Console"/>
-            <AppenderRef ref="FileAppender"/>
+            <AppenderRef ref="InfoFile"/>
         </Logger>
-
-        <!-- Root Logger -->
+ 
+        <!-- Logger for application-specific ERROR logs -->
+        <Logger name="com.demo.ng_crs.error" level="error" additivity="false">
+            <AppenderRef ref="ErrorFile"/>
+        </Logger>
+ 
+        <!-- Root Logger to handle general logging -->
         <Root level="info">
             <AppenderRef ref="Console"/>
-            <AppenderRef ref="FileAppender"/>
+            <AppenderRef ref="InfoFile"/>
         </Root>
     </Loggers>
 </Configuration>

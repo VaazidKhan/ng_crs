@@ -16,6 +16,8 @@ public class CentralSetUp {
     WebDriver driver;
     WebDriverWait wait;
     private static final Logger log = LogManager.getLogger(CentralSetUp.class); // Correct logger for the class
+    private static final Logger errorLogger = LogManager.getLogger("com.demo.ng_crs.error"); // For ERROR logs
+
     
     public CentralSetUp(WebDriver driver) {
         this.driver = driver;
@@ -50,7 +52,7 @@ public class CentralSetUp {
                 }
             }
         } catch (Exception e) {
-            log.error("Error occurred while switching to the new tab: ", e);
+        	errorLogger.error("Error occurred while switching to the new tab: ", e);
         }
     }
 }

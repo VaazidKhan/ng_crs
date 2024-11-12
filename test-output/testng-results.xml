@@ -1,56 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="0" failed="1" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-01T14:56:26 IST" name="User_Suite" finished-at="2024-11-01T15:01:13 IST" duration-ms="286962">
+  <suite started-at="2024-11-12T13:14:13 IST" name="User_Suite" finished-at="2024-11-12T13:15:20 IST" duration-ms="66824">
     <groups>
     </groups>
-    <test started-at="2024-11-01T14:56:26 IST" name="User_Test" finished-at="2024-11-01T15:01:13 IST" duration-ms="286962">
+    <test started-at="2024-11-12T13:14:13 IST" name="User_Test" finished-at="2024-11-12T13:15:20 IST" duration-ms="66824">
       <class name="tests.BookingTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookingTest@2bb7bd00]" started-at="2024-11-01T14:56:26 IST" name="setup" finished-at="2024-11-01T14:56:28 IST" duration-ms="1485" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookingTest@3fffff43]" started-at="2024-11-12T13:14:14 IST" name="setup" finished-at="2024-11-12T13:14:15 IST" duration-ms="1588" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:tests.BookingTest@2bb7bd00]" started-at="2024-11-01T14:56:28 IST" name="login" finished-at="2024-11-01T14:56:44 IST" duration-ms="16734" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="menu()[pri:0, instance:tests.BookingTest@2bb7bd00]" started-at="2024-11-01T14:56:45 IST" name="menu" finished-at="2024-11-01T14:56:49 IST" depends-on-methods="tests.BookingTest.login" duration-ms="4187" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- menu -->
-        <test-method signature="csu()[pri:0, instance:tests.BookingTest@2bb7bd00]" started-at="2024-11-01T14:56:49 IST" name="csu" finished-at="2024-11-01T14:57:03 IST" depends-on-methods="tests.BookingTest.menu" duration-ms="14549" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- csu -->
-        <test-method signature="agent()[pri:0, instance:tests.BookingTest@2bb7bd00]" started-at="2024-11-01T14:57:03 IST" name="agent" finished-at="2024-11-01T15:00:13 IST" depends-on-methods="tests.BookingTest.csu" duration-ms="189242" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- agent -->
-        <test-method signature="newBooking()[pri:0, instance:tests.BookingTest@2bb7bd00]" started-at="2024-11-01T15:00:13 IST" name="newBooking" finished-at="2024-11-01T15:00:13 IST" depends-on-methods="tests.BookingTest.agent" duration-ms="191" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newBooking -->
-        <test-method signature="cruises()[pri:0, instance:tests.BookingTest@2bb7bd00]" started-at="2024-11-01T15:00:13 IST" name="cruises" finished-at="2024-11-01T15:01:13 IST" depends-on-methods="tests.BookingTest.newBooking" duration-ms="60054" status="FAIL">
+        <test-method signature="login()[pri:0, instance:tests.BookingTest@3fffff43]" started-at="2024-11-12T13:14:15 IST" name="login" finished-at="2024-11-12T13:15:19 IST" duration-ms="63780" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Failed to click on new booking button: Expected condition failed: waiting for element to be clickable: By.xpath: (//i[@class='icon icon-right-arrow m-l-2'])[1] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.91, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62360}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62360/devtoo..., se:cdpVersion: 130.0.6723.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 92188883fea015eb0a7de2c065ff94a4]]>
+              <![CDATA[Test failed at login: Login failed due to incorrect credentials.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failed to click on new booking button: Expected condition failed: waiting for element to be clickable: By.xpath: (//i[@class='icon icon-right-arrow m-l-2'])[1] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.91, chrome: {chromedriverVersion: 130.0.6723.91 (53ac07678369..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62360}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62360/devtoo..., se:cdpVersion: 130.0.6723.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 92188883fea015eb0a7de2c065ff94a4
+              <![CDATA[java.lang.AssertionError: Test failed at login: Login failed due to incorrect credentials.
 at org.testng.Assert.fail(Assert.java:111)
-at pages.CruiseBooking.voyage(CruiseBooking.java:49)
-at tests.BookingTest.cruises(BookingTest.java:125)
+at tests.BookingTest.login(BookingTest.java:34)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -80,6 +49,176 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="menu()[pri:0, instance:tests.BookingTest@3fffff43]" started-at="2024-11-12T13:15:20 IST" name="menu" finished-at="2024-11-12T13:15:20 IST" depends-on-methods="tests.BookingTest.login" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.BookingTest.menu() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
+[tests.BookingTest.login() on instance tests.BookingTest@3fffff43]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.BookingTest.menu() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
+[tests.BookingTest.login() on instance tests.BookingTest@3fffff43]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menu -->
+        <test-method signature="csu()[pri:0, instance:tests.BookingTest@3fffff43]" started-at="2024-11-12T13:15:20 IST" name="csu" finished-at="2024-11-12T13:15:20 IST" depends-on-methods="tests.BookingTest.menu" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.BookingTest.csu() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
+[tests.BookingTest.menu() on instance tests.BookingTest@3fffff43]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.BookingTest.csu() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
+[tests.BookingTest.menu() on instance tests.BookingTest@3fffff43]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- csu -->
+        <test-method signature="agent()[pri:0, instance:tests.BookingTest@3fffff43]" started-at="2024-11-12T13:15:20 IST" name="agent" finished-at="2024-11-12T13:15:20 IST" depends-on-methods="tests.BookingTest.csu" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.BookingTest.agent() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
+[tests.BookingTest.csu() on instance tests.BookingTest@3fffff43]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.BookingTest.agent() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
+[tests.BookingTest.csu() on instance tests.BookingTest@3fffff43]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agent -->
+        <test-method signature="newBooking()[pri:0, instance:tests.BookingTest@3fffff43]" started-at="2024-11-12T13:15:20 IST" name="newBooking" finished-at="2024-11-12T13:15:20 IST" depends-on-methods="tests.BookingTest.agent" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.BookingTest.newBooking() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
+[tests.BookingTest.agent() on instance tests.BookingTest@3fffff43]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.BookingTest.newBooking() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
+[tests.BookingTest.agent() on instance tests.BookingTest@3fffff43]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newBooking -->
+        <test-method signature="cruises()[pri:0, instance:tests.BookingTest@3fffff43]" started-at="2024-11-12T13:15:20 IST" name="cruises" finished-at="2024-11-12T13:15:20 IST" depends-on-methods="tests.BookingTest.newBooking" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.BookingTest.cruises() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
+[tests.BookingTest.newBooking() on instance tests.BookingTest@3fffff43]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.BookingTest.cruises() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
+[tests.BookingTest.newBooking() on instance tests.BookingTest@3fffff43]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cruises -->

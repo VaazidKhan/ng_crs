@@ -19,6 +19,8 @@ public class NewBooking extends BaseTest {
 	  WebDriver driver;
 	    WebDriverWait wait;
 	    private static final Logger log = LogManager.getLogger(NewBooking.class);
+	    private static final Logger errorLogger = LogManager.getLogger("com.demo.ng_crs.error"); // For ERROR logs
+
 	    
 	 // Constructor to initialize WebDriver and WebDriverWait
 	    public NewBooking(WebDriver driver) {
@@ -38,7 +40,7 @@ public class NewBooking extends BaseTest {
 	            newButton.click();
 	            log.info("New booking button clicked successfully.");
 	        } catch (Exception e) {
-	            log.error("Error in booking method: " + e.getMessage(), e);
+	        	errorLogger.error("Error in booking method: " + e.getMessage(), e);
 	            Assert.fail("Failed to click on new booking button: " + e.getMessage());
 	        }
 	        
@@ -54,11 +56,11 @@ public class NewBooking extends BaseTest {
 //	            
 //	            log.info("Search button clicked successfully.");
 //	        } catch (Exception e) {
-//	            log.error("Error in booking method at search button: " + e.getMessage(), e);
+//	            errorLogger.error("Error in booking method at search button: " + e.getMessage(), e);
 //	            
 //	            // Debugging additional details
-//	            log.error("Additional Debug Info: Page Title: " + driver.getTitle());
-//	            log.error("Additional Debug Info: Current URL: " + driver.getCurrentUrl());
+//	            errorLogger.error("Additional Debug Info: Page Title: " + driver.getTitle());
+//	            errorLogger.error("Additional Debug Info: Current URL: " + driver.getCurrentUrl());
 //	            
 //	            Assert.fail("Failed to click on search button: " + e.getMessage());
 //	        }
