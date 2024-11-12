@@ -144,7 +144,7 @@ public class BookingTest extends BaseTest {
             cruisebooking.selectSuite();
             log.info("Select Suite clicked.");
         } catch (Exception e) {
-            log.error("Suite button interaction failed at: " + e.getMessage(), e);
+        	eLogger.error("Suite button interaction failed at: " + e.getMessage(), e);
             Assert.fail("Test failed at select suite button in package: " + e.getMessage());
         }
 
@@ -153,7 +153,7 @@ public class BookingTest extends BaseTest {
             cruisebooking.suites();
             log.info("Suite Selected.");
         } catch (Exception e) {
-            log.error("Suite selection interaction failed at: " + e.getMessage(), e);
+        	eLogger.error("Suite selection interaction failed at: " + e.getMessage(), e);
             Assert.fail("Test failed at suite selection in suites: " + e.getMessage());
         }
 

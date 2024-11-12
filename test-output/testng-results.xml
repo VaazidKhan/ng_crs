@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="6" passed="0" failed="1" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-12T13:14:13 IST" name="User_Suite" finished-at="2024-11-12T13:15:20 IST" duration-ms="66824">
+  <suite started-at="2024-11-12T20:38:58 IST" name="User_Suite" finished-at="2024-11-12T20:40:04 IST" duration-ms="66474">
     <groups>
     </groups>
-    <test started-at="2024-11-12T13:14:13 IST" name="User_Test" finished-at="2024-11-12T13:15:20 IST" duration-ms="66824">
+    <test started-at="2024-11-12T20:38:58 IST" name="User_Test" finished-at="2024-11-12T20:40:04 IST" duration-ms="66474">
       <class name="tests.BookingTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookingTest@3fffff43]" started-at="2024-11-12T13:14:14 IST" name="setup" finished-at="2024-11-12T13:14:15 IST" duration-ms="1588" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookingTest@7b324585]" started-at="2024-11-12T20:38:58 IST" name="setup" finished-at="2024-11-12T20:38:59 IST" duration-ms="1389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:tests.BookingTest@3fffff43]" started-at="2024-11-12T13:14:15 IST" name="login" finished-at="2024-11-12T13:15:19 IST" duration-ms="63780" status="FAIL">
+        <test-method signature="login()[pri:0, instance:tests.BookingTest@7b324585]" started-at="2024-11-12T20:38:59 IST" name="login" finished-at="2024-11-12T20:40:02 IST" duration-ms="63371" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Test failed at login: Login failed due to incorrect credentials.]]>
@@ -52,15 +52,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="menu()[pri:0, instance:tests.BookingTest@3fffff43]" started-at="2024-11-12T13:15:20 IST" name="menu" finished-at="2024-11-12T13:15:20 IST" depends-on-methods="tests.BookingTest.login" duration-ms="1" status="SKIP">
+        <test-method signature="menu()[pri:0, instance:tests.BookingTest@7b324585]" started-at="2024-11-12T20:40:04 IST" name="menu" finished-at="2024-11-12T20:40:04 IST" depends-on-methods="tests.BookingTest.login" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method tests.BookingTest.menu() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
-[tests.BookingTest.login() on instance tests.BookingTest@3fffff43]]]>
+              <![CDATA[Method tests.BookingTest.menu() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
+[tests.BookingTest.login() on instance tests.BookingTest@7b324585]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method tests.BookingTest.menu() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
-[tests.BookingTest.login() on instance tests.BookingTest@3fffff43]
+              <![CDATA[java.lang.Throwable: Method tests.BookingTest.menu() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
+[tests.BookingTest.login() on instance tests.BookingTest@7b324585]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -86,15 +86,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- menu -->
-        <test-method signature="csu()[pri:0, instance:tests.BookingTest@3fffff43]" started-at="2024-11-12T13:15:20 IST" name="csu" finished-at="2024-11-12T13:15:20 IST" depends-on-methods="tests.BookingTest.menu" duration-ms="0" status="SKIP">
+        <test-method signature="csu()[pri:0, instance:tests.BookingTest@7b324585]" started-at="2024-11-12T20:40:04 IST" name="csu" finished-at="2024-11-12T20:40:04 IST" depends-on-methods="tests.BookingTest.menu" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method tests.BookingTest.csu() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
-[tests.BookingTest.menu() on instance tests.BookingTest@3fffff43]]]>
+              <![CDATA[Method tests.BookingTest.csu() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
+[tests.BookingTest.menu() on instance tests.BookingTest@7b324585]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method tests.BookingTest.csu() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
-[tests.BookingTest.menu() on instance tests.BookingTest@3fffff43]
+              <![CDATA[java.lang.Throwable: Method tests.BookingTest.csu() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
+[tests.BookingTest.menu() on instance tests.BookingTest@7b324585]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -120,15 +120,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- csu -->
-        <test-method signature="agent()[pri:0, instance:tests.BookingTest@3fffff43]" started-at="2024-11-12T13:15:20 IST" name="agent" finished-at="2024-11-12T13:15:20 IST" depends-on-methods="tests.BookingTest.csu" duration-ms="0" status="SKIP">
+        <test-method signature="agent()[pri:0, instance:tests.BookingTest@7b324585]" started-at="2024-11-12T20:40:04 IST" name="agent" finished-at="2024-11-12T20:40:04 IST" depends-on-methods="tests.BookingTest.csu" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method tests.BookingTest.agent() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
-[tests.BookingTest.csu() on instance tests.BookingTest@3fffff43]]]>
+              <![CDATA[Method tests.BookingTest.agent() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
+[tests.BookingTest.csu() on instance tests.BookingTest@7b324585]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method tests.BookingTest.agent() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
-[tests.BookingTest.csu() on instance tests.BookingTest@3fffff43]
+              <![CDATA[java.lang.Throwable: Method tests.BookingTest.agent() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
+[tests.BookingTest.csu() on instance tests.BookingTest@7b324585]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -154,15 +154,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- agent -->
-        <test-method signature="newBooking()[pri:0, instance:tests.BookingTest@3fffff43]" started-at="2024-11-12T13:15:20 IST" name="newBooking" finished-at="2024-11-12T13:15:20 IST" depends-on-methods="tests.BookingTest.agent" duration-ms="0" status="SKIP">
+        <test-method signature="newBooking()[pri:0, instance:tests.BookingTest@7b324585]" started-at="2024-11-12T20:40:04 IST" name="newBooking" finished-at="2024-11-12T20:40:04 IST" depends-on-methods="tests.BookingTest.agent" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method tests.BookingTest.newBooking() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
-[tests.BookingTest.agent() on instance tests.BookingTest@3fffff43]]]>
+              <![CDATA[Method tests.BookingTest.newBooking() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
+[tests.BookingTest.agent() on instance tests.BookingTest@7b324585]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method tests.BookingTest.newBooking() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
-[tests.BookingTest.agent() on instance tests.BookingTest@3fffff43]
+              <![CDATA[java.lang.Throwable: Method tests.BookingTest.newBooking() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
+[tests.BookingTest.agent() on instance tests.BookingTest@7b324585]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -188,15 +188,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newBooking -->
-        <test-method signature="cruises()[pri:0, instance:tests.BookingTest@3fffff43]" started-at="2024-11-12T13:15:20 IST" name="cruises" finished-at="2024-11-12T13:15:20 IST" depends-on-methods="tests.BookingTest.newBooking" duration-ms="0" status="SKIP">
+        <test-method signature="cruises()[pri:0, instance:tests.BookingTest@7b324585]" started-at="2024-11-12T20:40:04 IST" name="cruises" finished-at="2024-11-12T20:40:04 IST" depends-on-methods="tests.BookingTest.newBooking" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method tests.BookingTest.cruises() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
-[tests.BookingTest.newBooking() on instance tests.BookingTest@3fffff43]]]>
+              <![CDATA[Method tests.BookingTest.cruises() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
+[tests.BookingTest.newBooking() on instance tests.BookingTest@7b324585]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method tests.BookingTest.cruises() on instance tests.BookingTest@3fffff43 depends on not successfully finished methods 
-[tests.BookingTest.newBooking() on instance tests.BookingTest@3fffff43]
+              <![CDATA[java.lang.Throwable: Method tests.BookingTest.cruises() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
+[tests.BookingTest.newBooking() on instance tests.BookingTest@7b324585]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)

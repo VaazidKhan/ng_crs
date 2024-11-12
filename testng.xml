@@ -8,7 +8,7 @@
 
     <test thread-count="5" name="User_Test">
         <classes>
-            <class name="tests.BookingTest"/>  <!-- Ensure this poin.ts to the correct package/class -->
+            <class name="tests.BookingTest"/>
         </classes>
     </test>
 </suite>

@@ -5,40 +5,42 @@
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
- 
-        <!-- Rolling File Appender for INFO logs -->
+
+        <!-- Rolling File Appender for INFO logs with date suffix -->
         <RollingFile name="InfoFile" fileName="logs/info.log"
-                     filePattern="logs/info-%d{yyyy-MM-dd}-%i.log" append="false">
+                     filePattern="logs/info-%d{yyyy-MM-dd}-%i.log" append="true">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
             <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
                 <SizeBasedTriggeringPolicy size="10MB"/>
             </Policies>
             <DefaultRolloverStrategy max="10"/>
         </RollingFile>
- 
-        <!-- Rolling File Appender for ERROR logs -->
+
+        <!-- Rolling File Appender for ERROR logs with date suffix -->
         <RollingFile name="ErrorFile" fileName="logs/error.log"
-                     filePattern="logs/error-%d{yyyy-MM-dd}-%i.log" append="false">
+                     filePattern="logs/error-%d{yyyy-MM-dd}-%i.log" append="true">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
             <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
                 <SizeBasedTriggeringPolicy size="10MB"/>
             </Policies>
             <DefaultRolloverStrategy max="10"/>
         </RollingFile>
     </Appenders>
- 
+
     <Loggers>
-<!-- Logger for application-specific INFO and higher logs, excluding ERROR -->
+        <!-- Logger for application-specific INFO and higher logs, excluding ERROR -->
         <Logger name="com.demo.ng_crs" level="info" additivity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="InfoFile"/>
         </Logger>
- 
+
         <!-- Logger for application-specific ERROR logs -->
         <Logger name="com.demo.ng_crs.error" level="error" additivity="false">
             <AppenderRef ref="ErrorFile"/>
         </Logger>
- 
+
         <!-- Root Logger to handle general logging -->
         <Root level="info">
             <AppenderRef ref="Console"/>

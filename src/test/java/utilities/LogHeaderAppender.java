@@ -11,29 +11,28 @@ import java.util.Properties;
 
 public class LogHeaderAppender {
     private static Properties config;
-
-
     private static final Logger logger = LogManager.getLogger(LogHeaderAppender.class);
 
-    // Method to append log header with system information
-    public static void appendLogHeader() {
+    static {
         config = new Properties();
         try {
             FileInputStream fis = new FileInputStream("src/main/resources/config.properties");
             config.load(fis);
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error("Failed to load config properties", e);
         }
+    }
 
-        try (FileWriter writer = new FileWriter("logs/App-" + java.time.LocalDate.now() + ".log", true)) {
-            Properties systemProperties = System.getProperties();
-            String Name = config.getProperty("username");
-            String javaVersion = systemProperties.getProperty("java.version");
-            String os = systemProperties.getProperty("os.name");
+    // Method to append log header with system information
+    public static void appendLogHeader(String logFilePath) {
+        try (FileWriter writer = new FileWriter(logFilePath, true)) {
+            String name = config.getProperty("username", "supportuser");
+            String javaVersion = System.getProperty("java.version");
+            String os = System.getProperty("os.name");
             String systemName = InetAddress.getLocalHost().getHostName();
 
             writer.write("-------------------------------------------------\n");
-            writer.write("Name: "+Name+"\n");
+            writer.write("Name: " + name + "\n");
             writer.write("Log Start: " + java.time.LocalDateTime.now() + "\n");
             writer.write("Java Version: " + javaVersion + "\n");
             writer.write("Operating System: " + os + "\n");
@@ -44,9 +43,9 @@ public class LogHeaderAppender {
         }
     }
 
-    // Method to append log footer with the end time
-    public static void appendLogFooter() {
-        try (FileWriter writer = new FileWriter("logs/App-" + java.time.LocalDate.now() + ".log", true)) {
+    // Method to append log footer with end time
+    public static void appendLogFooter(String logFilePath) {
+        try (FileWriter writer = new FileWriter(logFilePath, true)) {
             writer.write("-------------------------------------------------\n");
             writer.write("Log End: " + java.time.LocalDateTime.now() + "\n");
             writer.write("-------------------------------------------------\n\n");
