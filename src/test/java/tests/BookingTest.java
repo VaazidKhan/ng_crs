@@ -70,7 +70,6 @@ public class BookingTest extends BaseTest {
         Agency agency = new Agency(driver);
         
         try {
-        	Thread.sleep(2000);
         	agency.waitForOverlayToDisappear();
         	log.info("Waiting for the overlay to end");
         }catch(Exception e) {
@@ -79,31 +78,30 @@ public class BookingTest extends BaseTest {
         }
         
         try {
-            Thread.sleep(3000); // Better replaced with explicit waits
             agency.agency();
             log.info("Clicked on Agency option.");
         } catch (Exception e) {
         	eLogger.error("Agency interaction failed at: " + e.getMessage(), e);
             Assert.fail("Test failed at agency button: " + e.getMessage());
         }
-
+        
         try {
-            Thread.sleep(2000); // Better replaced with explicit waits
-            agency.agent();
-            log.info("Agencies listed.");
+            agency.agencies();
+            log.info("Clicked on agencies button.");
         } catch (Exception e) {
-        	eLogger.error("Agency list interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at agency list: " + e.getMessage());
+        	eLogger.error("Agencies interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at agencies button: " + e.getMessage());
+        }
+        
+        try {
+            agency.newBooking();
+            log.info("Clicked on new booking button.");
+        } catch (Exception e) {
+        	eLogger.error("New Booking interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at new booking button: " + e.getMessage());
         }
 
-//        try {
-//            Thread.sleep(2000); // Better replaced with explicit waits
-//            agency.selectAgent(config.getProperty("agent"));
-//            log.info("Agent selected.");
-//        } catch (Exception e) {
-//            eLogger.error("Agent selection interaction failed at: " + e.getMessage(), e);
-//            Assert.fail("Test failed at agent selection: " + e.getMessage());
-//        }
+
     }
 
     @Test(dependsOnMethods = "agent")
