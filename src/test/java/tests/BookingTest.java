@@ -94,6 +94,15 @@ public class BookingTest extends BaseTest {
         }
         
         try {
+            log.info("Attempting to send agency code.");
+            agency.searchAgent(config.getProperty("agencyCode"));
+            log.info("Clicked on agency code field.");
+        } catch (Exception e) {
+        	eLogger.error("Agency code field interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at agency code field: " + e.getMessage());
+        }
+        
+        try {
             agency.newBooking();
             log.info("Clicked on new booking button.");
         } catch (Exception e) {

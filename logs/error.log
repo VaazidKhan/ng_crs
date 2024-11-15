@@ -1,16 +1,44 @@
--------------------------------------------------
-Name: supportuser
-Log Start: 2024-11-12T20:38:58.102251
-Java Version: 23.0.1
-Operating System: Windows 11
-System Name: DESKTOP-KR6B0UD
--------------------------------------------------
-
-2024-11-12 20:40:02.984 [main] ERROR com.demo.ng_crs.error - Login failed: Error message displayed
-2024-11-12 20:40:02.984 [main] ERROR com.demo.ng_crs.error - Login failed at: Login failed due to incorrect credentials.
-java.lang.Exception: Login failed due to incorrect credentials.
-	at pages.LoginPage.login(LoginPage.java:54) ~[test-classes/:?]
-	at tests.BookingTest.login(BookingTest.java:30) ~[test-classes/:?]
+2024-11-15 14:33:08.380 [main] ERROR com.demo.ng_crs.error - Error occurred in the agencies method: element click intercepted: Element <div _ngcontent-jkk-c632="" class="d-flex align-items-center flex-column tab-link gap-2">...</div> is not clickable at point (276, 209). Other element would receive the click: <div _ngcontent-jkk-c462="" class="ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome=130.0.6723.119)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [394867f4cc53ac23bd31b9ff6c687834, clickElement {id=f.C5CEEFA1AF2B0F2FCB5B741BBC9C9E09.d.92695AC5F0ECBF74CF2D626FF01A7207.e.308}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51652}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51652/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (394867f4cc53ac23bd31b9ff6c687834)] -> xpath: //li[@class='active']//div[@class='d-flex align-items-center flex-column tab-link gap-2']]
+Session ID: 394867f4cc53ac23bd31b9ff6c687834
+2024-11-15 14:33:15.153 [main] ERROR com.demo.ng_crs.error - Error in booking method: element click intercepted: Element <button _ngcontent-jkk-c628="" class="btn btn-primary pe-auto" title="">...</button> is not clickable at point (1454, 91). Other element would receive the click: <div _ngcontent-jkk-c462="" class="ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome=130.0.6723.119)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [394867f4cc53ac23bd31b9ff6c687834, clickElement {id=f.C5CEEFA1AF2B0F2FCB5B741BBC9C9E09.d.92695AC5F0ECBF74CF2D626FF01A7207.e.459}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51652}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51652/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (394867f4cc53ac23bd31b9ff6c687834)] -> xpath: //button[@class='btn btn-primary pe-auto']]
+Session ID: 394867f4cc53ac23bd31b9ff6c687834
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-jkk-c628="" class="btn btn-primary pe-auto" title="">...</button> is not clickable at point (1454, 91). Other element would receive the click: <div _ngcontent-jkk-c462="" class="ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome=130.0.6723.119)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [394867f4cc53ac23bd31b9ff6c687834, clickElement {id=f.C5CEEFA1AF2B0F2FCB5B741BBC9C9E09.d.92695AC5F0ECBF74CF2D626FF01A7207.e.459}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51652}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51652/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (394867f4cc53ac23bd31b9ff6c687834)] -> xpath: //button[@class='btn btn-primary pe-auto']]
+Session ID: 394867f4cc53ac23bd31b9ff6c687834
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:485) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.25.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.25.0.jar:?]
+	at pages.NewBooking.booking(NewBooking.java:40) ~[test-classes/:?]
+	at tests.BookingTest.newBooking(BookingTest.java:121) ~[test-classes/:?]
 	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.0.jar:7.10.0]
@@ -38,22 +66,6 @@ java.lang.Exception: Login failed due to incorrect credentials.
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
 -------------------------------------------------
-Log End: 2024-11-12T20:40:05.139153200
--------------------------------------------------
-
--------------------------------------------------
-Name: supportuser2
-Log Start: 2024-11-12T21:53:42.953290
-Java Version: 23.0.1
-Operating System: Windows 11
-System Name: DESKTOP-KR6B0UD
--------------------------------------------------
-
--------------------------------------------------
-Name: supportuser2
-Log Start: 2024-11-12T21:58:03.063582700
-Java Version: 23.0.1
-Operating System: Windows 11
-System Name: DESKTOP-KR6B0UD
+Log End: 2024-11-15T14:33:16.956740500
 -------------------------------------------------
 

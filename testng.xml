@@ -5,8 +5,7 @@
         <listener class-name="utilities.LogHeaderSuiteListener"/>
         <listener class-name="base.TestListener"/>
     </listeners>
-
-    <test thread-count="5" name="User_Test">
+    <test name="User_Test">
         <classes>
             <class name="tests.BookingTest"/>
         </classes>

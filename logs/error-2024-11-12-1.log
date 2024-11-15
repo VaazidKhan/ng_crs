@@ -1,0 +1,67 @@
+-------------------------------------------------
+Name: supportuser
+Log Start: 2024-11-12T20:38:58.102251
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-12 20:40:02.984 [main] ERROR com.demo.ng_crs.error - Login failed: Error message displayed
+2024-11-12 20:40:02.984 [main] ERROR com.demo.ng_crs.error - Login failed at: Login failed due to incorrect credentials.
+java.lang.Exception: Login failed due to incorrect credentials.
+	at pages.LoginPage.login(LoginPage.java:54) ~[test-classes/:?]
+	at tests.BookingTest.login(BookingTest.java:30) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.0.jar:7.10.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.0.jar:7.10.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.0.jar:7.10.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.0.jar:7.10.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.0.jar:7.10.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.0.jar:7.10.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.0.jar:7.10.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.0.jar:7.10.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.0.jar:7.10.0]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.0.jar:7.10.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.0.jar:7.10.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.0.jar:7.10.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.0.jar:7.10.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.0.jar:7.10.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.0.jar:7.10.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.0.jar:7.10.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.0.jar:7.10.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.0.jar:7.10.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.0.jar:7.10.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.0.jar:7.10.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+-------------------------------------------------
+Log End: 2024-11-12T20:40:05.139153200
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-12T21:53:42.953290
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-12T21:58:03.063582700
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-14T21:37:38.121159400
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+

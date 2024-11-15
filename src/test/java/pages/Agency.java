@@ -1,10 +1,6 @@
 package pages;
 
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,7 +9,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import base.BaseTest;
 
@@ -23,10 +18,6 @@ public class Agency extends BaseTest {
     private static final Logger log = LogManager.getLogger(Agency.class);
     private static final Logger errorLogger = LogManager.getLogger("com.demo.ng_crs.error"); // For ERROR logs
 
-
-    // Store the list of agents as a class-level variable
-    List<String> allAgents = new ArrayList<>();
-
     // Constructor to initialize WebDriver and WebDriverWait
     public Agency(WebDriver driver) {
         this.driver = driver;
@@ -34,11 +25,12 @@ public class Agency extends BaseTest {
     }
 
     // Locators for various elements
-    By homeButton = By.xpath("(//li[@title='Home']");
+    By homeButton = By.xpath("(//li[@title='Home'])");
     By agencyButton = By.xpath("//button[normalize-space()='Agency']");
     By agenciesButton = By.xpath("//li[@class='active']//div[@class='d-flex align-items-center flex-column tab-link gap-2']");
-    By agencyCode = By.xpath("//input[@placeholder='Please Enter Agency code']");
+    By agencyCode = By.xpath("//input[@formcontrolname='cmpCode']");
     By searchButton = By.xpath("//i[@class='icon icon-search']");
+    By errorMsg = By.xpath("//div[contains(text(),'Error')]");
     By resultsFound = By.xpath("//span[contains(text(), 'Results Found')]");
     By newBooking = By.xpath("//button[normalize-space()='New Booking']");
     
@@ -94,6 +86,23 @@ public class Agency extends BaseTest {
             agencies.click();
     	}catch(Exception e) {
             errorLogger.error("Error occurred in the agencies method: " + e.getMessage());
+    	}
+    }
+    
+  //method to search the agent
+    public void searchAgent(String agentCode) {
+    	try {
+    		// Wait for the agency code button to be visible
+            WebElement agencycode = wait.until(ExpectedConditions.elementToBeClickable(agencyCode));
+            log.info("Waiting for agency code field to be clickable");
+            agencycode.clear();
+            Thread.sleep(2000);
+            agencycode.sendKeys(agentCode);
+            WebElement searchbtn = wait.until(ExpectedConditions.elementToBeClickable(searchButton));
+            log.info("Waiting for search button to be clickable");
+            searchbtn.click();
+    	}catch (Exception e) {
+            errorLogger.error("Error occurred in the search agent method: " + e.getMessage());
     	}
     }
     

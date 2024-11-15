@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>User_Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/5</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 12 20:38:58 IST 2024</td>
+<td>Started on:</td><td>Fri Nov 15 14:32:28 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>66 seconds (66474 ms)</td>
+<tr><td>Total time:</td><td>47 seconds (47774 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,14 +76,32 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.BookingTest.login()'><b>login</b><br>Test class: tests.BookingTest</td>
-<td><div><pre>java.lang.AssertionError: Test failed at login: Login failed due to incorrect credentials.
-	at tests.BookingTest.login(BookingTest.java:34)
+<td title='tests.BookingTest.newBooking()'><b>newBooking</b><br>Test class: tests.BookingTest</td>
+<td><div><pre>java.lang.AssertionError: Failed to click on new booking button: element click intercepted: Element &lt;button _ngcontent-jkk-c628=&quot;&quot; class=&quot;btn btn-primary pe-auto&quot; title=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (1454, 91). Other element would receive the click: &lt;div _ngcontent-jkk-c462=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.119)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [394867f4cc53ac23bd31b9ff6c687834, clickElement {id=f.C5CEEFA1AF2B0F2FCB5B741BBC9C9E09.d.92695AC5F0ECBF74CF2D626FF01A7207.e.459}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51652}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51652/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (394867f4cc53ac23bd31b9ff6c687834)] -&gt; xpath: //button[@class=&apos;btn btn-primary pe-auto&apos;]]
+Session ID: 394867f4cc53ac23bd31b9ff6c687834
+	at pages.NewBooking.booking(NewBooking.java:44)
+	at tests.BookingTest.newBooking(BookingTest.java:121)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1397643446", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1397643446'><pre>java.lang.AssertionError: Test failed at login: Login failed due to incorrect credentials.
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace483669346", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace483669346'><pre>java.lang.AssertionError: Failed to click on new booking button: element click intercepted: Element &lt;button _ngcontent-jkk-c628=&quot;&quot; class=&quot;btn btn-primary pe-auto&quot; title=&quot;&quot;&gt;...&lt;/button&gt; is not clickable at point (1454, 91). Other element would receive the click: &lt;div _ngcontent-jkk-c462=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.119)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [394867f4cc53ac23bd31b9ff6c687834, clickElement {id=f.C5CEEFA1AF2B0F2FCB5B741BBC9C9E09.d.92695AC5F0ECBF74CF2D626FF01A7207.e.459}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51652}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51652/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (394867f4cc53ac23bd31b9ff6c687834)] -&gt; xpath: //button[@class=&apos;btn btn-primary pe-auto&apos;]]
+Session ID: 394867f4cc53ac23bd31b9ff6c687834
 	at org.testng.Assert.fail(Assert.java:111)
-	at tests.BookingTest.login(BookingTest.java:34)
+	at pages.NewBooking.booking(NewBooking.java:44)
+	at tests.BookingTest.newBooking(BookingTest.java:121)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -111,7 +129,36 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>63</td>
+<td>1</td>
+<td>tests.BookingTest@7b324585</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.BookingTest.csu()'><b>csu</b><br>Test class: tests.BookingTest</td>
+<td></td>
+<td>14</td>
+<td>tests.BookingTest@7b324585</td></tr>
+<tr>
+<td title='tests.BookingTest.agent()'><b>agent</b><br>Test class: tests.BookingTest</td>
+<td></td>
+<td>13</td>
+<td>tests.BookingTest@7b324585</td></tr>
+<tr>
+<td title='tests.BookingTest.menu()'><b>menu</b><br>Test class: tests.BookingTest</td>
+<td></td>
+<td>4</td>
+<td>tests.BookingTest@7b324585</td></tr>
+<tr>
+<td title='tests.BookingTest.login()'><b>login</b><br>Test class: tests.BookingTest</td>
+<td></td>
+<td>9</td>
 <td>tests.BookingTest@7b324585</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -127,129 +174,9 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.Throwable: Method tests.BookingTest.cruises() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
 [tests.BookingTest.newBooking() on instance tests.BookingTest@7b324585]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1781297535", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1781297535'><pre>java.lang.Throwable: Method tests.BookingTest.cruises() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace280397810", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace280397810'><pre>java.lang.Throwable: Method tests.BookingTest.cruises() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
 [tests.BookingTest.newBooking() on instance tests.BookingTest@7b324585]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>tests.BookingTest@7b324585</td></tr>
-<tr>
-<td title='tests.BookingTest.menu()'><b>menu</b><br>Test class: tests.BookingTest</td>
-<td><div><pre>java.lang.Throwable: Method tests.BookingTest.menu() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
-[tests.BookingTest.login() on instance tests.BookingTest@7b324585]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace352830403", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace352830403'><pre>java.lang.Throwable: Method tests.BookingTest.menu() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
-[tests.BookingTest.login() on instance tests.BookingTest@7b324585]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>tests.BookingTest@7b324585</td></tr>
-<tr>
-<td title='tests.BookingTest.newBooking()'><b>newBooking</b><br>Test class: tests.BookingTest</td>
-<td><div><pre>java.lang.Throwable: Method tests.BookingTest.newBooking() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
-[tests.BookingTest.agent() on instance tests.BookingTest@7b324585]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1104938392", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1104938392'><pre>java.lang.Throwable: Method tests.BookingTest.newBooking() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
-[tests.BookingTest.agent() on instance tests.BookingTest@7b324585]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>tests.BookingTest@7b324585</td></tr>
-<tr>
-<td title='tests.BookingTest.csu()'><b>csu</b><br>Test class: tests.BookingTest</td>
-<td><div><pre>java.lang.Throwable: Method tests.BookingTest.csu() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
-[tests.BookingTest.menu() on instance tests.BookingTest@7b324585]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1294361489", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1294361489'><pre>java.lang.Throwable: Method tests.BookingTest.csu() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
-[tests.BookingTest.menu() on instance tests.BookingTest@7b324585]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>tests.BookingTest@7b324585</td></tr>
-<tr>
-<td title='tests.BookingTest.agent()'><b>agent</b><br>Test class: tests.BookingTest</td>
-<td><div><pre>java.lang.Throwable: Method tests.BookingTest.agent() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
-[tests.BookingTest.csu() on instance tests.BookingTest@7b324585]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2028042905", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2028042905'><pre>java.lang.Throwable: Method tests.BookingTest.agent() on instance tests.BookingTest@7b324585 depends on not successfully finished methods 
-[tests.BookingTest.csu() on instance tests.BookingTest@7b324585]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
