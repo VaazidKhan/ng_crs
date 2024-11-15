@@ -397,3 +397,115 @@ System Name: DESKTOP-KR6B0UD
 Log End: 2024-11-15T17:34:22.652372300
 -------------------------------------------------
 
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-15T20:21:38.943121500
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-15 20:22:07.883 [main] ERROR com.demo.ng_crs.error - Error occurred in the agency method: element click intercepted: Element <li _ngcontent-lto-c618="" kendotooltip="" position="right" title="Home">...</li> is not clickable at point (23, 120). Other element would receive the click: <div _ngcontent-lto-c462="" class="ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome=130.0.6723.119)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f115269b1698cb80bbf162aa5b16f946, clickElement {id=f.726D1C3BD4FB12FE98EEEDAD445F016F.d.ACAF03B31458089A8D3DEB8CCD161443.e.147}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58256}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58256/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f115269b1698cb80bbf162aa5b16f946)] -> xpath: (//li[@title='Home'])]
+Session ID: f115269b1698cb80bbf162aa5b16f946
+-------------------------------------------------
+Log End: 2024-11-15T20:22:08.357199
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-15T20:23:35.569185400
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-15T20:25:35.736688400
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+-------------------------------------------------
+Log End: 2024-11-15T20:26:23.908570400
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-15T23:01:48.660729200
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-15 23:02:35.898 [main] ERROR com.demo.ng_crs.error - Error occurred in the agency method: element click intercepted: Element <button _ngcontent-jqs-c632="" class="btn btn-white active">...</button> is not clickable at point (163, 115). Other element would receive the click: <div _ngcontent-jqs-c462="" class="ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome=130.0.6723.119)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c2c424eac856995100c5bd56bbaafd00, clickElement {id=f.A4BC481EC42B8FDFBB1339A6CC6AE36B.d.B53211F13B774D18EEA52C909EF27D22.e.200}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59190/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c2c424eac856995100c5bd56bbaafd00)] -> xpath: //button[normalize-space()='Agency']]
+Session ID: c2c424eac856995100c5bd56bbaafd00
+-------------------------------------------------
+Log End: 2024-11-15T23:02:36.387909300
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-15T23:02:53.231463500
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-15T23:04:57.837183100
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-15T23:06:30.084146
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-15 23:07:04.774 [main] ERROR com.demo.ng_crs.error - Error occurred in the agency method: element click intercepted: Element <button _ngcontent-iqo-c632="" class="btn btn-white active">...</button> is not clickable at point (163, 115). Other element would receive the click: <div _ngcontent-iqo-c462="" class="ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome=130.0.6723.119)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [39af13a7a0f20209ca1de799c2ec0f9c, clickElement {id=f.5C4B67B7489AE6F0702292A9D4AB9C8C.d.C899CF5C2351F497661E8E08ED198DBD.e.249}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59276/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (39af13a7a0f20209ca1de799c2ec0f9c)] -> xpath: //button[normalize-space()='Agency']]
+Session ID: 39af13a7a0f20209ca1de799c2ec0f9c
+-------------------------------------------------
+Log End: 2024-11-15T23:07:05.295853
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-15T23:07:36.754174
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-15 23:08:35.647 [main] ERROR com.demo.ng_crs.error - Suites tab is not selected as expected. aria-selected: false, Tab Text: Suite(s)
+-------------------------------------------------
+Log End: 2024-11-15T23:08:44.463138900
+-------------------------------------------------
+

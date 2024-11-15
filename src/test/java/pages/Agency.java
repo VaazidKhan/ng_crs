@@ -106,19 +106,18 @@ public class Agency extends BaseTest {
             WebElement agencycode = wait.until(ExpectedConditions.elementToBeClickable(agencyCode));
             log.info("Waiting for agency code field to be clickable");
             agencycode.clear();
-            Thread.sleep(2000);
+            Thread.sleep(4000);
             agencycode.sendKeys(agentCode);
-            Thread.sleep(2000);
+            Thread.sleep(3000);
             WebElement searchbtn = wait.until(ExpectedConditions.elementToBeClickable(searchButton));
             log.info("Waiting for search button to be clickable");
+            Thread.sleep(3000);
             searchbtn.click();
             log.info("Clicked on search button");
 
     	}catch (Exception e) {
             errorLogger.error("Error occurred in the search agent method: " + e.getMessage());
-            Assert.fail("An error occurred while attempting to interact with agent method: " + e.getMessage());
-
-            
+            Assert.fail("An error occurred while attempting to interact with agent method: " + e.getMessage()); 
     	}
     }
     

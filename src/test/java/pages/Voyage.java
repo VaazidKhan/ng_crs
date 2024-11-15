@@ -39,13 +39,13 @@ public class Voyage {
 
             // Find the "Voyage" tab element
             WebElement voyageTabElement = wait.until(ExpectedConditions.visibilityOfElementLocated(voyagePipe));
-            
+            WebElement voyageTabText = wait.until(ExpectedConditions.visibilityOfElementLocated(tab));
             // Check if the 'aria-selected' attribute is set to true
             String isSelected = voyageTabElement.getAttribute("aria-selected");
             String tabText = voyageTabElement.findElement(By.tagName("span")).getText();
-            String text = driver.findElement(tab).getText();
+            String text = voyageTabText.findElement(tab).getText();
 
-            if ("true".equals(isSelected) && "Voyage".equals(tabText)) {
+            if ("true".equals(isSelected) && text.equals(tabText)) {
                 log.info("Voyage tab is correctly selected and highlighted in the pipeline.");
                 return true;
             } else {

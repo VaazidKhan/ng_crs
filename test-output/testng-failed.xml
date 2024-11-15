@@ -12,7 +12,9 @@
         <methods>
           <include name="csu"/>
           <include name="setup"/>
+          <include name="packageTab"/>
           <include name="agent"/>
+          <include name="suiteTab"/>
           <include name="login"/>
           <include name="menu"/>
           <include name="voyageTab"/>

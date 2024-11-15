@@ -1,40 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-15T17:33:29 IST" name="User_Suite" finished-at="2024-11-15T17:34:22 IST" duration-ms="52866">
+  <suite started-at="2024-11-15T23:07:36 IST" name="User_Suite" finished-at="2024-11-15T23:08:44 IST" duration-ms="67468">
     <groups>
     </groups>
-    <test started-at="2024-11-15T17:33:29 IST" name="User_Test" finished-at="2024-11-15T17:34:22 IST" duration-ms="52866">
+    <test started-at="2024-11-15T23:07:36 IST" name="User_Test" finished-at="2024-11-15T23:08:44 IST" duration-ms="67468">
       <class name="tests.BookingTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookingTest@7b324585]" started-at="2024-11-15T17:33:29 IST" name="setup" finished-at="2024-11-15T17:33:30 IST" duration-ms="1322" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookingTest@2e11485]" started-at="2024-11-15T23:07:36 IST" name="setup" finished-at="2024-11-15T23:07:40 IST" duration-ms="3116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:tests.BookingTest@7b324585]" started-at="2024-11-15T17:33:30 IST" name="login" finished-at="2024-11-15T17:33:38 IST" duration-ms="8236" status="PASS">
+        <test-method signature="login()[pri:0, instance:tests.BookingTest@2e11485]" started-at="2024-11-15T23:07:40 IST" name="login" finished-at="2024-11-15T23:07:52 IST" duration-ms="12343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="menu()[pri:0, instance:tests.BookingTest@7b324585]" started-at="2024-11-15T17:33:39 IST" name="menu" finished-at="2024-11-15T17:33:43 IST" depends-on-methods="tests.BookingTest.login" duration-ms="4114" status="PASS">
+        <test-method signature="menu()[pri:0, instance:tests.BookingTest@2e11485]" started-at="2024-11-15T23:07:52 IST" name="menu" finished-at="2024-11-15T23:07:56 IST" depends-on-methods="tests.BookingTest.login" duration-ms="4123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- menu -->
-        <test-method signature="csu()[pri:0, instance:tests.BookingTest@7b324585]" started-at="2024-11-15T17:33:43 IST" name="csu" finished-at="2024-11-15T17:33:55 IST" depends-on-methods="tests.BookingTest.menu" duration-ms="12084" status="PASS">
+        <test-method signature="csu()[pri:0, instance:tests.BookingTest@2e11485]" started-at="2024-11-15T23:07:56 IST" name="csu" finished-at="2024-11-15T23:08:03 IST" depends-on-methods="tests.BookingTest.menu" duration-ms="6572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- csu -->
-        <test-method signature="agent()[pri:0, instance:tests.BookingTest@7b324585]" started-at="2024-11-15T17:33:55 IST" name="agent" finished-at="2024-11-15T17:34:13 IST" depends-on-methods="tests.BookingTest.csu" duration-ms="18254" status="PASS">
+        <test-method signature="agent()[pri:0, instance:tests.BookingTest@2e11485]" started-at="2024-11-15T23:08:03 IST" name="agent" finished-at="2024-11-15T23:08:26 IST" depends-on-methods="tests.BookingTest.csu" duration-ms="23578" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- agent -->
-        <test-method signature="voyageTab()[pri:0, instance:tests.BookingTest@7b324585]" started-at="2024-11-15T17:34:13 IST" name="voyageTab" finished-at="2024-11-15T17:34:18 IST" depends-on-methods="tests.BookingTest.agent" duration-ms="4602" status="PASS">
+        <test-method signature="voyageTab()[pri:0, instance:tests.BookingTest@2e11485]" started-at="2024-11-15T23:08:26 IST" name="voyageTab" finished-at="2024-11-15T23:08:29 IST" depends-on-methods="tests.BookingTest.agent" duration-ms="3076" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- voyageTab -->
-        <test-method signature="packageTab()[pri:0, instance:tests.BookingTest@7b324585]" started-at="2024-11-15T17:34:18 IST" name="packageTab" finished-at="2024-11-15T17:34:22 IST" depends-on-methods="tests.BookingTest.voyageTab" duration-ms="4037" status="PASS">
+        <test-method signature="packageTab()[pri:0, instance:tests.BookingTest@2e11485]" started-at="2024-11-15T23:08:29 IST" name="packageTab" finished-at="2024-11-15T23:08:35 IST" depends-on-methods="tests.BookingTest.voyageTab" duration-ms="5772" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- packageTab -->
+        <test-method signature="suiteTab()[pri:0, instance:tests.BookingTest@2e11485]" started-at="2024-11-15T23:08:35 IST" name="suiteTab" finished-at="2024-11-15T23:08:44 IST" depends-on-methods="tests.BookingTest.packageTab" duration-ms="8688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteTab -->
       </class> <!-- tests.BookingTest -->
     </test> <!-- User_Test -->
   </suite> <!-- User_Suite -->

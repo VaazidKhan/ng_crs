@@ -25,9 +25,38 @@ public class Package {
 	        this.driver = driver;
 	        this.wait = new WebDriverWait(driver, Duration.ofSeconds(30)); // Explicit wait
 	    }
-
+	    By packagePipe = By.xpath("//li[@role='tab' and @aria-controls='k-tabstrip-tabpanel-1' and .//span[text()='Package']]");
+	    By tab = By.xpath("//div[@class='d-flex gap-3']/span");
 	    By packageField = By.xpath("//li[@class='cabin-content ng-star-inserted']");
+	    By selectSuiteField = By.xpath("//button[contains(text(),'Select Suite')]");
+	    
+	    
+	 // Method to verify if "Package" tab is selected
+	    public boolean isPackageTabSelected() {
+	        try {
+	            log.info("Verifying if the UI is in the 'Package' tab.");
 
+	            // Find the "Voyage" tab element
+	            WebElement packageTabElement = wait.until(ExpectedConditions.visibilityOfElementLocated(packagePipe));
+	            WebElement packageTabText = wait.until(ExpectedConditions.visibilityOfElementLocated(tab));
+
+	            // Check if the 'aria-selected' attribute is set to true
+	            String isSelected = packageTabElement.getAttribute("aria-selected");
+	            String tabText = packageTabElement.findElement(By.tagName("span")).getText();
+	            String text = packageTabText.findElement(tab).getText();
+
+	            if ("true".equals(isSelected) && text.equals(tabText)) {
+	                log.info("Package tab is correctly selected and highlighted in the pipeline.");
+	                return true;
+	            } else {
+	                errorLogger.error("Package tab is not selected as expected. aria-selected: " + isSelected + ", Tab Text: " + tabText);
+	                return false;
+	            }
+	        } catch (Exception e) {
+	            errorLogger.error("An error occurred while verifying the Package tab selection.", e);
+	            return false;
+	        }
+	    }
 	    
 	// Method to select a package and suite with retry for stale element
     public void packages() {
@@ -69,4 +98,19 @@ public class Package {
             Assert.fail("Failed to select a package after multiple attempts.");
         }
     }
+    
+
+	 // Method to select a suite
+   public void selectSuite() {
+       try {
+           log.info("Waiting for the Select Suite button to be clickable.");
+           WebElement selectSuiteBtn = wait.until(ExpectedConditions.elementToBeClickable(selectSuiteField));
+               selectSuiteBtn.click();
+               log.info("Select Suite button clicked successfully.");
+           
+       } catch (Exception e) {
+       	errorLogger.error("An error occurred while suite selecting : " + e.getMessage(), e);
+           Assert.fail("Failed to click on select suite button: " + e.getMessage());
+       }
+   }
 }
