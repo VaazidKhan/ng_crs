@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import base.BaseTest;
 
@@ -71,9 +72,12 @@ public class Agency extends BaseTest {
                 WebElement agency = wait.until(ExpectedConditions.visibilityOfElementLocated(agencyButton));
                 agency.click();
                 log.info("Clicked on Agency button.");
+                Thread.sleep(2000);
             }
         } catch (Exception e) {
             errorLogger.error("Error occurred in the agency method: " + e.getMessage());
+            Assert.fail("An error occurred while attempting to interact with agency method: " + e.getMessage());
+
         }
     }
     
@@ -84,8 +88,14 @@ public class Agency extends BaseTest {
             WebElement agencies = wait.until(ExpectedConditions.visibilityOfElementLocated(agenciesButton));
             //clicking on agencies
             agencies.click();
+            log.info("Clicked on Agencies button.");
+            Thread.sleep(2000);
+
+
     	}catch(Exception e) {
             errorLogger.error("Error occurred in the agencies method: " + e.getMessage());
+            Assert.fail("An error occurred while attempting to interact with agencies method: " + e.getMessage());
+
     	}
     }
     
@@ -98,11 +108,17 @@ public class Agency extends BaseTest {
             agencycode.clear();
             Thread.sleep(2000);
             agencycode.sendKeys(agentCode);
+            Thread.sleep(2000);
             WebElement searchbtn = wait.until(ExpectedConditions.elementToBeClickable(searchButton));
             log.info("Waiting for search button to be clickable");
             searchbtn.click();
+            log.info("Clicked on search button");
+
     	}catch (Exception e) {
             errorLogger.error("Error occurred in the search agent method: " + e.getMessage());
+            Assert.fail("An error occurred while attempting to interact with agent method: " + e.getMessage());
+
+            
     	}
     }
     
@@ -116,6 +132,8 @@ public class Agency extends BaseTest {
             newbooking.click();
     	}catch(Exception e) {
             errorLogger.error("Error occurred in the new booking method: " + e.getMessage());
+            Assert.fail("An error occurred while attempting to interact with booking method: " + e.getMessage());
+
     	}
     }
 }

@@ -12,11 +12,10 @@
         <methods>
           <include name="csu"/>
           <include name="setup"/>
-          <include name="newBooking"/>
           <include name="agent"/>
-          <include name="cruises"/>
           <include name="login"/>
           <include name="menu"/>
+          <include name="voyageTab"/>
         </methods>
       </class> <!-- tests.BookingTest -->
     </classes>

@@ -19,6 +19,8 @@ public class CruiseBooking extends BaseTest {
     WebDriver driver;
     WebDriverWait wait;
     private static final Logger log = LogManager.getLogger(CruiseBooking.class);
+    private static final Logger errorLogger = LogManager.getLogger("com.demo.ng_crs.error"); // For ERROR logs
+
 
     // Constructor to initialize WebDriver and WebDriverWait
     public CruiseBooking(WebDriver driver) {
@@ -27,6 +29,7 @@ public class CruiseBooking extends BaseTest {
     }
 
     // Locators
+    By searchButton = By.xpath("//i[@class='icon icon-search']");
     By voyageField = By.xpath("(//i[@class='icon icon-right-arrow m-l-2'])[1]");
     By packageField = By.xpath("//li[@class='cabin-content ng-star-inserted']");
     By selectSuiteField = By.xpath("//button[contains(text(),'Select Suite')]");
@@ -40,12 +43,15 @@ public class CruiseBooking extends BaseTest {
     // Method to select a voyage
     public void voyage() {
         try {
+        	log.info("Checking if there are any available cruises");
+            WebElement search = wait.until(ExpectedConditions.elementToBeClickable(searchButton));
+            search.click();
             log.info("Clicking on available cruise.");
             WebElement cruise = wait.until(ExpectedConditions.elementToBeClickable(voyageField));
             cruise.click();
             log.info("Cruise selected successfully.");
         } catch (Exception e) {
-            log.error("Error in booking method: " + e.getMessage(), e);
+            errorLogger.error("Error in booking method: " + e.getMessage(), e);
             Assert.fail("Failed to click on new booking button: " + e.getMessage());
         }
     }
@@ -81,7 +87,7 @@ public class CruiseBooking extends BaseTest {
                 log.warn("Encountered StaleElementReferenceException, retrying... Attempt " + (retryCount + 1));
                 retryCount++;
             } catch (Exception e) {
-                log.error("Error selecting package: " + e.getMessage(), e);
+            	errorLogger.error("Error selecting package: " + e.getMessage(), e);
                 Assert.fail("Failed to select a package: " + e.getMessage());
             }
         }
@@ -101,7 +107,7 @@ public class CruiseBooking extends BaseTest {
                 log.info("Select Suite button clicked successfully.");
             
         } catch (Exception e) {
-            log.error("An error occurred while suite selecting : " + e.getMessage(), e);
+        	errorLogger.error("An error occurred while suite selecting : " + e.getMessage(), e);
             Assert.fail("Failed to click on select suite button: " + e.getMessage());
         }
     }
@@ -138,7 +144,7 @@ public class CruiseBooking extends BaseTest {
                 log.warn("Encountered StaleElementReferenceException, retrying... Attempt " + (retryCount + 1));
                 retryCount++;
             } catch (Exception e) {
-                log.error("Error selecting suite: " + e.getMessage(), e);
+            	errorLogger.error("Error selecting suite: " + e.getMessage(), e);
                 Assert.fail("Failed to select a suite: " + e.getMessage());
             }
         }
@@ -171,7 +177,7 @@ public class CruiseBooking extends BaseTest {
         }
     	
     }catch (Exception e) {
-    	log.error("Error selecting item/option: " + e.getMessage(), e);
+    	errorLogger.error("Error selecting item/option: " + e.getMessage(), e);
         Assert.fail("Failed to select a item/option: " + e.getMessage());
     }
         

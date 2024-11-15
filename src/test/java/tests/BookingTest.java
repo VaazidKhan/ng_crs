@@ -1,18 +1,18 @@
 package tests;
 
-import base.BaseTest;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import base.BaseTest;
 import pages.Agency;
 import pages.CentralSetUp;
 import pages.CruiseBooking;
 import pages.LoginPage;
 import pages.MenuIcon;
-import pages.NewBooking;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import pages.Package;
+import pages.Voyage;
 
 
 public class BookingTest extends BaseTest {
@@ -20,7 +20,7 @@ public class BookingTest extends BaseTest {
     private static final Logger log = LogManager.getLogger(BaseTest.class);
     private static final Logger eLogger = LogManager.getLogger("com.demo.ng_crs.error"); // For ERROR logs
 
-
+//login
     @Test
     public void login() {
         LoginPage loginPage = new LoginPage(driver);
@@ -35,6 +35,7 @@ public class BookingTest extends BaseTest {
         }
     }
 
+ //menu
     @Test(dependsOnMethods = "login")
     public void menu() {
         MenuIcon menuicon = new MenuIcon(driver);
@@ -48,6 +49,8 @@ public class BookingTest extends BaseTest {
             Assert.fail("Test failed at Menu Icon: " + e.getMessage());
         }
     }
+    
+ //central setup
 
     @Test(dependsOnMethods = "menu")
     public void csu() {
@@ -65,6 +68,7 @@ public class BookingTest extends BaseTest {
         }
     }
 
+ //Agent
     @Test(dependsOnMethods = "csu")
     public void agent() {
         Agency agency = new Agency(driver);
@@ -112,82 +116,47 @@ public class BookingTest extends BaseTest {
 
 
     }
-
+    
     @Test(dependsOnMethods = "agent")
-    public void newBooking() {
-        NewBooking newbooking = new NewBooking(driver);
-
+    public void voyageTab() {
+        Voyage voyages = new Voyage(driver);
+        
         try {
-            newbooking.booking();
-            log.info("Clicked on New Booking.");
+            voyages.isVoyageTabSelected();
+            log.info("Verifying if the Voyage in the pipeline is selected");
         } catch (Exception e) {
-        	eLogger.error("New booking button interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at new booking: " + e.getMessage());
+        	eLogger.error("Voyage tab interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at voyage tab: " + e.getMessage());
         }
-    }
-
-    @Test(dependsOnMethods = "newBooking")
-    public void cruises() throws Exception {
-        CruiseBooking cruisebooking = new CruiseBooking(driver);
 
         try {
-            cruisebooking.voyage();
-            log.info("Random Cruise selected.");
+            voyages.voyageTab();
+            log.info("Searching for available cruises.");
+        } catch (Exception e) {
+        	eLogger.error("Cruise searching interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at VoyageTab: " + e.getMessage());
+        }
+        
+        try {
+            voyages.availableCruise();
+            log.info("Random Available Cruise selected.");
         } catch (Exception e) {
         	eLogger.error("Cruise selection interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at CruiseBooking: " + e.getMessage());
+            Assert.fail("Test failed at VoyageTab: " + e.getMessage());
         }
-
-        try {
-            cruisebooking.packages();
-            log.info("Random Package or suite selected.");
-        } catch (Exception e) {
-        	eLogger.error("Package selection interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at package selection: " + e.getMessage());
-        }
-
-        Thread.sleep(2000); // Better replaced with explicit waits
-        try {
-            cruisebooking.selectSuite();
-            log.info("Select Suite clicked.");
-        } catch (Exception e) {
-        	eLogger.error("Suite button interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at select suite button in package: " + e.getMessage());
-        }
-
-        Thread.sleep(4000); // Better replaced with explicit waits
-        try {
-            cruisebooking.suites();
-            log.info("Suite Selected.");
-        } catch (Exception e) {
-        	eLogger.error("Suite selection interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at suite selection in suites: " + e.getMessage());
-        }
-
-        Thread.sleep(2000); // Better replaced with explicit waits
-        try {
-            cruisebooking.selectSuite();
-            log.info("Select Suite clicked.");
-        } catch (Exception e) {
-        	eLogger.error("Suite button interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at select suite button in package: " + e.getMessage());
-        }
-
-        Thread.sleep(2000); // Better replaced with explicit waits
-        try {
-            cruisebooking.options();
-            log.info("Item/Option selected.");
-        } catch (Exception e) {
-        	eLogger.error("Item/Option interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at selecting item in options: " + e.getMessage());
-        }
-
-        try {
-            cruisebooking.proceedToBooking();
-            log.info("Proceed to Booking button selected.");
-        } catch (Exception e) {
-        	eLogger.error("Proceed to Booking button interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at Proceed to Booking: " + e.getMessage());
-        }
+      
+    }
+    
+    @Test(dependsOnMethods = "voyageTab")
+    public void packageTab() {
+    	Package packageVoy= new Package(driver);
+        
+    	try {
+    		packageVoy.packages();
+    		log.info("Selected package");
+    	}catch(Exception e) {
+    		eLogger.error("Package selection interaction failed at: " + e.getMessage(), e);
+            Assert.fail("Test failed at PackageTab: " + e.getMessage());
+    	}
     }
 }
