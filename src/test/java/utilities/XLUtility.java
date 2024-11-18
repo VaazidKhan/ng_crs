@@ -123,7 +123,7 @@ public class XLUtility {
 		style = workbook.createCellStyle();
 		
 		style.setFillForegroundColor(IndexedColors.GREEN.getIndex());
-		style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+		style.setFillPattern(FillPatternType.SOLID_FOREGROUND); 
 		
 		cell.setCellStyle(style);
 		workbook.write(fo);

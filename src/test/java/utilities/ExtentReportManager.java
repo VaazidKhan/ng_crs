@@ -29,21 +29,23 @@ public class ExtentReportManager implements ITestListener {
     private static ExtentTest test;
     private static Properties config;
     private static final Logger log = Logger.getLogger(ExtentReportManager.class);
-
+    
+    String filePath = "src/main/resources/config.properties";
     String repName;
+    String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date()); // time stamp
 
+    
     @Override
     public void onStart(ITestContext testContext) {
         // Load config properties
         config = new Properties();
         try {
-            FileInputStream fis = new FileInputStream("src/main/resources/config.properties");
+            FileInputStream fis = new FileInputStream(filePath);
             config.load(fis);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date()); // time stamp
         repName = "Test-Report-" + timeStamp + ".html";
 
         // Ensure reports directory exists
@@ -69,8 +71,7 @@ public class ExtentReportManager implements ITestListener {
     @Override
     public void onFinish(ITestContext testContext) {
         // Log end time
-        String endTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
-        log.info("Test finished at: " + endTime);
+        log.info("Test finished at: " + timeStamp);
 
         extent.flush(); // Writes the test report once the execution is completed
     }
@@ -117,7 +118,6 @@ public class ExtentReportManager implements ITestListener {
 
     // Utility method to capture screenshots
     public String captureScreenshot(WebDriver driver, String testName) {
-        String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
 
@@ -128,7 +128,7 @@ public class ExtentReportManager implements ITestListener {
             destDir.mkdirs();
         }
 
-        String destination = screenshotsDir + testName + "_" + dateName + ".png";
+        String destination = screenshotsDir + testName + "_" + timeStamp + ".png";
         File finalDestination = new File(destination);
         try {
             FileHandler.copy(source, finalDestination); // Save screenshot

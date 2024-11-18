@@ -1,671 +1,181 @@
-2024-11-15 14:32:31.536 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
-2024-11-15 14:32:31.541 [main] INFO  pages.LoginPage - Waiting for username field to be visible
-2024-11-15 14:32:36.260 [main] INFO  pages.LoginPage - Username field is now visible
-2024-11-15 14:32:36.391 [main] INFO  pages.LoginPage - Username inserted successfully
-2024-11-15 14:32:36.472 [main] INFO  pages.LoginPage - Password inserted successfully
-2024-11-15 14:32:36.955 [main] INFO  pages.LoginPage - Login button clicked
-2024-11-15 14:32:40.832 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
-2024-11-15 14:32:40.832 [main] INFO  base.BaseTest - Login successful.
-2024-11-15 14:32:44.887 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
-2024-11-15 14:32:45.048 [main] INFO  pages.MenuIcon - Menu icon clicked
-2024-11-15 14:32:45.049 [main] INFO  base.BaseTest - Clicked on menu icon.
-2024-11-15 14:32:49.179 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
-2024-11-15 14:32:59.973 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
-2024-11-15 14:32:59.973 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
-2024-11-15 14:32:59.973 [main] INFO  base.BaseTest - Switched to the new tab successfully.
-2024-11-15 14:33:00.506 [main] INFO  pages.Agency - Overlay disappeared.
-2024-11-15 14:33:00.506 [main] INFO  base.BaseTest - Waiting for the overlay to end
-2024-11-15 14:33:03.862 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
-2024-11-15 14:33:06.963 [main] INFO  pages.Agency - Clicked on Agency button.
-2024-11-15 14:33:06.963 [main] INFO  base.BaseTest - Clicked on Agency option.
-2024-11-15 14:33:08.396 [main] INFO  base.BaseTest - Clicked on agencies button.
-2024-11-15 14:33:08.397 [main] INFO  base.BaseTest - Attempting to send agency code.
-2024-11-15 14:33:08.477 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
-2024-11-15 14:33:11.066 [main] INFO  pages.Agency - Waiting for search button to be clickable
-2024-11-15 14:33:11.159 [main] INFO  base.BaseTest - Clicked on agency code field.
-2024-11-15 14:33:13.776 [main] INFO  base.BaseTest - Clicked on new booking button.
-2024-11-15 14:33:13.792 [main] INFO  pages.NewBooking - Clicking on New Booking.
+2024-11-18 10:37:52.401 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
+2024-11-18 10:37:52.406 [main] INFO  pages.LoginPage - Waiting for username field to be visible
+2024-11-18 10:37:58.435 [main] INFO  pages.LoginPage - Username field is now visible
+2024-11-18 10:37:58.568 [main] INFO  pages.LoginPage - Username inserted successfully
+2024-11-18 10:37:58.646 [main] INFO  pages.LoginPage - Password inserted successfully
+2024-11-18 10:37:59.111 [main] INFO  pages.LoginPage - Login button clicked
+2024-11-18 10:38:11.425 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
+2024-11-18 10:38:11.426 [main] INFO  base.BaseTest - Login successful.
+2024-11-18 10:38:15.456 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
+2024-11-18 10:38:15.612 [main] INFO  pages.MenuIcon - Menu icon clicked
+2024-11-18 10:38:15.612 [main] INFO  base.BaseTest - Clicked on menu icon.
+2024-11-18 10:38:19.729 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
+2024-11-18 10:38:28.425 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-11-18 10:38:28.425 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
+2024-11-18 10:38:28.426 [main] INFO  base.BaseTest - Switched to the new tab successfully.
+2024-11-18 10:38:29.021 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 10:38:29.022 [main] INFO  base.BaseTest - Waiting for the overlay to end
+2024-11-18 10:38:32.279 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
+2024-11-18 10:38:35.347 [main] INFO  pages.Agency - Clicked on Agency button.
+2024-11-18 10:38:37.360 [main] INFO  base.BaseTest - Clicked on Agency option.
+2024-11-18 10:38:37.478 [main] INFO  pages.Agency - Clicked on Agencies button.
+2024-11-18 10:38:39.495 [main] INFO  base.BaseTest - Clicked on agencies button.
+2024-11-18 10:38:39.495 [main] INFO  base.BaseTest - Attempting to send agency code.
+2024-11-18 10:38:39.536 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
+2024-11-18 10:38:47.094 [main] INFO  pages.Agency - Waiting for search button to be clickable
+2024-11-18 10:38:50.226 [main] INFO  pages.Agency - Clicked on search button
+2024-11-18 10:38:50.226 [main] INFO  base.BaseTest - Clicked on agency code field.
+2024-11-18 10:38:52.026 [main] INFO  base.BaseTest - Clicked on new booking button.
+2024-11-18 10:38:52.060 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
+2024-11-18 10:38:53.642 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
+2024-11-18 10:38:53.642 [main] INFO  base.BaseTest - Verifying if the Voyage in the pipeline is selected
+2024-11-18 10:38:53.642 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
+2024-11-18 10:38:53.876 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
+2024-11-18 10:38:53.876 [main] INFO  pages.Voyage - Voyage tab is currently active.
+2024-11-18 10:38:54.065 [main] INFO  pages.Voyage - Click on search button in voyage
+2024-11-18 10:38:54.065 [main] INFO  base.BaseTest - Searching for available cruises.
+2024-11-18 10:38:55.154 [main] INFO  pages.Voyage - Checking if the cruise has a green mark (availability icon) and availability count greater than 2
+2024-11-18 10:38:55.468 [main] INFO  pages.Voyage - Selected a cruise with availability greater than 2.
+2024-11-18 10:38:55.469 [main] INFO  base.BaseTest - Random Available Cruise selected.
+2024-11-18 10:38:55.475 [main] INFO  pages.Package - Verifying if the UI is in the 'Package' tab.
+2024-11-18 10:39:00.043 [main] INFO  pages.Package - Package tab is correctly selected and highlighted in the pipeline.
+2024-11-18 10:39:00.043 [main] INFO  base.BaseTest - Verifying if the Package in the pipeline is selected
+2024-11-18 10:39:00.043 [main] INFO  pages.Package - Checking if any packages are available.
+2024-11-18 10:39:00.132 [main] INFO  pages.Package - Package selected successfully.
+2024-11-18 10:39:00.132 [main] INFO  base.BaseTest - Selected package
+2024-11-18 10:39:00.132 [main] INFO  pages.Package - Waiting for the Select Suite button to be clickable.
+2024-11-18 10:39:00.291 [main] INFO  pages.Package - Select Suite button clicked successfully.
+2024-11-18 10:39:00.291 [main] INFO  base.BaseTest - Select Suite button clicked
+2024-11-18 10:39:00.296 [main] INFO  pages.Package - Verifying if the UI is in the 'Suite(s)' tab.
+2024-11-18 10:39:00.424 [main] INFO  base.BaseTest - Verifying if the Suites in the pipeline is selected
+2024-11-18 10:39:00.424 [main] INFO  pages.Package - Checking available suites.
 -------------------------------------------------
-Log End: 2024-11-15T14:33:16.956740500
+Log End: 2024-11-18T10:39:04.807388100
 -------------------------------------------------
 
 -------------------------------------------------
 Name: supportuser2
-Log Start: 2024-11-15T17:00:10.464919300
+Log Start: 2024-11-18T10:40:18.158653700
 Java Version: 23.0.1
 Operating System: Windows 11
 System Name: DESKTOP-KR6B0UD
 -------------------------------------------------
 
-2024-11-15 17:00:12.823 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
-2024-11-15 17:00:12.827 [main] INFO  pages.LoginPage - Waiting for username field to be visible
-2024-11-15 17:00:15.913 [main] INFO  pages.LoginPage - Username field is now visible
-2024-11-15 17:00:15.993 [main] INFO  pages.LoginPage - Username inserted successfully
-2024-11-15 17:00:16.066 [main] INFO  pages.LoginPage - Password inserted successfully
-2024-11-15 17:00:16.445 [main] INFO  pages.LoginPage - Login button clicked
-2024-11-15 17:00:21.170 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
-2024-11-15 17:00:21.170 [main] INFO  base.BaseTest - Login successful.
-2024-11-15 17:00:25.196 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
-2024-11-15 17:00:25.316 [main] INFO  pages.MenuIcon - Menu icon clicked
-2024-11-15 17:00:25.316 [main] INFO  base.BaseTest - Clicked on menu icon.
-2024-11-15 17:00:29.430 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
-2024-11-15 17:00:37.502 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
-2024-11-15 17:00:37.502 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
-2024-11-15 17:00:37.502 [main] INFO  base.BaseTest - Switched to the new tab successfully.
-2024-11-15 17:00:38.090 [main] INFO  pages.Agency - Overlay disappeared.
-2024-11-15 17:00:38.091 [main] INFO  base.BaseTest - Waiting for the overlay to end
-2024-11-15 17:00:41.473 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
-2024-11-15 17:00:44.620 [main] INFO  pages.Agency - Clicked on Agency button.
-2024-11-15 17:00:44.620 [main] INFO  base.BaseTest - Clicked on Agency option.
-2024-11-15 17:00:46.005 [main] INFO  base.BaseTest - Clicked on agencies button.
-2024-11-15 17:00:46.005 [main] INFO  base.BaseTest - Attempting to send agency code.
-2024-11-15 17:00:46.042 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
-2024-11-15 17:00:48.680 [main] INFO  pages.Agency - Waiting for search button to be clickable
-2024-11-15 17:00:48.746 [main] INFO  base.BaseTest - Clicked on agency code field.
-2024-11-15 17:00:50.630 [main] INFO  base.BaseTest - Clicked on new booking button.
-2024-11-15 17:00:50.644 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
-2024-11-15 17:00:50.663 [main] INFO  base.BaseTest - Verifying if the Voyage in the pipeline is selected
-2024-11-15 17:00:50.664 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
-2024-11-15 17:00:50.664 [main] INFO  base.BaseTest - Searching for avaolable cruises.
+2024-11-18 10:40:19.712 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
+2024-11-18 10:40:19.714 [main] INFO  pages.LoginPage - Waiting for username field to be visible
+2024-11-18 10:40:23.342 [main] INFO  pages.LoginPage - Username field is now visible
+2024-11-18 10:40:23.434 [main] INFO  pages.LoginPage - Username inserted successfully
+2024-11-18 10:40:23.509 [main] INFO  pages.LoginPage - Password inserted successfully
+2024-11-18 10:40:28.061 [main] INFO  pages.LoginPage - Login button clicked
+2024-11-18 10:40:28.317 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
+2024-11-18 10:40:28.318 [main] INFO  base.BaseTest - Login successful.
+2024-11-18 10:40:32.341 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
+2024-11-18 10:40:32.472 [main] INFO  pages.MenuIcon - Menu icon clicked
+2024-11-18 10:40:32.472 [main] INFO  base.BaseTest - Clicked on menu icon.
+2024-11-18 10:40:36.662 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
+2024-11-18 10:40:49.649 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-11-18 10:40:49.649 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
+2024-11-18 10:40:49.649 [main] INFO  base.BaseTest - Switched to the new tab successfully.
+2024-11-18 10:40:50.282 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 10:40:50.282 [main] INFO  base.BaseTest - Waiting for the overlay to end
+2024-11-18 10:40:53.312 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
+2024-11-18 10:40:56.423 [main] INFO  pages.Agency - Clicked on Agency button.
+2024-11-18 10:40:58.441 [main] INFO  base.BaseTest - Clicked on Agency option.
+2024-11-18 10:40:58.530 [main] INFO  pages.Agency - Clicked on Agencies button.
+2024-11-18 10:41:00.556 [main] INFO  base.BaseTest - Clicked on agencies button.
+2024-11-18 10:41:00.556 [main] INFO  base.BaseTest - Attempting to send agency code.
+2024-11-18 10:41:00.640 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
+2024-11-18 10:41:08.261 [main] INFO  pages.Agency - Waiting for search button to be clickable
+2024-11-18 10:41:11.371 [main] INFO  pages.Agency - Clicked on search button
+2024-11-18 10:41:11.371 [main] INFO  base.BaseTest - Clicked on agency code field.
+2024-11-18 10:41:13.138 [main] INFO  base.BaseTest - Clicked on new booking button.
+2024-11-18 10:41:13.158 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
+2024-11-18 10:41:14.879 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
+2024-11-18 10:41:14.879 [main] INFO  base.BaseTest - Verifying if the Voyage in the pipeline is selected
+2024-11-18 10:41:14.879 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
+2024-11-18 10:41:15.008 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
+2024-11-18 10:41:15.008 [main] INFO  pages.Voyage - Voyage tab is currently active.
+2024-11-18 10:41:15.153 [main] INFO  pages.Voyage - Click on search button in voyage
+2024-11-18 10:41:15.153 [main] INFO  base.BaseTest - Searching for available cruises.
+2024-11-18 10:41:17.411 [main] INFO  pages.Voyage - Checking if the cruise has a green mark (availability icon) and availability count greater than 2
+2024-11-18 10:41:17.533 [main] INFO  pages.Voyage - Selected a cruise with availability greater than 2.
+2024-11-18 10:41:17.533 [main] INFO  base.BaseTest - Random Available Cruise selected.
+2024-11-18 10:41:17.537 [main] INFO  pages.Package - Verifying if the UI is in the 'Package' tab.
+2024-11-18 10:41:21.229 [main] INFO  pages.Package - Package tab is correctly selected and highlighted in the pipeline.
+2024-11-18 10:41:21.229 [main] INFO  base.BaseTest - Verifying if the Package in the pipeline is selected
+2024-11-18 10:41:21.229 [main] INFO  pages.Package - Checking if any packages are available.
+2024-11-18 10:41:21.448 [main] INFO  pages.Package - Package selected successfully.
+2024-11-18 10:41:21.448 [main] INFO  base.BaseTest - Selected package
+2024-11-18 10:41:21.448 [main] INFO  pages.Package - Waiting for the Select Suite button to be clickable.
+2024-11-18 10:41:21.528 [main] INFO  pages.Package - Select Suite button clicked successfully.
+2024-11-18 10:41:21.528 [main] INFO  base.BaseTest - Select Suite button clicked
+2024-11-18 10:41:21.536 [main] INFO  pages.Package - Verifying if the UI is in the 'Suite(s)' tab.
+2024-11-18 10:41:21.720 [main] INFO  base.BaseTest - Verifying if the Suites in the pipeline is selected
+2024-11-18 10:41:21.720 [main] INFO  pages.Package - Checking available suites.
 -------------------------------------------------
-Log End: 2024-11-15T17:00:52.018923900
+Log End: 2024-11-18T10:41:25.132126800
 -------------------------------------------------
 
 -------------------------------------------------
 Name: supportuser2
-Log Start: 2024-11-15T17:05:46.247354600
+Log Start: 2024-11-18T10:43:10.296262500
 Java Version: 23.0.1
 Operating System: Windows 11
 System Name: DESKTOP-KR6B0UD
 -------------------------------------------------
 
-2024-11-15 17:05:47.704 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
-2024-11-15 17:05:47.706 [main] INFO  pages.LoginPage - Waiting for username field to be visible
-2024-11-15 17:05:50.219 [main] INFO  pages.LoginPage - Username field is now visible
-2024-11-15 17:05:50.342 [main] INFO  pages.LoginPage - Username inserted successfully
-2024-11-15 17:05:50.431 [main] INFO  pages.LoginPage - Password inserted successfully
-2024-11-15 17:05:53.873 [main] INFO  pages.LoginPage - Login button clicked
-2024-11-15 17:05:54.079 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
-2024-11-15 17:05:54.079 [main] INFO  base.BaseTest - Login successful.
-2024-11-15 17:05:58.099 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
-2024-11-15 17:05:58.335 [main] INFO  pages.MenuIcon - Menu icon clicked
-2024-11-15 17:05:58.335 [main] INFO  base.BaseTest - Clicked on menu icon.
-2024-11-15 17:06:02.482 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
-2024-11-15 17:06:11.695 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
-2024-11-15 17:06:11.696 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
-2024-11-15 17:06:11.696 [main] INFO  base.BaseTest - Switched to the new tab successfully.
-2024-11-15 17:06:12.366 [main] INFO  pages.Agency - Overlay disappeared.
-2024-11-15 17:06:12.366 [main] INFO  base.BaseTest - Waiting for the overlay to end
-2024-11-15 17:06:15.799 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
-2024-11-15 17:06:18.915 [main] INFO  pages.Agency - Clicked on Agency button.
-2024-11-15 17:06:18.915 [main] INFO  base.BaseTest - Clicked on Agency option.
-2024-11-15 17:06:20.306 [main] INFO  base.BaseTest - Clicked on agencies button.
-2024-11-15 17:06:20.306 [main] INFO  base.BaseTest - Attempting to send agency code.
-2024-11-15 17:06:20.370 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
-2024-11-15 17:06:22.975 [main] INFO  pages.Agency - Waiting for search button to be clickable
-2024-11-15 17:06:23.046 [main] INFO  base.BaseTest - Clicked on agency code field.
-2024-11-15 17:06:25.435 [main] INFO  base.BaseTest - Clicked on new booking button.
-2024-11-15 17:06:25.446 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
-2024-11-15 17:07:25.565 [main] INFO  base.BaseTest - Verifying if the Voyage in the pipeline is selected
-2024-11-15 17:07:25.565 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
+2024-11-18 10:43:12.308 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
+2024-11-18 10:43:12.310 [main] INFO  pages.LoginPage - Waiting for username field to be visible
+2024-11-18 10:43:16.157 [main] INFO  pages.LoginPage - Username field is now visible
+2024-11-18 10:43:16.241 [main] INFO  pages.LoginPage - Username inserted successfully
+2024-11-18 10:43:16.311 [main] INFO  pages.LoginPage - Password inserted successfully
+2024-11-18 10:43:16.688 [main] INFO  pages.LoginPage - Login button clicked
+2024-11-18 10:43:22.452 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
+2024-11-18 10:43:22.452 [main] INFO  base.BaseTest - Login successful.
+2024-11-18 10:43:26.480 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
+2024-11-18 10:43:26.580 [main] INFO  pages.MenuIcon - Menu icon clicked
+2024-11-18 10:43:26.580 [main] INFO  base.BaseTest - Clicked on menu icon.
+2024-11-18 10:43:30.777 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
+2024-11-18 10:43:39.181 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-11-18 10:43:39.181 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
+2024-11-18 10:43:39.181 [main] INFO  base.BaseTest - Switched to the new tab successfully.
+2024-11-18 10:43:39.792 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 10:43:39.792 [main] INFO  base.BaseTest - Waiting for the overlay to end
+2024-11-18 10:43:42.881 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
+2024-11-18 10:43:45.931 [main] INFO  pages.Agency - Clicked on Agency button.
+2024-11-18 10:43:47.946 [main] INFO  base.BaseTest - Clicked on Agency option.
+2024-11-18 10:43:48.034 [main] INFO  pages.Agency - Clicked on Agencies button.
+2024-11-18 10:43:50.050 [main] INFO  base.BaseTest - Clicked on agencies button.
+2024-11-18 10:43:50.050 [main] INFO  base.BaseTest - Attempting to send agency code.
+2024-11-18 10:43:50.100 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
+2024-11-18 10:43:57.725 [main] INFO  pages.Agency - Waiting for search button to be clickable
+2024-11-18 10:44:00.815 [main] INFO  pages.Agency - Clicked on search button
+2024-11-18 10:44:00.815 [main] INFO  base.BaseTest - Clicked on agency code field.
+2024-11-18 10:44:03.252 [main] INFO  base.BaseTest - Clicked on new booking button.
+2024-11-18 10:44:03.263 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
+2024-11-18 10:44:05.612 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
+2024-11-18 10:44:05.612 [main] INFO  base.BaseTest - Verifying if the Voyage in the pipeline is selected
+2024-11-18 10:44:05.612 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
+2024-11-18 10:44:05.774 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
+2024-11-18 10:44:05.774 [main] INFO  pages.Voyage - Voyage tab is currently active.
+2024-11-18 10:44:06.011 [main] INFO  pages.Voyage - Click on search button in voyage
+2024-11-18 10:44:06.011 [main] INFO  base.BaseTest - Searching for available cruises.
+2024-11-18 10:44:08.217 [main] INFO  pages.Voyage - Checking if the cruise has a green mark (availability icon) and availability count greater than 2
+2024-11-18 10:44:08.411 [main] INFO  pages.Voyage - Selected a cruise with availability greater than 2.
+2024-11-18 10:44:08.411 [main] INFO  base.BaseTest - Random Available Cruise selected.
+2024-11-18 10:44:08.411 [main] INFO  pages.Package - Verifying if the UI is in the 'Package' tab.
+2024-11-18 10:44:10.743 [main] INFO  pages.Package - Package tab is correctly selected and highlighted in the pipeline.
+2024-11-18 10:44:10.743 [main] INFO  base.BaseTest - Verifying if the Package in the pipeline is selected
+2024-11-18 10:44:10.743 [main] INFO  pages.Package - Checking if any packages are available.
+2024-11-18 10:44:12.233 [main] INFO  pages.Package - Package selected successfully.
+2024-11-18 10:44:12.233 [main] INFO  base.BaseTest - Selected package
+2024-11-18 10:44:12.233 [main] INFO  pages.Package - Waiting for the Select Suite button to be clickable.
+2024-11-18 10:44:12.310 [main] INFO  pages.Package - Select Suite button clicked successfully.
+2024-11-18 10:44:12.310 [main] INFO  base.BaseTest - Select Suite button clicked
+2024-11-18 10:44:12.310 [main] INFO  pages.Package - Verifying if the UI is in the 'Suite(s)' tab.
+2024-11-18 10:44:12.376 [main] INFO  base.BaseTest - Verifying if the Suites in the pipeline is selected
+2024-11-18 10:44:12.376 [main] INFO  pages.Package - Checking available suites.
 -------------------------------------------------
-Log End: 2024-11-15T17:08:26.126504600
--------------------------------------------------
-
--------------------------------------------------
-Name: supportuser2
-Log Start: 2024-11-15T17:13:03.380978100
-Java Version: 23.0.1
-Operating System: Windows 11
-System Name: DESKTOP-KR6B0UD
--------------------------------------------------
-
-2024-11-15 17:13:04.965 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
-2024-11-15 17:13:04.967 [main] INFO  pages.LoginPage - Waiting for username field to be visible
-2024-11-15 17:13:07.601 [main] INFO  pages.LoginPage - Username field is now visible
-2024-11-15 17:13:07.682 [main] INFO  pages.LoginPage - Username inserted successfully
-2024-11-15 17:13:07.740 [main] INFO  pages.LoginPage - Password inserted successfully
-2024-11-15 17:13:08.091 [main] INFO  pages.LoginPage - Login button clicked
-2024-11-15 17:13:14.230 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
-2024-11-15 17:13:14.231 [main] INFO  base.BaseTest - Login successful.
-2024-11-15 17:13:18.249 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
-2024-11-15 17:13:18.380 [main] INFO  pages.MenuIcon - Menu icon clicked
-2024-11-15 17:13:18.380 [main] INFO  base.BaseTest - Clicked on menu icon.
-2024-11-15 17:13:22.543 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
-2024-11-15 17:13:34.467 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
-2024-11-15 17:13:34.467 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
-2024-11-15 17:13:34.467 [main] INFO  base.BaseTest - Switched to the new tab successfully.
-2024-11-15 17:13:35.006 [main] INFO  pages.Agency - Overlay disappeared.
-2024-11-15 17:13:35.006 [main] INFO  base.BaseTest - Waiting for the overlay to end
-2024-11-15 17:13:38.259 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
-2024-11-15 17:13:41.744 [main] INFO  pages.Agency - Clicked on Agency button.
-2024-11-15 17:13:41.744 [main] INFO  base.BaseTest - Clicked on Agency option.
--------------------------------------------------
-Log End: 2024-11-15T17:13:43.505252900
--------------------------------------------------
-
--------------------------------------------------
-Name: supportuser2
-Log Start: 2024-11-15T17:14:00.014381800
-Java Version: 23.0.1
-Operating System: Windows 11
-System Name: DESKTOP-KR6B0UD
--------------------------------------------------
-
-2024-11-15 17:14:01.542 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
-2024-11-15 17:14:01.544 [main] INFO  pages.LoginPage - Waiting for username field to be visible
-2024-11-15 17:14:04.214 [main] INFO  pages.LoginPage - Username field is now visible
-2024-11-15 17:14:04.340 [main] INFO  pages.LoginPage - Username inserted successfully
-2024-11-15 17:14:04.416 [main] INFO  pages.LoginPage - Password inserted successfully
-2024-11-15 17:14:04.768 [main] INFO  pages.LoginPage - Login button clicked
-2024-11-15 17:14:09.659 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
-2024-11-15 17:14:09.659 [main] INFO  base.BaseTest - Login successful.
-2024-11-15 17:14:13.685 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
-2024-11-15 17:14:13.792 [main] INFO  pages.MenuIcon - Menu icon clicked
-2024-11-15 17:14:13.792 [main] INFO  base.BaseTest - Clicked on menu icon.
-2024-11-15 17:14:17.903 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
-2024-11-15 17:14:26.031 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS - Home Page
-2024-11-15 17:14:26.032 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
-2024-11-15 17:14:26.032 [main] INFO  base.BaseTest - Switched to the new tab successfully.
-2024-11-15 17:14:26.068 [main] INFO  pages.Agency - Overlay disappeared.
-2024-11-15 17:14:26.069 [main] INFO  base.BaseTest - Waiting for the overlay to end
-2024-11-15 17:14:29.394 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
-2024-11-15 17:14:32.432 [main] INFO  pages.Agency - Clicked on Agency button.
-2024-11-15 17:14:32.433 [main] INFO  base.BaseTest - Clicked on Agency option.
--------------------------------------------------
-Log End: 2024-11-15T17:14:34.718704800
--------------------------------------------------
-
--------------------------------------------------
-Name: supportuser2
-Log Start: 2024-11-15T17:18:03.956487300
-Java Version: 23.0.1
-Operating System: Windows 11
-System Name: DESKTOP-KR6B0UD
--------------------------------------------------
-
-2024-11-15 17:18:05.503 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
-2024-11-15 17:18:05.505 [main] INFO  pages.LoginPage - Waiting for username field to be visible
-2024-11-15 17:18:09.755 [main] INFO  pages.LoginPage - Username field is now visible
-2024-11-15 17:18:09.826 [main] INFO  pages.LoginPage - Username inserted successfully
-2024-11-15 17:18:09.914 [main] INFO  pages.LoginPage - Password inserted successfully
-2024-11-15 17:18:10.319 [main] INFO  pages.LoginPage - Login button clicked
-2024-11-15 17:18:16.606 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
-2024-11-15 17:18:16.606 [main] INFO  base.BaseTest - Login successful.
-2024-11-15 17:18:20.628 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
-2024-11-15 17:18:20.722 [main] INFO  pages.MenuIcon - Menu icon clicked
-2024-11-15 17:18:20.722 [main] INFO  base.BaseTest - Clicked on menu icon.
-2024-11-15 17:18:24.873 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
-2024-11-15 17:18:38.599 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
-2024-11-15 17:18:38.599 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
-2024-11-15 17:18:38.600 [main] INFO  base.BaseTest - Switched to the new tab successfully.
-2024-11-15 17:18:39.159 [main] INFO  pages.Agency - Overlay disappeared.
-2024-11-15 17:18:39.161 [main] INFO  base.BaseTest - Waiting for the overlay to end
-2024-11-15 17:18:42.532 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
-2024-11-15 17:18:45.704 [main] INFO  pages.Agency - Clicked on Agency button.
-2024-11-15 17:18:47.704 [main] INFO  base.BaseTest - Clicked on Agency option.
-2024-11-15 17:18:47.833 [main] INFO  pages.Agency - Clicked on Agencies button.
-2024-11-15 17:18:49.833 [main] INFO  base.BaseTest - Clicked on agencies button.
-2024-11-15 17:18:49.833 [main] INFO  base.BaseTest - Attempting to send agency code.
-2024-11-15 17:18:49.882 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
-2024-11-15 17:18:54.465 [main] INFO  pages.Agency - Waiting for search button to be clickable
-2024-11-15 17:18:54.543 [main] INFO  pages.Agency - Clicked on search button
-2024-11-15 17:18:54.543 [main] INFO  base.BaseTest - Clicked on agency code field.
-2024-11-15 17:18:56.459 [main] INFO  base.BaseTest - Clicked on new booking button.
-2024-11-15 17:18:56.474 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
-2024-11-15 17:18:58.150 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
-2024-11-15 17:18:58.151 [main] INFO  base.BaseTest - Verifying if the Voyage in the pipeline is selected
-2024-11-15 17:18:58.151 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
-2024-11-15 17:18:58.297 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
-2024-11-15 17:18:58.297 [main] INFO  pages.Voyage - Voyage tab is currently active.
-2024-11-15 17:18:58.658 [main] INFO  pages.Voyage - Click on search button in voyage
-2024-11-15 17:18:58.659 [main] INFO  base.BaseTest - Searching for available cruises.
-2024-11-15 17:19:00.239 [main] INFO  pages.Voyage - Checking if the cruise has a green mark (availability icon) and availability count greater than 2
-2024-11-15 17:19:00.565 [main] INFO  pages.Voyage - Selected a cruise with availability greater than 2.
-2024-11-15 17:19:00.566 [main] INFO  base.BaseTest - Random Available Cruise selected.
--------------------------------------------------
-Log End: 2024-11-15T17:19:00.973006
--------------------------------------------------
-
--------------------------------------------------
-Name: supportuser2
-Log Start: 2024-11-15T17:31:20.155649900
-Java Version: 23.0.1
-Operating System: Windows 11
-System Name: DESKTOP-KR6B0UD
--------------------------------------------------
-
-2024-11-15 17:31:21.640 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
-2024-11-15 17:31:21.642 [main] INFO  pages.LoginPage - Waiting for username field to be visible
-2024-11-15 17:31:24.550 [main] INFO  pages.LoginPage - Username field is now visible
-2024-11-15 17:31:24.649 [main] INFO  pages.LoginPage - Username inserted successfully
-2024-11-15 17:31:24.721 [main] INFO  pages.LoginPage - Password inserted successfully
-2024-11-15 17:31:25.080 [main] INFO  pages.LoginPage - Login button clicked
-2024-11-15 17:31:27.696 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
-2024-11-15 17:31:27.696 [main] INFO  base.BaseTest - Login successful.
-2024-11-15 17:31:31.726 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
-2024-11-15 17:31:31.841 [main] INFO  pages.MenuIcon - Menu icon clicked
-2024-11-15 17:31:31.842 [main] INFO  base.BaseTest - Clicked on menu icon.
-2024-11-15 17:31:35.971 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
-2024-11-15 17:31:43.906 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
-2024-11-15 17:31:43.906 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
-2024-11-15 17:31:43.907 [main] INFO  base.BaseTest - Switched to the new tab successfully.
-2024-11-15 17:31:44.465 [main] INFO  pages.Agency - Overlay disappeared.
-2024-11-15 17:31:44.466 [main] INFO  base.BaseTest - Waiting for the overlay to end
-2024-11-15 17:31:47.769 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
-2024-11-15 17:31:50.907 [main] INFO  pages.Agency - Clicked on Agency button.
-2024-11-15 17:31:52.909 [main] INFO  base.BaseTest - Clicked on Agency option.
-2024-11-15 17:31:52.994 [main] INFO  pages.Agency - Clicked on Agencies button.
-2024-11-15 17:31:54.995 [main] INFO  base.BaseTest - Clicked on agencies button.
-2024-11-15 17:31:54.995 [main] INFO  base.BaseTest - Attempting to send agency code.
-2024-11-15 17:31:55.073 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
-2024-11-15 17:31:59.681 [main] INFO  pages.Agency - Waiting for search button to be clickable
-2024-11-15 17:31:59.756 [main] INFO  pages.Agency - Clicked on search button
-2024-11-15 17:31:59.756 [main] INFO  base.BaseTest - Clicked on agency code field.
-2024-11-15 17:32:01.967 [main] INFO  base.BaseTest - Clicked on new booking button.
-2024-11-15 17:32:01.977 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
-2024-11-15 17:32:03.867 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
-2024-11-15 17:32:03.868 [main] INFO  base.BaseTest - Verifying if the Voyage in the pipeline is selected
-2024-11-15 17:32:03.868 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
-2024-11-15 17:32:03.959 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
-2024-11-15 17:32:03.959 [main] INFO  pages.Voyage - Voyage tab is currently active.
-2024-11-15 17:32:04.153 [main] INFO  pages.Voyage - Click on search button in voyage
-2024-11-15 17:32:04.154 [main] INFO  base.BaseTest - Searching for available cruises.
-2024-11-15 17:32:04.741 [main] INFO  pages.Voyage - Checking if the cruise has a green mark (availability icon) and availability count greater than 2
-2024-11-15 17:32:05.102 [main] INFO  pages.Voyage - Selected a cruise with availability greater than 2.
-2024-11-15 17:32:05.102 [main] INFO  base.BaseTest - Random Available Cruise selected.
--------------------------------------------------
-Log End: 2024-11-15T17:32:05.519489500
--------------------------------------------------
-
--------------------------------------------------
-Name: supportuser2
-Log Start: 2024-11-15T17:33:29.265203300
-Java Version: 23.0.1
-Operating System: Windows 11
-System Name: DESKTOP-KR6B0UD
--------------------------------------------------
-
-2024-11-15 17:33:30.777 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
-2024-11-15 17:33:30.779 [main] INFO  pages.LoginPage - Waiting for username field to be visible
-2024-11-15 17:33:34.253 [main] INFO  pages.LoginPage - Username field is now visible
-2024-11-15 17:33:34.322 [main] INFO  pages.LoginPage - Username inserted successfully
-2024-11-15 17:33:34.372 [main] INFO  pages.LoginPage - Password inserted successfully
-2024-11-15 17:33:34.729 [main] INFO  pages.LoginPage - Login button clicked
-2024-11-15 17:33:38.995 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
-2024-11-15 17:33:38.995 [main] INFO  base.BaseTest - Login successful.
-2024-11-15 17:33:43.020 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
-2024-11-15 17:33:43.127 [main] INFO  pages.MenuIcon - Menu icon clicked
-2024-11-15 17:33:43.128 [main] INFO  base.BaseTest - Clicked on menu icon.
-2024-11-15 17:33:47.248 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
-2024-11-15 17:33:55.215 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
-2024-11-15 17:33:55.215 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
-2024-11-15 17:33:55.216 [main] INFO  base.BaseTest - Switched to the new tab successfully.
-2024-11-15 17:33:55.671 [main] INFO  pages.Agency - Overlay disappeared.
-2024-11-15 17:33:55.671 [main] INFO  base.BaseTest - Waiting for the overlay to end
-2024-11-15 17:33:59.056 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
-2024-11-15 17:34:02.382 [main] INFO  pages.Agency - Clicked on Agency button.
-2024-11-15 17:34:04.383 [main] INFO  base.BaseTest - Clicked on Agency option.
-2024-11-15 17:34:04.495 [main] INFO  pages.Agency - Clicked on Agencies button.
-2024-11-15 17:34:06.496 [main] INFO  base.BaseTest - Clicked on agencies button.
-2024-11-15 17:34:06.497 [main] INFO  base.BaseTest - Attempting to send agency code.
-2024-11-15 17:34:06.546 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
-2024-11-15 17:34:11.140 [main] INFO  pages.Agency - Waiting for search button to be clickable
-2024-11-15 17:34:11.212 [main] INFO  pages.Agency - Clicked on search button
-2024-11-15 17:34:11.212 [main] INFO  base.BaseTest - Clicked on agency code field.
-2024-11-15 17:34:13.475 [main] INFO  base.BaseTest - Clicked on new booking button.
-2024-11-15 17:34:13.484 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
-2024-11-15 17:34:15.804 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
-2024-11-15 17:34:15.804 [main] INFO  base.BaseTest - Verifying if the Voyage in the pipeline is selected
-2024-11-15 17:34:15.804 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
-2024-11-15 17:34:15.890 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
-2024-11-15 17:34:15.890 [main] INFO  pages.Voyage - Voyage tab is currently active.
-2024-11-15 17:34:16.095 [main] INFO  pages.Voyage - Click on search button in voyage
-2024-11-15 17:34:16.096 [main] INFO  base.BaseTest - Searching for available cruises.
-2024-11-15 17:34:17.697 [main] INFO  pages.Voyage - Checking if the cruise has a green mark (availability icon) and availability count greater than 2
-2024-11-15 17:34:18.079 [main] INFO  pages.Voyage - Selected a cruise with availability greater than 2.
-2024-11-15 17:34:18.079 [main] INFO  base.BaseTest - Random Available Cruise selected.
-2024-11-15 17:34:18.096 [main] INFO  pages.Package - Checking if any packages are available.
-2024-11-15 17:34:21.922 [main] WARN  pages.Package - Encountered StaleElementReferenceException, retrying... Attempt 1
-2024-11-15 17:34:21.923 [main] INFO  pages.Package - Checking if any packages are available.
-2024-11-15 17:34:22.130 [main] INFO  pages.Package - Package selected successfully.
-2024-11-15 17:34:22.130 [main] INFO  base.BaseTest - Selected package
--------------------------------------------------
-Log End: 2024-11-15T17:34:22.652372300
--------------------------------------------------
-
--------------------------------------------------
-Name: supportuser2
-Log Start: 2024-11-15T20:21:38.943121500
-Java Version: 23.0.1
-Operating System: Windows 11
-System Name: DESKTOP-KR6B0UD
--------------------------------------------------
-
-2024-11-15 20:21:41.395 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
-2024-11-15 20:21:41.397 [main] INFO  pages.LoginPage - Waiting for username field to be visible
-2024-11-15 20:21:47.725 [main] INFO  pages.LoginPage - Username field is now visible
-2024-11-15 20:21:47.820 [main] INFO  pages.LoginPage - Username inserted successfully
-2024-11-15 20:21:47.891 [main] INFO  pages.LoginPage - Password inserted successfully
-2024-11-15 20:21:48.351 [main] INFO  pages.LoginPage - Login button clicked
-2024-11-15 20:21:53.516 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
-2024-11-15 20:21:53.516 [main] INFO  base.BaseTest - Login successful.
-2024-11-15 20:21:57.548 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
-2024-11-15 20:21:57.658 [main] INFO  pages.MenuIcon - Menu icon clicked
-2024-11-15 20:21:57.658 [main] INFO  base.BaseTest - Clicked on menu icon.
-2024-11-15 20:22:01.769 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
-2024-11-15 20:22:04.685 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
-2024-11-15 20:22:04.685 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
-2024-11-15 20:22:04.685 [main] INFO  base.BaseTest - Switched to the new tab successfully.
-2024-11-15 20:22:05.125 [main] INFO  pages.Agency - Overlay disappeared.
-2024-11-15 20:22:05.125 [main] INFO  base.BaseTest - Waiting for the overlay to end
-2024-11-15 20:22:06.803 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
--------------------------------------------------
-Log End: 2024-11-15T20:22:08.353656300
--------------------------------------------------
-
--------------------------------------------------
-Name: supportuser2
-Log Start: 2024-11-15T20:23:35.569185400
-Java Version: 23.0.1
-Operating System: Windows 11
-System Name: DESKTOP-KR6B0UD
--------------------------------------------------
-
-2024-11-15 20:23:37.340 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
-2024-11-15 20:23:37.342 [main] INFO  pages.LoginPage - Waiting for username field to be visible
-2024-11-15 20:23:39.805 [main] INFO  pages.LoginPage - Username field is now visible
-2024-11-15 20:23:39.890 [main] INFO  pages.LoginPage - Username inserted successfully
-2024-11-15 20:23:39.959 [main] INFO  pages.LoginPage - Password inserted successfully
-2024-11-15 20:23:40.343 [main] INFO  pages.LoginPage - Login button clicked
-2024-11-15 20:23:43.589 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
-2024-11-15 20:23:43.589 [main] INFO  base.BaseTest - Login successful.
-2024-11-15 20:23:47.615 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
-2024-11-15 20:23:47.793 [main] INFO  pages.MenuIcon - Menu icon clicked
-2024-11-15 20:23:47.794 [main] INFO  base.BaseTest - Clicked on menu icon.
-2024-11-15 20:23:51.906 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
-2024-11-15 20:23:54.212 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
-2024-11-15 20:23:54.212 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
-2024-11-15 20:23:54.218 [main] INFO  base.BaseTest - Switched to the new tab successfully.
-2024-11-15 20:23:54.715 [main] INFO  pages.Agency - Overlay disappeared.
-2024-11-15 20:23:54.715 [main] INFO  base.BaseTest - Waiting for the overlay to end
-2024-11-15 20:23:58.167 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
-2024-11-15 20:24:01.601 [main] INFO  pages.Agency - Clicked on Agency button.
-2024-11-15 20:24:03.602 [main] INFO  base.BaseTest - Clicked on Agency option.
-2024-11-15 20:24:03.686 [main] INFO  pages.Agency - Clicked on Agencies button.
-2024-11-15 20:24:05.693 [main] INFO  base.BaseTest - Clicked on agencies button.
-2024-11-15 20:24:05.693 [main] INFO  base.BaseTest - Attempting to send agency code.
-2024-11-15 20:24:05.722 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
-2024-11-15 20:24:10.298 [main] INFO  pages.Agency - Waiting for search button to be clickable
-2024-11-15 20:24:10.379 [main] INFO  pages.Agency - Clicked on search button
-2024-11-15 20:24:10.379 [main] INFO  base.BaseTest - Clicked on agency code field.
-2024-11-15 20:24:12.345 [main] INFO  base.BaseTest - Clicked on new booking button.
-2024-11-15 20:24:12.348 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
-2024-11-15 20:24:14.728 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
-2024-11-15 20:24:14.728 [main] INFO  base.BaseTest - Verifying if the Voyage in the pipeline is selected
-2024-11-15 20:24:14.728 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
-2024-11-15 20:24:14.822 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
-2024-11-15 20:24:14.822 [main] INFO  pages.Voyage - Voyage tab is currently active.
-2024-11-15 20:24:14.950 [main] INFO  pages.Voyage - Click on search button in voyage
-2024-11-15 20:24:14.950 [main] INFO  base.BaseTest - Searching for available cruises.
-2024-11-15 20:25:14.971 [main] INFO  base.BaseTest - Random Available Cruise selected.
-2024-11-15 20:25:14.986 [main] INFO  pages.Package - Verifying if the UI is in the 'Package' tab.
--------------------------------------------------
-Name: supportuser2
-Log Start: 2024-11-15T20:25:35.736688400
-Java Version: 23.0.1
-Operating System: Windows 11
-System Name: DESKTOP-KR6B0UD
--------------------------------------------------
-
-2024-11-15 20:25:37.347 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
-2024-11-15 20:25:37.350 [main] INFO  pages.LoginPage - Waiting for username field to be visible
-2024-11-15 20:25:40.094 [main] INFO  pages.LoginPage - Username field is now visible
-2024-11-15 20:25:40.198 [main] INFO  pages.LoginPage - Username inserted successfully
-2024-11-15 20:25:40.263 [main] INFO  pages.LoginPage - Password inserted successfully
-2024-11-15 20:25:43.935 [main] INFO  pages.LoginPage - Login button clicked
-2024-11-15 20:25:44.132 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
-2024-11-15 20:25:44.133 [main] INFO  base.BaseTest - Login successful.
-2024-11-15 20:25:48.148 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
-2024-11-15 20:25:48.247 [main] INFO  pages.MenuIcon - Menu icon clicked
-2024-11-15 20:25:48.247 [main] INFO  base.BaseTest - Clicked on menu icon.
-2024-11-15 20:25:52.382 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
-2024-11-15 20:25:57.102 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
-2024-11-15 20:25:57.102 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
-2024-11-15 20:25:57.102 [main] INFO  base.BaseTest - Switched to the new tab successfully.
-2024-11-15 20:25:58.021 [main] INFO  pages.Agency - Overlay disappeared.
-2024-11-15 20:25:58.021 [main] INFO  base.BaseTest - Waiting for the overlay to end
-2024-11-15 20:26:01.345 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
-2024-11-15 20:26:04.504 [main] INFO  pages.Agency - Clicked on Agency button.
-2024-11-15 20:26:06.505 [main] INFO  base.BaseTest - Clicked on Agency option.
-2024-11-15 20:26:06.594 [main] INFO  pages.Agency - Clicked on Agencies button.
-2024-11-15 20:26:08.605 [main] INFO  base.BaseTest - Clicked on agencies button.
-2024-11-15 20:26:08.605 [main] INFO  base.BaseTest - Attempting to send agency code.
-2024-11-15 20:26:08.633 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
-2024-11-15 20:26:13.222 [main] INFO  pages.Agency - Waiting for search button to be clickable
-2024-11-15 20:26:13.293 [main] INFO  pages.Agency - Clicked on search button
-2024-11-15 20:26:13.293 [main] INFO  base.BaseTest - Clicked on agency code field.
-2024-11-15 20:26:15.202 [main] INFO  base.BaseTest - Clicked on new booking button.
-2024-11-15 20:26:15.206 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
-2024-11-15 20:26:17.303 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
-2024-11-15 20:26:17.303 [main] INFO  base.BaseTest - Verifying if the Voyage in the pipeline is selected
-2024-11-15 20:26:17.303 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
-2024-11-15 20:26:17.405 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
-2024-11-15 20:26:17.405 [main] INFO  pages.Voyage - Voyage tab is currently active.
-2024-11-15 20:26:17.535 [main] INFO  pages.Voyage - Click on search button in voyage
-2024-11-15 20:26:17.535 [main] INFO  base.BaseTest - Searching for available cruises.
-2024-11-15 20:26:18.226 [main] INFO  pages.Voyage - Checking if the cruise has a green mark (availability icon) and availability count greater than 2
-2024-11-15 20:26:18.598 [main] INFO  pages.Voyage - Selected a cruise with availability greater than 2.
-2024-11-15 20:26:18.598 [main] INFO  base.BaseTest - Random Available Cruise selected.
-2024-11-15 20:26:18.598 [main] INFO  pages.Package - Verifying if the UI is in the 'Package' tab.
-2024-11-15 20:26:22.027 [main] INFO  pages.Package - Package tab is correctly selected and highlighted in the pipeline.
-2024-11-15 20:26:22.027 [main] INFO  base.BaseTest - Verifying if the Package in the pipeline is selected
-2024-11-15 20:26:22.027 [main] INFO  pages.Package - Checking if any packages are available.
-2024-11-15 20:26:23.276 [main] WARN  pages.Package - Encountered StaleElementReferenceException, retrying... Attempt 1
-2024-11-15 20:26:23.276 [main] INFO  pages.Package - Checking if any packages are available.
-2024-11-15 20:26:23.512 [main] INFO  pages.Package - Package selected successfully.
-2024-11-15 20:26:23.512 [main] INFO  base.BaseTest - Selected package
-2024-11-15 20:26:23.512 [main] INFO  pages.Package - Waiting for the Select Suite button to be clickable.
-2024-11-15 20:26:23.625 [main] INFO  pages.Package - Select Suite button clicked successfully.
-2024-11-15 20:26:23.625 [main] INFO  base.BaseTest - Select Suite button clicked
--------------------------------------------------
-Log End: 2024-11-15T20:26:23.908570400
--------------------------------------------------
-
--------------------------------------------------
-Name: supportuser2
-Log Start: 2024-11-15T23:01:48.660729200
-Java Version: 23.0.1
-Operating System: Windows 11
-System Name: DESKTOP-KR6B0UD
--------------------------------------------------
-
-2024-11-15 23:01:52.625 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
-2024-11-15 23:01:52.628 [main] INFO  pages.LoginPage - Waiting for username field to be visible
-2024-11-15 23:02:05.960 [main] INFO  pages.LoginPage - Username field is now visible
-2024-11-15 23:02:06.039 [main] INFO  pages.LoginPage - Username inserted successfully
-2024-11-15 23:02:06.112 [main] INFO  pages.LoginPage - Password inserted successfully
-2024-11-15 23:02:18.921 [main] INFO  pages.LoginPage - Login button clicked
-2024-11-15 23:02:19.719 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
-2024-11-15 23:02:19.719 [main] INFO  base.BaseTest - Login successful.
-2024-11-15 23:02:23.742 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
-2024-11-15 23:02:23.830 [main] INFO  pages.MenuIcon - Menu icon clicked
-2024-11-15 23:02:23.830 [main] INFO  base.BaseTest - Clicked on menu icon.
-2024-11-15 23:02:27.942 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
-2024-11-15 23:02:29.575 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
-2024-11-15 23:02:29.575 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
-2024-11-15 23:02:29.575 [main] INFO  base.BaseTest - Switched to the new tab successfully.
-2024-11-15 23:02:30.069 [main] INFO  pages.Agency - Overlay disappeared.
-2024-11-15 23:02:30.069 [main] INFO  base.BaseTest - Waiting for the overlay to end
-2024-11-15 23:02:33.348 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
--------------------------------------------------
-Log End: 2024-11-15T23:02:36.372063
--------------------------------------------------
-
--------------------------------------------------
-Name: supportuser2
-Log Start: 2024-11-15T23:02:53.231463500
-Java Version: 23.0.1
-Operating System: Windows 11
-System Name: DESKTOP-KR6B0UD
--------------------------------------------------
-
-2024-11-15 23:02:56.595 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
-2024-11-15 23:02:56.597 [main] INFO  pages.LoginPage - Waiting for username field to be visible
-2024-11-15 23:03:05.023 [main] INFO  pages.LoginPage - Username field is now visible
-2024-11-15 23:03:05.159 [main] INFO  pages.LoginPage - Username inserted successfully
-2024-11-15 23:03:05.241 [main] INFO  pages.LoginPage - Password inserted successfully
-2024-11-15 23:03:05.671 [main] INFO  pages.LoginPage - Login button clicked
-2024-11-15 23:03:14.241 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
-2024-11-15 23:03:14.241 [main] INFO  base.BaseTest - Login successful.
-2024-11-15 23:03:18.256 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
-2024-11-15 23:03:18.375 [main] INFO  pages.MenuIcon - Menu icon clicked
-2024-11-15 23:03:18.375 [main] INFO  base.BaseTest - Clicked on menu icon.
-2024-11-15 23:03:22.479 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
-2024-11-15 23:03:31.361 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
-2024-11-15 23:03:31.361 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
-2024-11-15 23:03:31.361 [main] INFO  base.BaseTest - Switched to the new tab successfully.
-2024-11-15 23:03:32.919 [main] INFO  pages.Agency - Overlay disappeared.
-2024-11-15 23:03:32.919 [main] INFO  base.BaseTest - Waiting for the overlay to end
-2024-11-15 23:03:36.280 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
-2024-11-15 23:03:39.642 [main] INFO  pages.Agency - Clicked on Agency button.
-2024-11-15 23:03:41.647 [main] INFO  base.BaseTest - Clicked on Agency option.
-2024-11-15 23:03:41.730 [main] INFO  pages.Agency - Clicked on Agencies button.
-2024-11-15 23:03:43.737 [main] INFO  base.BaseTest - Clicked on agencies button.
-2024-11-15 23:03:43.737 [main] INFO  base.BaseTest - Attempting to send agency code.
-2024-11-15 23:03:43.768 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
-2024-11-15 23:03:48.363 [main] INFO  pages.Agency - Waiting for search button to be clickable
-2024-11-15 23:03:48.462 [main] INFO  pages.Agency - Clicked on search button
-2024-11-15 23:03:48.462 [main] INFO  base.BaseTest - Clicked on agency code field.
-2024-11-15 23:03:50.206 [main] INFO  base.BaseTest - Clicked on new booking button.
-2024-11-15 23:03:50.218 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
-2024-11-15 23:03:52.336 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
-2024-11-15 23:03:52.336 [main] INFO  base.BaseTest - Verifying if the Voyage in the pipeline is selected
-2024-11-15 23:03:52.336 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
-2024-11-15 23:03:52.442 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
-2024-11-15 23:03:52.442 [main] INFO  pages.Voyage - Voyage tab is currently active.
-2024-11-15 23:03:52.631 [main] INFO  pages.Voyage - Click on search button in voyage
-2024-11-15 23:03:52.631 [main] INFO  base.BaseTest - Searching for available cruises.
--------------------------------------------------
-Name: supportuser2
-Log Start: 2024-11-15T23:04:57.836182200
-Java Version: 23.0.1
-Operating System: Windows 11
-System Name: DESKTOP-KR6B0UD
--------------------------------------------------
-
-2024-11-15 23:04:59.437 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
-2024-11-15 23:04:59.439 [main] INFO  pages.LoginPage - Waiting for username field to be visible
-2024-11-15 23:05:02.812 [main] INFO  pages.LoginPage - Username field is now visible
-2024-11-15 23:05:02.918 [main] INFO  pages.LoginPage - Username inserted successfully
-2024-11-15 23:05:02.984 [main] INFO  pages.LoginPage - Password inserted successfully
-2024-11-15 23:05:03.413 [main] INFO  pages.LoginPage - Login button clicked
-2024-11-15 23:05:12.752 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
-2024-11-15 23:05:12.758 [main] INFO  base.BaseTest - Login successful.
-2024-11-15 23:05:16.774 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
-2024-11-15 23:05:16.859 [main] INFO  pages.MenuIcon - Menu icon clicked
-2024-11-15 23:05:16.859 [main] INFO  base.BaseTest - Clicked on menu icon.
-2024-11-15 23:05:20.965 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
-2024-11-15 23:05:34.541 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: 
-2024-11-15 23:05:34.543 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
-2024-11-15 23:05:34.543 [main] INFO  base.BaseTest - Switched to the new tab successfully.
-2024-11-15 23:06:04.856 [main] WARN  pages.Agency - Overlay might still be visible or not found.
-2024-11-15 23:06:04.856 [main] INFO  base.BaseTest - Waiting for the overlay to end
--------------------------------------------------
-Name: supportuser2
-Log Start: 2024-11-15T23:06:30.083144300
-Java Version: 23.0.1
-Operating System: Windows 11
-System Name: DESKTOP-KR6B0UD
--------------------------------------------------
-
-2024-11-15 23:06:31.722 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
-2024-11-15 23:06:31.724 [main] INFO  pages.LoginPage - Waiting for username field to be visible
-2024-11-15 23:06:34.351 [main] INFO  pages.LoginPage - Username field is now visible
-2024-11-15 23:06:34.468 [main] INFO  pages.LoginPage - Username inserted successfully
-2024-11-15 23:06:34.533 [main] INFO  pages.LoginPage - Password inserted successfully
-2024-11-15 23:06:34.983 [main] INFO  pages.LoginPage - Login button clicked
-2024-11-15 23:06:43.338 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
-2024-11-15 23:06:43.343 [main] INFO  base.BaseTest - Login successful.
-2024-11-15 23:06:47.359 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
-2024-11-15 23:06:47.477 [main] INFO  pages.MenuIcon - Menu icon clicked
-2024-11-15 23:06:47.477 [main] INFO  base.BaseTest - Clicked on menu icon.
-2024-11-15 23:06:51.583 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
-2024-11-15 23:06:57.846 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
-2024-11-15 23:06:57.846 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
-2024-11-15 23:06:57.846 [main] INFO  base.BaseTest - Switched to the new tab successfully.
-2024-11-15 23:06:58.453 [main] INFO  pages.Agency - Overlay disappeared.
-2024-11-15 23:06:58.453 [main] INFO  base.BaseTest - Waiting for the overlay to end
-2024-11-15 23:07:01.828 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
--------------------------------------------------
-Log End: 2024-11-15T23:07:05.294846400
--------------------------------------------------
-
--------------------------------------------------
-Name: supportuser2
-Log Start: 2024-11-15T23:07:36.752467700
-Java Version: 23.0.1
-Operating System: Windows 11
-System Name: DESKTOP-KR6B0UD
--------------------------------------------------
-
-2024-11-15 23:07:40.068 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
-2024-11-15 23:07:40.070 [main] INFO  pages.LoginPage - Waiting for username field to be visible
-2024-11-15 23:07:43.093 [main] INFO  pages.LoginPage - Username field is now visible
-2024-11-15 23:07:43.207 [main] INFO  pages.LoginPage - Username inserted successfully
-2024-11-15 23:07:43.272 [main] INFO  pages.LoginPage - Password inserted successfully
-2024-11-15 23:07:52.105 [main] INFO  pages.LoginPage - Login button clicked
-2024-11-15 23:07:52.397 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
-2024-11-15 23:07:52.397 [main] INFO  base.BaseTest - Login successful.
-2024-11-15 23:07:56.419 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
-2024-11-15 23:07:56.532 [main] INFO  pages.MenuIcon - Menu icon clicked
-2024-11-15 23:07:56.532 [main] INFO  base.BaseTest - Clicked on menu icon.
-2024-11-15 23:08:00.631 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
-2024-11-15 23:08:03.110 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
-2024-11-15 23:08:03.110 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
-2024-11-15 23:08:03.110 [main] INFO  base.BaseTest - Switched to the new tab successfully.
-2024-11-15 23:08:03.481 [main] INFO  pages.Agency - Overlay disappeared.
-2024-11-15 23:08:03.481 [main] INFO  base.BaseTest - Waiting for the overlay to end
-2024-11-15 23:08:06.897 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
-2024-11-15 23:08:10.188 [main] INFO  pages.Agency - Clicked on Agency button.
-2024-11-15 23:08:12.199 [main] INFO  base.BaseTest - Clicked on Agency option.
-2024-11-15 23:08:12.284 [main] INFO  pages.Agency - Clicked on Agencies button.
-2024-11-15 23:08:14.286 [main] INFO  base.BaseTest - Clicked on agencies button.
-2024-11-15 23:08:14.286 [main] INFO  base.BaseTest - Attempting to send agency code.
-2024-11-15 23:08:14.313 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
-2024-11-15 23:08:21.968 [main] INFO  pages.Agency - Waiting for search button to be clickable
-2024-11-15 23:08:25.120 [main] INFO  pages.Agency - Clicked on search button
-2024-11-15 23:08:25.120 [main] INFO  base.BaseTest - Clicked on agency code field.
-2024-11-15 23:08:26.693 [main] INFO  base.BaseTest - Clicked on new booking button.
-2024-11-15 23:08:26.697 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
-2024-11-15 23:08:28.204 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
-2024-11-15 23:08:28.204 [main] INFO  base.BaseTest - Verifying if the Voyage in the pipeline is selected
-2024-11-15 23:08:28.204 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
-2024-11-15 23:08:28.424 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
-2024-11-15 23:08:28.424 [main] INFO  pages.Voyage - Voyage tab is currently active.
-2024-11-15 23:08:28.820 [main] INFO  pages.Voyage - Click on search button in voyage
-2024-11-15 23:08:28.822 [main] INFO  base.BaseTest - Searching for available cruises.
-2024-11-15 23:08:29.439 [main] INFO  pages.Voyage - Checking if the cruise has a green mark (availability icon) and availability count greater than 2
-2024-11-15 23:08:29.770 [main] INFO  pages.Voyage - Selected a cruise with availability greater than 2.
-2024-11-15 23:08:29.771 [main] INFO  base.BaseTest - Random Available Cruise selected.
-2024-11-15 23:08:29.771 [main] INFO  pages.Package - Verifying if the UI is in the 'Package' tab.
-2024-11-15 23:08:35.266 [main] INFO  pages.Package - Package tab is correctly selected and highlighted in the pipeline.
-2024-11-15 23:08:35.266 [main] INFO  base.BaseTest - Verifying if the Package in the pipeline is selected
-2024-11-15 23:08:35.266 [main] INFO  pages.Package - Checking if any packages are available.
-2024-11-15 23:08:35.460 [main] INFO  pages.Package - Package selected successfully.
-2024-11-15 23:08:35.460 [main] INFO  base.BaseTest - Selected package
-2024-11-15 23:08:35.460 [main] INFO  pages.Package - Waiting for the Select Suite button to be clickable.
-2024-11-15 23:08:35.543 [main] INFO  pages.Package - Select Suite button clicked successfully.
-2024-11-15 23:08:35.543 [main] INFO  base.BaseTest - Select Suite button clicked
-2024-11-15 23:08:35.547 [main] INFO  pages.Package - Verifying if the UI is in the 'Suite(s)' tab.
-2024-11-15 23:08:35.647 [main] INFO  base.BaseTest - Verifying if the Suites in the pipeline is selected
-2024-11-15 23:08:35.647 [main] INFO  pages.Package - Checking available suites.
-2024-11-15 23:08:44.098 [main] INFO  pages.Package - First available suite selected successfully.
-2024-11-15 23:08:44.098 [main] INFO  base.BaseTest - Selected suites
-2024-11-15 23:08:44.098 [main] INFO  pages.Package - Waiting for the Select Suite button to be clickable.
-2024-11-15 23:08:44.231 [main] INFO  pages.Package - Select Suite button clicked successfully.
-2024-11-15 23:08:44.231 [main] INFO  base.BaseTest - Select Suite button clicked
--------------------------------------------------
-Log End: 2024-11-15T23:08:44.463138900
+Log End: 2024-11-18T10:44:17.450234300
 -------------------------------------------------
 

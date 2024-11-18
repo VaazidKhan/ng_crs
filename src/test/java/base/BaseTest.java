@@ -19,6 +19,8 @@ public class BaseTest {
     public WebDriver getDriver() {
         return driver;
     }
+    
+    String filePath = "src/main/resources/config.properties";
 
     @BeforeClass
     public void setup() throws IOException {
@@ -27,7 +29,7 @@ public class BaseTest {
 
         // Load config properties
         config = new Properties();
-        FileInputStream fis = new FileInputStream("src/main/resources/config.properties");
+        FileInputStream fis = new FileInputStream(filePath);
         config.load(fis);
 
         // Ensure log directory exists

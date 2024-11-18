@@ -13,12 +13,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class PreviewOptions {
-	
-	
-	WebDriver driver;
+
+    WebDriver driver;
     WebDriverWait wait;
 
-    private static final Logger log = LogManager.getLogger(Package.class);
+    private static final Logger log = LogManager.getLogger(PreviewOptions.class); // Updated logger
     private static final Logger errorLogger = LogManager.getLogger("com.demo.ng_crs.error"); // For ERROR logs
 
     // Constructor to initialize WebDriver and WebDriverWait
@@ -26,31 +25,30 @@ public class PreviewOptions {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(30)); // Explicit wait
     }
-    
-    By previewPipe = By.xpath("//li[@role='tab' and @aria-controls='k-tabstrip-tabpanel-3' and .//span[text()='Preview/Options']]");
-    By tab = By.xpath("//div[@class='d-flex gap-3']/span");
-    By optionsField = By.xpath("//div[@class='preview-item']");
-    By proccedToBookingField = By.xpath("//button[@class='btn btn-primary text-nowrap']");
-    
-    
- // Method to verify if "Voyage" tab is selected
+
+    // Locators
+    private static final By PREVIEW_PIPE = By.xpath("//li[@role='tab' and @aria-controls='k-tabstrip-tabpanel-3' and .//span[text()='Preview/Options']]");
+    private static final By TAB = By.xpath("//div[@class='d-flex gap-3']/span");
+    private static final By OPTIONS_FIELD = By.xpath("//div[@class='preview-item']");
+    private static final By PROCEED_TO_BOOKING_BUTTON = By.xpath("//button[@class='btn btn-primary text-nowrap']");
+
+    // Method to verify if "Preview/Options" tab is selected
     public boolean isPreviewOptionsTabSelected() {
         try {
-            log.info("Verifying if the UI is in the 'Suite(s)' tab.");
+            log.info("Verifying if the UI is in the 'Preview/Options' tab.");
 
-            // Find the "Voyage" tab element
-            WebElement previewTabElement = wait.until(ExpectedConditions.visibilityOfElementLocated(previewPipe));
-            WebElement previewTabText = wait.until(ExpectedConditions.visibilityOfElementLocated(tab));
-            // Check if the 'aria-selected' attribute is set to true
+            WebElement previewTabElement = wait.until(ExpectedConditions.visibilityOfElementLocated(PREVIEW_PIPE));
+            WebElement previewTabText = wait.until(ExpectedConditions.visibilityOfElementLocated(TAB));
+
             String isSelected = previewTabElement.getAttribute("aria-selected");
-            String tabText = previewTabElement.findElement(By.tagName("span")).getText();
-            String text = previewTabText.findElement(tab).getText();
+            String pipelineText = previewTabText.getText();
+            String selectedText = previewTabElement.findElement(By.tagName("span")).getText();
 
-            if ("true".equals(isSelected) && text.equals(tabText)) {
+            if ("true".equals(isSelected) && pipelineText.equals(selectedText)) {
                 log.info("Preview/Options tab is correctly selected and highlighted in the pipeline.");
                 return true;
             } else {
-                errorLogger.error("Preview/Options tab is not selected as expected. aria-selected: " + isSelected + ", Tab Text: " + tabText);
+                errorLogger.error("Preview/Options tab is not selected. aria-selected: " + isSelected + ", Expected Text: " + selectedText);
                 return false;
             }
         } catch (Exception e) {
@@ -58,47 +56,48 @@ public class PreviewOptions {
             return false;
         }
     }
-    
-    public void options() {
-    	
-        boolean itemSelected = false;
-        try {
-    	//locate all items
-        List<WebElement> optionsElement = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(optionsField));
-        if (!optionsElement.isEmpty()) {
-            // Click the first available suite
-            WebElement availableOptions = optionsElement.get(0);
-            
-            if (availableOptions.isDisplayed() && availableOptions.isEnabled()) {
-                availableOptions.click();
-                log.info("Item/Option selected successfully.");
-                itemSelected = true; // Exit loop once successful
-            } else {
-                log.warn("Item/Option found but it is not clickable.");
-            }
-        } else {
-            log.info("No Item/Option available, proceeding to proceed booking.");
-            itemSelected = true; // Exit loop if no packages are found
-        }
-    	
-    }catch (Exception e) {
-    	errorLogger.error("Error selecting item/option: " + e.getMessage(), e);
-        Assert.fail("Failed to select a item/option: " + e.getMessage());
-    }
-        
-    }
-    
- public void proceedToBooking() throws Exception {
-	 try {
-	 WebElement ptb = wait.until(ExpectedConditions.elementToBeClickable(proccedToBookingField));
-	 ptb.click();
-	 log.info("Clicked on Proceed to booking button");
-    	
-    }catch(Exception e) {
-    	errorLogger.error("Proceed booking button interaction failed at: " + e.getMessage(), e);
-    	Assert.fail("Failed to click proceed booking :"+e.getMessage());
-    }
-    }
-	
 
+    // Method to select an option/item
+    public void options() {
+        try {
+        	Thread.sleep(3000);
+            log.info("Attempting to locate and select an item/option.");
+            List<WebElement> optionsElements = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(OPTIONS_FIELD));
+
+            if (!optionsElements.isEmpty()) {
+                WebElement availableOption = optionsElements.get(0);
+
+                if (availableOption.isDisplayed() && availableOption.isEnabled()) {
+                    availableOption.click();
+                    log.info("Item/Option selected successfully.");
+                } else {
+                    log.warn("Item/Option found but it is not clickable.");
+                }
+            } else {
+                log.info("No Item/Option available to select.");
+            }
+        } catch (Exception e) {
+            errorLogger.error("Error selecting item/option: " + e.getMessage(), e);
+            Assert.fail("Failed to select an item/option: " + e.getMessage());
+        }
+    }
+
+    // Method to proceed to booking
+    public void proceedToBooking() {
+        try {
+            log.info("Attempting to click on 'Proceed to Booking' button.");
+            WebElement proceedButton = wait.until(ExpectedConditions.elementToBeClickable(PROCEED_TO_BOOKING_BUTTON));
+
+            if (proceedButton != null && proceedButton.isDisplayed()) {
+                proceedButton.click();
+                log.info("Clicked on 'Proceed to Booking' button successfully.");
+            } else {
+                errorLogger.error("Proceed to Booking button is not clickable or visible.");
+                Assert.fail("Proceed to Booking button is not clickable or visible.");
+            }
+        } catch (Exception e) {
+            errorLogger.error("Failed to click 'Proceed to Booking' button: " + e.getMessage(), e);
+            Assert.fail("Failed to click 'Proceed to Booking' button: " + e.getMessage());
+        }
+    }
 }

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>User_Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 15 23:07:36 IST 2024</td>
+<td>Started on:</td><td>Mon Nov 18 10:43:10 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>67 seconds (67468 ms)</td>
+<tr><td>Total time:</td><td>66 seconds (66968 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,71 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.BookingTest.suiteTab()'><b>suiteTab</b><br>Test class: tests.BookingTest</td>
+<td><div><pre>java.lang.AssertionError: Failed to select a suite: element click intercepted: Element &lt;span _ngcontent-mbj-c759=&quot;&quot; kendotooltip=&quot;&quot; class=&quot;status status-approve ng-star-inserted&quot; title=&quot;Available&quot;&gt;...&lt;/span&gt; is not clickable at point (905, 319). Other element would receive the click: &lt;div _ngcontent-mbj-c462=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.119)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [85bbdf43f2d1e4fb45693e695e91ec33, clickElement {id=f.EBC2EB1B6731F2B0597127676DA37BC2.d.323BA71A61FFB61AC115728CFD0BAE5A.e.771}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61987}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61987/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (85bbdf43f2d1e4fb45693e695e91ec33)] -&gt; xpath: //span[@title=&apos;Available&apos;]]
+Session ID: 85bbdf43f2d1e4fb45693e695e91ec33
+	at pages.Suite.suites(Suite.java:95)
+	at tests.BookingTest.suiteTab(BookingTest.java:191)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1410791643", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1410791643'><pre>java.lang.AssertionError: Failed to select a suite: element click intercepted: Element &lt;span _ngcontent-mbj-c759=&quot;&quot; kendotooltip=&quot;&quot; class=&quot;status status-approve ng-star-inserted&quot; title=&quot;Available&quot;&gt;...&lt;/span&gt; is not clickable at point (905, 319). Other element would receive the click: &lt;div _ngcontent-mbj-c462=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.119)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [85bbdf43f2d1e4fb45693e695e91ec33, clickElement {id=f.EBC2EB1B6731F2B0597127676DA37BC2.d.323BA71A61FFB61AC115728CFD0BAE5A.e.771}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61987}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61987/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (85bbdf43f2d1e4fb45693e695e91ec33)] -&gt; xpath: //span[@title=&apos;Available&apos;]]
+Session ID: 85bbdf43f2d1e4fb45693e695e91ec33
+	at org.testng.Assert.fail(Assert.java:111)
+	at pages.Suite.suites(Suite.java:95)
+	at tests.BookingTest.suiteTab(BookingTest.java:191)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>4</td>
+<td>tests.BookingTest@60dce7ea</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,40 +141,74 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.BookingTest.suiteTab()'><b>suiteTab</b><br>Test class: tests.BookingTest</td>
-<td></td>
-<td>8</td>
-<td>tests.BookingTest@2e11485</td></tr>
-<tr>
 <td title='tests.BookingTest.csu()'><b>csu</b><br>Test class: tests.BookingTest</td>
 <td></td>
-<td>6</td>
-<td>tests.BookingTest@2e11485</td></tr>
+<td>12</td>
+<td>tests.BookingTest@60dce7ea</td></tr>
+<tr>
+<td title='tests.BookingTest.packageTab()'><b>packageTab</b><br>Test class: tests.BookingTest</td>
+<td></td>
+<td>3</td>
+<td>tests.BookingTest@60dce7ea</td></tr>
 <tr>
 <td title='tests.BookingTest.login()'><b>login</b><br>Test class: tests.BookingTest</td>
 <td></td>
-<td>12</td>
-<td>tests.BookingTest@2e11485</td></tr>
+<td>10</td>
+<td>tests.BookingTest@60dce7ea</td></tr>
 <tr>
 <td title='tests.BookingTest.agent()'><b>agent</b><br>Test class: tests.BookingTest</td>
 <td></td>
-<td>23</td>
-<td>tests.BookingTest@2e11485</td></tr>
+<td>24</td>
+<td>tests.BookingTest@60dce7ea</td></tr>
+<tr>
+<td title='tests.BookingTest.voyageTab()'><b>voyageTab</b><br>Test class: tests.BookingTest</td>
+<td></td>
+<td>5</td>
+<td>tests.BookingTest@60dce7ea</td></tr>
 <tr>
 <td title='tests.BookingTest.menu()'><b>menu</b><br>Test class: tests.BookingTest</td>
 <td></td>
 <td>4</td>
-<td>tests.BookingTest@2e11485</td></tr>
+<td>tests.BookingTest@60dce7ea</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='tests.BookingTest.voyageTab()'><b>voyageTab</b><br>Test class: tests.BookingTest</td>
-<td></td>
-<td>3</td>
-<td>tests.BookingTest@2e11485</td></tr>
-<tr>
-<td title='tests.BookingTest.packageTab()'><b>packageTab</b><br>Test class: tests.BookingTest</td>
-<td></td>
-<td>5</td>
-<td>tests.BookingTest@2e11485</td></tr>
+<td title='tests.BookingTest.previewTab()'><b>previewTab</b><br>Test class: tests.BookingTest</td>
+<td><div><pre>java.lang.Throwable: Method tests.BookingTest.previewTab() on instance tests.BookingTest@60dce7ea depends on not successfully finished methods 
+[tests.BookingTest.suiteTab() on instance tests.BookingTest@60dce7ea]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1780414044", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1780414044'><pre>java.lang.Throwable: Method tests.BookingTest.previewTab() on instance tests.BookingTest@60dce7ea depends on not successfully finished methods 
+[tests.BookingTest.suiteTab() on instance tests.BookingTest@60dce7ea]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.BookingTest@60dce7ea</td></tr>
 </table><p>
 </body>
 </html>

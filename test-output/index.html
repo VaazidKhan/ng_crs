@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-User_Suite" class="navigator-link">
-              <span class="suite-name border-passed">User_Suite</span>
+              <span class="suite-name border-failed">User_Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,  1 skipped,  6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-User_Suite" class="hide-methods failed suite-User_Suite"> (hide)</a> <!-- hide-methods failed suite-User_Suite -->
+                      <a href="#" panel-name="suite-User_Suite" class="show-methods failed suite-User_Suite"> (show)</a> <!-- show-methods failed suite-User_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-User_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-User_Suite" title="tests.BookingTest" class="method navigator-link" hash-for-method="suiteTab">suiteTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-User_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-User_Suite" class="hide-methods skipped suite-User_Suite"> (hide)</a> <!-- hide-methods skipped suite-User_Suite -->
+                      <a href="#" panel-name="suite-User_Suite" class="show-methods skipped suite-User_Suite"> (show)</a> <!-- show-methods skipped suite-User_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-User_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-User_Suite" title="tests.BookingTest" class="method navigator-link" hash-for-method="previewTab">previewTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-User_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -128,11 +156,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-User_Suite" title="tests.BookingTest" class="method navigator-link" hash-for-method="suiteTab">suiteTab</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-User_Suite" title="tests.BookingTest" class="method navigator-link" hash-for-method="voyageTab">voyageTab</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -148,6 +171,55 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-User_Suite" class="panel User_Suite">
+          <div class="suite-User_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.BookingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="suiteTab">
+                  </a> <!-- suiteTab -->
+                  <span class="method-name">suiteTab</span>
+                  <div class="stack-trace">java.lang.AssertionError: Failed to select a suite: element click intercepted: Element &lt;span _ngcontent-mbj-c759=&quot;&quot; kendotooltip=&quot;&quot; class=&quot;status status-approve ng-star-inserted&quot; title=&quot;Available&quot;&gt;...&lt;/span&gt; is not clickable at point (905, 319). Other element would receive the click: &lt;div _ngcontent-mbj-c462=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.119)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [85bbdf43f2d1e4fb45693e695e91ec33, clickElement {id=f.EBC2EB1B6731F2B0597127676DA37BC2.d.323BA71A61FFB61AC115728CFD0BAE5A.e.771}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61987}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61987/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (85bbdf43f2d1e4fb45693e695e91ec33)] -&gt; xpath: //span[@title=&apos;Available&apos;]]
+Session ID: 85bbdf43f2d1e4fb45693e695e91ec33
+	at pages.Suite.suites(Suite.java:95)
+	at tests.BookingTest.suiteTab(BookingTest.java:191)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-User_Suite-class-failed -->
+          <div class="suite-User_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.BookingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="previewTab">
+                  </a> <!-- previewTab -->
+                  <span class="method-name">previewTab</span>
+                  <div class="stack-trace">java.lang.Throwable: Method tests.BookingTest.previewTab() on instance tests.BookingTest@60dce7ea depends on not successfully finished methods 
+[tests.BookingTest.suiteTab() on instance tests.BookingTest@60dce7ea]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-User_Suite-class-skipped -->
           <div class="suite-User_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -187,13 +259,6 @@
                   <a name="packageTab">
                   </a> <!-- packageTab -->
                   <span class="method-name">packageTab</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="suiteTab">
-                  </a> <!-- suiteTab -->
-                  <span class="method-name">suiteTab</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -262,35 +327,39 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'agent')
 data.setCell(0, 2, 'tests.BookingTest')
-data.setCell(0, 3, 23578);
+data.setCell(0, 3, 24067);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login')
+data.setCell(1, 1, 'csu')
 data.setCell(1, 2, 'tests.BookingTest')
-data.setCell(1, 3, 12343);
+data.setCell(1, 3, 12596);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'suiteTab')
+data.setCell(2, 1, 'login')
 data.setCell(2, 2, 'tests.BookingTest')
-data.setCell(2, 3, 8688);
+data.setCell(2, 3, 10157);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'csu')
+data.setCell(3, 1, 'voyageTab')
 data.setCell(3, 2, 'tests.BookingTest')
-data.setCell(3, 3, 6572);
+data.setCell(3, 3, 5159);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'packageTab')
+data.setCell(4, 1, 'suiteTab')
 data.setCell(4, 2, 'tests.BookingTest')
-data.setCell(4, 3, 5772);
+data.setCell(4, 3, 4699);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'menu')
 data.setCell(5, 2, 'tests.BookingTest')
-data.setCell(5, 3, 4123);
+data.setCell(5, 3, 4112);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'voyageTab')
+data.setCell(6, 1, 'packageTab')
 data.setCell(6, 2, 'tests.BookingTest')
-data.setCell(6, 3, 3076);
+data.setCell(6, 3, 3899);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'previewTab')
+data.setCell(7, 2, 'tests.BookingTest')
+data.setCell(7, 3, 0);
 window.suiteTableData['User_Suite']= { tableData: data, tableDiv: 'times-div-User_Suite'}
 return data;
 }
@@ -328,31 +397,33 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">3126 ms</span>
+                <span class="method-start">1870 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">menu</span>
-                <span class="method-start">15481 ms</span>
+                <span class="method-start">12043 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">csu</span>
-                <span class="method-start">19610 ms</span>
+                <span class="method-start">16160 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">agent</span>
-                <span class="method-start">26187 ms</span>
+                <span class="method-start">28760 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">voyageTab</span>
-                <span class="method-start">49767 ms</span>
+                <span class="method-start">52827 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">packageTab</span>
-                <span class="method-start">52843 ms</span>
+                <span class="method-start">57986 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">suiteTab</span>
-                <span class="method-start">58615 ms</span>
+                <span class="method-start">61885 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
