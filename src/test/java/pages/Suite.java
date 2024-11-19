@@ -34,9 +34,23 @@ public class Suite {
     By suitesField = By.xpath("//li[@class='cabin-content book-cabin-content hrlel ng-star-inserted']");
     By suiteAvailability = By.xpath("//span[@title='Available']");
 
+    
+    // Wait for spinner to disappear
+    private void waitForSpinnerToDisappear() {
+        try {
+            log.info("Waiting for spinner to disappear.");
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
+            log.info("Spinner disappeared.");
+        } catch (Exception e) {
+            log.warn("Spinner was not visible or timed out: " + e.getMessage());
+        }
+    }
     // Method to verify if "Suite" tab is selected
     public boolean isSuiteTabSelected() {
         try {
+        	
+        	waitForSpinnerToDisappear();
+        	
             log.info("Verifying if the UI is in the 'Suite(s)' tab.");
             WebElement suitesTabElement = wait.until(ExpectedConditions.visibilityOfElementLocated(suitesPipe));
             WebElement suitesTabText = wait.until(ExpectedConditions.visibilityOfElementLocated(tab));
@@ -58,16 +72,6 @@ public class Suite {
         }
     }
 
-    // Wait for spinner to disappear
-    private void waitForSpinnerToDisappear() {
-        try {
-            log.info("Waiting for spinner to disappear.");
-            wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
-            log.info("Spinner disappeared.");
-        } catch (Exception e) {
-            log.warn("Spinner was not visible or timed out: " + e.getMessage());
-        }
-    }
 
     // Method to check and select available suites
     public void suites() {

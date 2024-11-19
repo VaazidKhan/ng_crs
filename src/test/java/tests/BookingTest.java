@@ -239,4 +239,27 @@ public class BookingTest extends BaseTest {
             handleError("Proceed to booking button", e, softAssert);
         }
     }
+    
+ // Preview Tab Test
+    @Test(dependsOnMethods = "previewTab")
+    public void newProfile() {
+        PaxDetails details = new PaxDetails(driver);
+        
+
+        try {
+            log.info("Verifying if the Pax Details tab is selected.");
+            Assert.assertTrue(details.isPaxDetailsTabSelected(), "Pax Details tab not selected.");
+            log.info("Pax Details tab is selected.");
+        } catch (Exception e) {
+            handleError("Pax Details Tab", e, softAssert);
+        }
+
+        try {
+            log.info("Interacting new profile button.");
+            details.newProfile();
+            log.info("New Profile interaction successful.");
+        } catch (Exception e) {
+            handleError("New Profile interaction failed at", e, softAssert);
+        }
+    }
 }

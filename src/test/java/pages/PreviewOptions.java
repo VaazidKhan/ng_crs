@@ -32,18 +32,33 @@ public class PreviewOptions {
     }
 
     // Locators
-    By PREVIEW_PIPE = By.xpath("//li[@role='tab' and @aria-controls='k-tabstrip-tabpanel-3' and .//span[text()='Preview/Options']]");
-    By TAB = By.xpath("//div[@class='d-flex gap-3']/span");
-    By OPTIONS_FIELD = By.xpath("//div[@class='preview-item']");
-    By PROCEED_TO_BOOKING_BUTTON = By.xpath("//button[@class='btn btn-primary text-nowrap']");
+    By previewPipe = By.xpath("//li[@role='tab' and @aria-controls='k-tabstrip-tabpanel-3' and .//span[text()='Preview/Options']]");
+    By tab = By.xpath("//div[@class='d-flex gap-3']/span");
+    By optionsField = By.xpath("//div[@class='preview-item']");
+    By proceedToBookingButton = By.xpath("//button[@class='btn btn-primary text-nowrap']");
+    By spinner = By.xpath("//div[contains(@class, 'ngx-spinner-overlay')]");
+
+    
+ // Wait for spinner to disappear
+    private void waitForSpinnerToDisappear() {
+        try {
+            log.info("Waiting for spinner to disappear.");
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(spinner));
+            log.info("Spinner disappeared.");
+        } catch (Exception e) {
+            log.warn("Spinner was not visible or timed out: " + e.getMessage());
+        }
+    }
 
     // Method to verify if "Preview/Options" tab is selected
     public boolean isPreviewOptionsTabSelected() {
         try {
+        	
+        	waitForSpinnerToDisappear();
             log.info("Verifying if the UI is in the 'Preview/Options' tab.");
 
-            WebElement previewTabElement = wait.until(ExpectedConditions.visibilityOfElementLocated(PREVIEW_PIPE));
-            WebElement previewTabText = wait.until(ExpectedConditions.visibilityOfElementLocated(TAB));
+            WebElement previewTabElement = wait.until(ExpectedConditions.visibilityOfElementLocated(previewPipe));
+            WebElement previewTabText = wait.until(ExpectedConditions.visibilityOfElementLocated(tab));
 
             String isSelected = previewTabElement.getAttribute("aria-selected");
             String pipelineText = previewTabText.getText();
@@ -66,7 +81,7 @@ public class PreviewOptions {
     public void options() {
         try {
             log.info("Attempting to locate and select an item/option.");
-            List<WebElement> optionsElements = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(OPTIONS_FIELD));
+            List<WebElement> optionsElements = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(optionsField));
 
             if (!optionsElements.isEmpty()) {
                 WebElement availableOption = optionsElements.get(0);
@@ -90,7 +105,7 @@ public class PreviewOptions {
     public void proceedToBooking() {
         try {
             log.info("Attempting to click on 'Proceed to Booking' button.");
-            WebElement proceedButton = wait.until(ExpectedConditions.elementToBeClickable(PROCEED_TO_BOOKING_BUTTON));
+            WebElement proceedButton = wait.until(ExpectedConditions.elementToBeClickable(proceedToBookingButton));
 
             if (proceedButton != null && proceedButton.isDisplayed()) {
                 proceedButton.click();
