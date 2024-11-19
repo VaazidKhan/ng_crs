@@ -2,65 +2,50 @@
 <testng-results ignored="0" total="8" passed="6" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-18T10:43:10 IST" name="User_Suite" finished-at="2024-11-18T10:44:17 IST" duration-ms="66968">
+  <suite started-at="2024-11-19T11:34:48 IST" name="User_Suite" finished-at="2024-11-19T11:36:35 IST" duration-ms="106549">
     <groups>
     </groups>
-    <test started-at="2024-11-18T10:43:10 IST" name="User_Test" finished-at="2024-11-18T10:44:17 IST" duration-ms="66968">
+    <test started-at="2024-11-19T11:34:48 IST" name="User_Test" finished-at="2024-11-19T11:36:35 IST" duration-ms="106549">
       <class name="tests.BookingTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookingTest@60dce7ea]" started-at="2024-11-18T10:43:10 IST" name="setup" finished-at="2024-11-18T10:43:12 IST" duration-ms="1860" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BookingTest@1ef3efa8]" started-at="2024-11-19T11:34:48 IST" name="setup" finished-at="2024-11-19T11:34:50 IST" duration-ms="1644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:tests.BookingTest@60dce7ea]" started-at="2024-11-18T10:43:12 IST" name="login" finished-at="2024-11-18T10:43:22 IST" duration-ms="10157" status="PASS">
+        <test-method signature="login()[pri:0, instance:tests.BookingTest@1ef3efa8]" started-at="2024-11-19T11:34:50 IST" name="login" finished-at="2024-11-19T11:35:00 IST" duration-ms="10045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="menu()[pri:0, instance:tests.BookingTest@60dce7ea]" started-at="2024-11-18T10:43:22 IST" name="menu" finished-at="2024-11-18T10:43:26 IST" depends-on-methods="tests.BookingTest.login" duration-ms="4112" status="PASS">
+        <test-method signature="menu()[pri:0, instance:tests.BookingTest@1ef3efa8]" started-at="2024-11-19T11:35:00 IST" name="menu" finished-at="2024-11-19T11:35:00 IST" depends-on-methods="tests.BookingTest.login" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- menu -->
-        <test-method signature="csu()[pri:0, instance:tests.BookingTest@60dce7ea]" started-at="2024-11-18T10:43:26 IST" name="csu" finished-at="2024-11-18T10:43:39 IST" depends-on-methods="tests.BookingTest.menu" duration-ms="12596" status="PASS">
+        <test-method signature="csu()[pri:0, instance:tests.BookingTest@1ef3efa8]" started-at="2024-11-19T11:35:00 IST" name="csu" finished-at="2024-11-19T11:35:06 IST" depends-on-methods="tests.BookingTest.menu" duration-ms="6191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- csu -->
-        <test-method signature="agent()[pri:0, instance:tests.BookingTest@60dce7ea]" started-at="2024-11-18T10:43:39 IST" name="agent" finished-at="2024-11-18T10:44:03 IST" depends-on-methods="tests.BookingTest.csu" duration-ms="24067" status="PASS">
+        <test-method signature="agent()[pri:0, instance:tests.BookingTest@1ef3efa8]" started-at="2024-11-19T11:35:06 IST" name="agent" finished-at="2024-11-19T11:36:20 IST" depends-on-methods="tests.BookingTest.csu" duration-ms="73985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- agent -->
-        <test-method signature="voyageTab()[pri:0, instance:tests.BookingTest@60dce7ea]" started-at="2024-11-18T10:44:03 IST" name="voyageTab" finished-at="2024-11-18T10:44:08 IST" depends-on-methods="tests.BookingTest.agent" duration-ms="5159" status="PASS">
+        <test-method signature="voyageTab()[pri:0, instance:tests.BookingTest@1ef3efa8]" started-at="2024-11-19T11:36:20 IST" name="voyageTab" finished-at="2024-11-19T11:36:29 IST" depends-on-methods="tests.BookingTest.agent" duration-ms="8783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- voyageTab -->
-        <test-method signature="packageTab()[pri:0, instance:tests.BookingTest@60dce7ea]" started-at="2024-11-18T10:44:08 IST" name="packageTab" finished-at="2024-11-18T10:44:12 IST" depends-on-methods="tests.BookingTest.voyageTab" duration-ms="3899" status="PASS">
+        <test-method signature="packageTab()[pri:0, instance:tests.BookingTest@1ef3efa8]" started-at="2024-11-19T11:36:29 IST" name="packageTab" finished-at="2024-11-19T11:36:34 IST" depends-on-methods="tests.BookingTest.voyageTab" duration-ms="4855" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- packageTab -->
-        <test-method signature="suiteTab()[pri:0, instance:tests.BookingTest@60dce7ea]" started-at="2024-11-18T10:44:12 IST" name="suiteTab" finished-at="2024-11-18T10:44:17 IST" depends-on-methods="tests.BookingTest.packageTab" duration-ms="4699" status="FAIL">
+        <test-method signature="suiteTab()[pri:0, instance:tests.BookingTest@1ef3efa8]" started-at="2024-11-19T11:36:34 IST" name="suiteTab" finished-at="2024-11-19T11:36:34 IST" depends-on-methods="tests.BookingTest.packageTab" duration-ms="196" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Failed to select a suite: element click intercepted: Element <span _ngcontent-mbj-c759="" kendotooltip="" class="status status-approve ng-star-inserted" title="Available">...</span> is not clickable at point (905, 319). Other element would receive the click: <div _ngcontent-mbj-c462="" class="ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
-  (Session info: chrome=130.0.6723.119)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [85bbdf43f2d1e4fb45693e695e91ec33, clickElement {id=f.EBC2EB1B6731F2B0597127676DA37BC2.d.323BA71A61FFB61AC115728CFD0BAE5A.e.771}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61987}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61987/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (85bbdf43f2d1e4fb45693e695e91ec33)] -> xpath: //span[@title='Available']]
-Session ID: 85bbdf43f2d1e4fb45693e695e91ec33]]>
+              <![CDATA[Suite tab not selected. expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Failed to select a suite: element click intercepted: Element <span _ngcontent-mbj-c759="" kendotooltip="" class="status status-approve ng-star-inserted" title="Available">...</span> is not clickable at point (905, 319). Other element would receive the click: <div _ngcontent-mbj-c462="" class="ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
-  (Session info: chrome=130.0.6723.119)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [85bbdf43f2d1e4fb45693e695e91ec33, clickElement {id=f.EBC2EB1B6731F2B0597127676DA37BC2.d.323BA71A61FFB61AC115728CFD0BAE5A.e.771}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61987}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61987/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (85bbdf43f2d1e4fb45693e695e91ec33)] -> xpath: //span[@title='Available']]
-Session ID: 85bbdf43f2d1e4fb45693e695e91ec33
+              <![CDATA[java.lang.AssertionError: Suite tab not selected. expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:111)
-at pages.Suite.suites(Suite.java:95)
-at tests.BookingTest.suiteTab(BookingTest.java:191)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.BookingTest.suiteTab(BookingTest.java:190)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -93,15 +78,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteTab -->
-        <test-method signature="previewTab()[pri:0, instance:tests.BookingTest@60dce7ea]" started-at="2024-11-18T10:44:17 IST" name="previewTab" finished-at="2024-11-18T10:44:17 IST" depends-on-methods="tests.BookingTest.suiteTab" duration-ms="0" status="SKIP">
+        <test-method signature="previewTab()[pri:0, instance:tests.BookingTest@1ef3efa8]" started-at="2024-11-19T11:36:35 IST" name="previewTab" finished-at="2024-11-19T11:36:35 IST" depends-on-methods="tests.BookingTest.suiteTab" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method tests.BookingTest.previewTab() on instance tests.BookingTest@60dce7ea depends on not successfully finished methods 
-[tests.BookingTest.suiteTab() on instance tests.BookingTest@60dce7ea]]]>
+              <![CDATA[Method tests.BookingTest.previewTab() on instance tests.BookingTest@1ef3efa8 depends on not successfully finished methods 
+[tests.BookingTest.suiteTab() on instance tests.BookingTest@1ef3efa8]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method tests.BookingTest.previewTab() on instance tests.BookingTest@60dce7ea depends on not successfully finished methods 
-[tests.BookingTest.suiteTab() on instance tests.BookingTest@60dce7ea]
+              <![CDATA[java.lang.Throwable: Method tests.BookingTest.previewTab() on instance tests.BookingTest@1ef3efa8 depends on not successfully finished methods 
+[tests.BookingTest.suiteTab() on instance tests.BookingTest@1ef3efa8]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)

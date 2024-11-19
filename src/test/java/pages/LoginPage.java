@@ -1,17 +1,18 @@
 package pages;
 
 import java.time.Duration;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 
 public class LoginPage {
 
     WebDriver driver;
-    WebDriverWait wait;
+    Wait<WebDriver> wait;
     private static final Logger infoLogger = LogManager.getLogger(LoginPage.class); // For INFO logs
     private static final Logger errorLogger = LogManager.getLogger("com.demo.ng_crs.error"); // For ERROR logs
 
@@ -23,7 +24,10 @@ public class LoginPage {
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(60)); // Explicit wait
+        this.wait = new FluentWait<>(driver)
+                        .withTimeout(Duration.ofSeconds(60))
+                        .pollingEvery(Duration.ofSeconds(5))
+                        .ignoring(Exception.class);
     }
 
     public void login(String username, String password) throws Exception {
@@ -31,24 +35,19 @@ public class LoginPage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(usernameField));
         infoLogger.info("Username field is now visible");
 
-        // Wait for username field to be clickable and then send keys
         wait.until(ExpectedConditions.elementToBeClickable(usernameField)).sendKeys(username);
         infoLogger.info("Username inserted successfully");
 
-        // Wait for password field to be clickable and then send keys
         wait.until(ExpectedConditions.elementToBeClickable(passwordField)).sendKeys(password);
         infoLogger.info("Password inserted successfully");
 
-        // Click on login button
         wait.until(ExpectedConditions.elementToBeClickable(loginButton)).click();
         infoLogger.info("Login button clicked");
 
-        // Wait for redirection or dashboard page after successful login
         try {
             wait.until(ExpectedConditions.visibilityOfElementLocated(dashboardPage));
             infoLogger.info("Signed in successfully, redirected to dashboard.");
         } catch (Exception e) {
-            // If no dashboard is loaded, check if an error message is displayed
             if (isElementPresent(errorMsg)) {
                 errorLogger.error("Login failed: Error message displayed");
                 throw new Exception("Login failed due to incorrect credentials.");
@@ -59,7 +58,6 @@ public class LoginPage {
         }
     }
 
-    // Utility method to check if an element is present
     public boolean isElementPresent(By locator) {
         try {
             driver.findElement(locator);
@@ -69,3 +67,4 @@ public class LoginPage {
         }
     }
 }
+

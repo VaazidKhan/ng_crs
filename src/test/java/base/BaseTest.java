@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
@@ -20,17 +21,20 @@ public class BaseTest {
         return driver;
     }
     
-    String filePath = "src/main/resources/config.properties";
+    String configfilePath = "src/main/resources/config.properties";
+    String xmlfilePath = "src/main/resources/log4j2.xml";
 
     @BeforeClass
     public void setup() throws IOException {
         // Initialize logger
         log = Logger.getLogger(BaseTest.class);
+        PropertyConfigurator.configure(xmlfilePath);
 
         // Load config properties
         config = new Properties();
-        FileInputStream fis = new FileInputStream(filePath);
-        config.load(fis);
+        try (FileInputStream fis = new FileInputStream(configfilePath)) {
+            config.load(fis);
+        }
 
         // Ensure log directory exists
         java.io.File logDir = new java.io.File("logs");
@@ -48,7 +52,7 @@ public class BaseTest {
         log.info("Driver initialized and application launched");
     }
 
-  //  @AfterClass
+    //@AfterClass
     public void teardown() {
         if (driver != null) {
             driver.quit();

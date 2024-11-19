@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,125 +15,128 @@ import org.testng.Assert;
 import base.BaseTest;
 
 public class Agency extends BaseTest {
-    WebDriver driver;
-    WebDriverWait wait;
+    private WebDriver driver;
+    private WebDriverWait wait;
     private static final Logger log = LogManager.getLogger(Agency.class);
-    private static final Logger errorLogger = LogManager.getLogger("com.demo.ng_crs.error"); // For ERROR logs
+    private static final Logger errorLogger = LogManager.getLogger("com.demo.ng_crs.error");
 
     // Constructor to initialize WebDriver and WebDriverWait
     public Agency(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(30)); // Explicit wait
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(15)); // Reduced explicit wait time
     }
 
-    // Locators for various elements
-    By homeButton = By.xpath("(//li[@title='Home'])");
-    By agencyButton = By.xpath("//button[normalize-space()='Agency']");
-    By agenciesButton = By.xpath("//li[@class='active']//div[@class='d-flex align-items-center flex-column tab-link gap-2']");
-    By agencyCode = By.xpath("//input[@formcontrolname='cmpCode']");
-    By searchButton = By.xpath("//i[@class='icon icon-search']");
-    By errorMsg = By.xpath("//div[contains(text(),'Error')]");
-    By resultsFound = By.xpath("//span[contains(text(), 'Results Found')]");
-    By newBooking = By.xpath("//button[normalize-space()='New Booking']");
-    
-    By alert = By.xpath("//h3[contains(text(),'Warning')]");
-    By yesButton = By.xpath("//button[contains(text(),'Yes')]");
-    
-    By overlay = By.xpath("//div[contains(@class,'ngx-spinner-overlay')]");
+    // Locators
+    private By homeButton = By.xpath("//a[@class='side-btn active']");
+    private By agencyButton = By.xpath("//button[normalize-space()='Agency']");
+    private By agenciesButton = By.xpath("//li[@class='active']//div[@class='d-flex align-items-center flex-column tab-link gap-2']");
+    private By agencyCode = By.xpath("//input[@formcontrolname='cmpCode']");
+    private By searchButton = By.xpath("//i[@class='icon icon-search']");
+    private By errorMsg = By.xpath("//div[contains(text(),'Error')]");
+    private By resultsFound = By.xpath("//span[contains(text(), 'Results Found')]");
+    private By newBooking = By.xpath("//button[normalize-space()='New Booking']");
+    private By overlay = By.xpath("//div[contains(@class,'ngx-spinner-overlay')]");
 
+    // Utility: Wait for overlay to disappear
     public void waitForOverlayToDisappear() {
         try {
-            wait.until(ExpectedConditions.invisibilityOfElementLocated(overlay));
-            log.info("Overlay disappeared.");
+            if (driver.findElements(overlay).size() > 0) {
+                wait.until(ExpectedConditions.invisibilityOfElementLocated(overlay));
+                log.info("Overlay disappeared.");
+            }
         } catch (Exception e) {
             log.warn("Overlay might still be visible or not found.");
         }
     }
-    //Method to click on Home field and Agency
+
+    // Method to click on Home and Agency buttons
     public void agency() {
         try {
-            // Wait for the home button to be visible
             WebElement home = wait.until(ExpectedConditions.visibilityOfElementLocated(homeButton));
-            // Check if the home button is already clicked
-            if (home.isSelected() || home.getAttribute("class").contains("active")) {
-                log.info("Home button is already clicked.");
-                
-                // Click on the agency button
-                WebElement agency = wait.until(ExpectedConditions.visibilityOfElementLocated(agencyButton));
-             // Check if the agency button is already clicked
-                if (agency.isSelected() || agency.getAttribute("class").contains("active")) {
-                    log.info("Agency button is already clicked.");
-                }
-            }         
-            else {
-                log.info("Home button is not clicked. Clicking on Home button.");
-                // Click the home button
+            if (!home.getAttribute("class").contains("active")) {
+                log.info("Clicking on Home button.");
                 home.click();
-                // Click on the agency button
-                WebElement agency = wait.until(ExpectedConditions.visibilityOfElementLocated(agencyButton));
+            } else {
+                log.info("Home button is already active.");
+            }
+
+            WebElement agency = wait.until(ExpectedConditions.visibilityOfElementLocated(agencyButton));
+            if (!agency.getAttribute("class").contains("active")) {
+                log.info("Clicking on Agency button.");
                 agency.click();
-                log.info("Clicked on Agency button.");
-                Thread.sleep(2000);
+            } else {
+                log.info("Agency button is already active.");
             }
         } catch (Exception e) {
-            errorLogger.error("Error occurred in the agency method: " + e.getMessage());
-            Assert.fail("An error occurred while attempting to interact with agency method: " + e.getMessage());
-
+            errorLogger.error("Error occurred in agency method: " + e.getMessage());
+            Assert.fail("Error in agency method: " + e.getMessage());
         }
     }
-    
- //method to click agencies button
+
+    // Method to click Agencies button
     public void agencies() {
-    	try {
-            // Wait for the agencies button to be visible
+        try {
             WebElement agencies = wait.until(ExpectedConditions.visibilityOfElementLocated(agenciesButton));
-            //clicking on agencies
-            agencies.click();
-            log.info("Clicked on Agencies button.");
-            Thread.sleep(2000);
-
-
-    	}catch(Exception e) {
-            errorLogger.error("Error occurred in the agencies method: " + e.getMessage());
-            Assert.fail("An error occurred while attempting to interact with agencies method: " + e.getMessage());
-
-    	}
+            if (!agencies.getAttribute("class").contains("active")) {
+                log.info("Clicking on Agencies button.");
+                agencies.click();
+            } else {
+                log.info("Agencies button is already active.");
+            }
+        } catch (Exception e) {
+            errorLogger.error("Error occurred in agencies method: " + e.getMessage());
+            Assert.fail("Error in agencies method: " + e.getMessage());
+        }
     }
-    
-  //method to search the agent
+
+    // Method to search for an agent
     public void searchAgent(String agentCode) {
-    	try {
-    		// Wait for the agency code button to be visible
+        try {
+            waitForOverlayToDisappear();
             WebElement agencycode = wait.until(ExpectedConditions.elementToBeClickable(agencyCode));
-            log.info("Waiting for agency code field to be clickable");
+            log.info("Clearing and entering agent code.");
             agencycode.clear();
-            Thread.sleep(4000);
             agencycode.sendKeys(agentCode);
-            Thread.sleep(3000);
-            WebElement searchbtn = wait.until(ExpectedConditions.elementToBeClickable(searchButton));
-            log.info("Waiting for search button to be clickable");
-            Thread.sleep(3000);
-            searchbtn.click();
-            log.info("Clicked on search button");
-
-    	}catch (Exception e) {
-            errorLogger.error("Error occurred in the search agent method: " + e.getMessage());
-            Assert.fail("An error occurred while attempting to interact with agent method: " + e.getMessage()); 
-    	}
+            log.info("Entered agency code: " + agentCode);
+        } catch (Exception e) {
+            errorLogger.error("Error occurred in searchAgent method: " + e.getMessage());
+            Assert.fail("Error in searchAgent: " + e.getMessage());
+        }
     }
-    
-   //method for new booking
-    public void newBooking() {
-    	
-    	try {
-            // Wait for the new booking button to be visible
-            WebElement newbooking = wait.until(ExpectedConditions.visibilityOfElementLocated(newBooking));
-            //clicking on new booking button
-            newbooking.click();
-    	}catch(Exception e) {
-            errorLogger.error("Error occurred in the new booking method: " + e.getMessage());
-            Assert.fail("An error occurred while attempting to interact with booking method: " + e.getMessage());
 
-    	}
+    // Method to perform a search
+    public void search() {
+        try {
+            WebElement searchbtn = wait.until(ExpectedConditions.elementToBeClickable(searchButton));
+            log.info("Clicking on Search button.");
+            searchbtn.click();
+            log.info("Search button clicked.");
+        } catch (Exception e) {
+            errorLogger.error("Error occurred in search method: " + e.getMessage());
+            Assert.fail("Error in search method: " + e.getMessage());
+        }
+    }
+
+    // Method for New Booking
+    public void newBooking() {
+        try {
+            WebElement newbooking = wait.until(ExpectedConditions.visibilityOfElementLocated(newBooking));
+            log.info("Clicking on New Booking button.");
+            newbooking.click();
+        } catch (Exception e) {
+            errorLogger.error("Error occurred in newBooking method: " + e.getMessage());
+            Assert.fail("Error in newBooking method: " + e.getMessage());
+        }
+    }
+
+    // Utility: Click using JavaScript
+    private void jsClick(WebElement element) {
+        try {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].click();", element);
+            log.info("Clicked element using JavaScript.");
+        } catch (Exception e) {
+            errorLogger.error("JavaScript click failed: " + e.getMessage());
+        }
     }
 }

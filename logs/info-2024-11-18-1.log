@@ -1,0 +1,561 @@
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-18T11:53:10.509175200
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-18 11:53:12.078 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
+2024-11-18 11:53:12.081 [main] INFO  pages.LoginPage - Waiting for username field to be visible
+2024-11-18 11:53:16.179 [main] INFO  pages.LoginPage - Username field is now visible
+2024-11-18 11:53:16.256 [main] INFO  pages.LoginPage - Username inserted successfully
+2024-11-18 11:53:16.320 [main] INFO  pages.LoginPage - Password inserted successfully
+2024-11-18 11:53:21.710 [main] INFO  pages.LoginPage - Login button clicked
+2024-11-18 11:53:21.916 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
+2024-11-18 11:53:21.917 [main] INFO  base.BaseTest - Login successful.
+2024-11-18 11:53:21.945 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
+2024-11-18 11:53:22.109 [main] INFO  pages.MenuIcon - Menu icon clicked
+2024-11-18 11:53:22.109 [main] INFO  base.BaseTest - Clicked on menu icon.
+2024-11-18 11:53:27.316 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
+2024-11-18 11:53:40.586 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-11-18 11:53:40.586 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
+2024-11-18 11:53:40.587 [main] INFO  base.BaseTest - Switched to the new tab successfully.
+2024-11-18 11:53:41.208 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 11:53:41.208 [main] INFO  base.BaseTest - Waiting for the overlay to end
+2024-11-18 11:53:42.716 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
+-------------------------------------------------
+Log End: 2024-11-18T11:53:45.648765100
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-18T11:55:50.445681200
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-18 11:55:51.932 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
+2024-11-18 11:55:51.935 [main] INFO  pages.LoginPage - Waiting for username field to be visible
+2024-11-18 11:55:55.975 [main] INFO  pages.LoginPage - Username field is now visible
+2024-11-18 11:55:56.040 [main] INFO  pages.LoginPage - Username inserted successfully
+2024-11-18 11:55:56.107 [main] INFO  pages.LoginPage - Password inserted successfully
+2024-11-18 11:55:56.481 [main] INFO  pages.LoginPage - Login button clicked
+2024-11-18 11:56:01.735 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
+2024-11-18 11:56:01.736 [main] INFO  base.BaseTest - Login successful.
+2024-11-18 11:56:01.764 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
+2024-11-18 11:56:01.905 [main] INFO  pages.MenuIcon - Menu icon clicked
+2024-11-18 11:56:01.906 [main] INFO  base.BaseTest - Clicked on menu icon.
+2024-11-18 11:56:07.093 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
+2024-11-18 11:56:10.813 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-11-18 11:56:10.813 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
+2024-11-18 11:56:10.813 [main] INFO  base.BaseTest - Switched to the new tab successfully.
+2024-11-18 11:56:16.639 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 11:56:16.639 [main] INFO  base.BaseTest - Waiting for the overlay to end
+2024-11-18 11:56:16.683 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 11:56:18.138 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
+2024-11-18 11:56:19.863 [main] WARN  pages.Agency - Element click intercepted, retrying... Attempt 1
+2024-11-18 11:57:20.423 [main] INFO  pages.Agency - Overlay disappeared.
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-18T11:57:51.980716100
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-18 11:57:53.601 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
+2024-11-18 11:57:53.603 [main] INFO  pages.LoginPage - Waiting for username field to be visible
+2024-11-18 11:57:59.636 [main] INFO  pages.LoginPage - Username field is now visible
+2024-11-18 11:57:59.775 [main] INFO  pages.LoginPage - Username inserted successfully
+2024-11-18 11:57:59.870 [main] INFO  pages.LoginPage - Password inserted successfully
+2024-11-18 11:58:00.288 [main] INFO  pages.LoginPage - Login button clicked
+2024-11-18 11:58:06.676 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
+2024-11-18 11:58:06.676 [main] INFO  base.BaseTest - Login successful.
+2024-11-18 11:58:06.702 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
+2024-11-18 11:58:06.860 [main] INFO  pages.MenuIcon - Menu icon clicked
+2024-11-18 11:58:06.860 [main] INFO  base.BaseTest - Clicked on menu icon.
+2024-11-18 11:58:12.033 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
+2024-11-18 11:58:26.485 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-11-18 11:58:26.485 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
+2024-11-18 11:58:26.486 [main] INFO  base.BaseTest - Switched to the new tab successfully.
+2024-11-18 11:58:27.012 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 11:58:27.013 [main] INFO  base.BaseTest - Waiting for the overlay to end
+2024-11-18 11:58:27.067 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 11:58:30.346 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
+2024-11-18 11:58:33.505 [main] INFO  pages.Agency - Clicked on Agency button.
+2024-11-18 11:58:33.505 [main] INFO  base.BaseTest - Clicked on Agency option.
+2024-11-18 11:58:33.524 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 11:58:34.918 [main] WARN  pages.Agency - Element click intercepted, retrying... Attempt 1
+2024-11-18 11:59:35.572 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 12:00:35.633 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 12:00:36.004 [main] INFO  pages.Agency - Clicked on Agencies button.
+2024-11-18 12:00:36.005 [main] INFO  base.BaseTest - Clicked on agencies button.
+2024-11-18 12:00:36.005 [main] INFO  base.BaseTest - Attempting to send agency code.
+2024-11-18 12:00:36.207 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
+-------------------------------------------------
+Log End: 2024-11-18T12:01:07.864096500
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-18T12:06:00.756106900
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-18 12:06:02.316 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
+2024-11-18 12:06:02.318 [main] INFO  pages.LoginPage - Waiting for username field to be visible
+2024-11-18 12:06:05.108 [main] INFO  pages.LoginPage - Username field is now visible
+2024-11-18 12:06:05.185 [main] INFO  pages.LoginPage - Username inserted successfully
+2024-11-18 12:06:05.244 [main] INFO  pages.LoginPage - Password inserted successfully
+2024-11-18 12:06:05.614 [main] INFO  pages.LoginPage - Login button clicked
+2024-11-18 12:06:10.824 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
+2024-11-18 12:06:10.825 [main] INFO  base.BaseTest - Login successful.
+2024-11-18 12:06:10.843 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
+2024-11-18 12:06:11.024 [main] INFO  pages.MenuIcon - Menu icon clicked
+2024-11-18 12:06:11.024 [main] INFO  base.BaseTest - Clicked on menu icon.
+2024-11-18 12:06:16.306 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
+2024-11-18 12:06:24.771 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-11-18 12:06:24.771 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
+2024-11-18 12:06:24.771 [main] INFO  base.BaseTest - Switched to the new tab successfully.
+2024-11-18 12:06:25.561 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 12:06:25.577 [main] INFO  base.BaseTest - Waiting for the overlay to end
+2024-11-18 12:06:25.649 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 12:06:32.086 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
+2024-11-18 12:06:35.453 [main] INFO  pages.Agency - Clicked on Agency button.
+2024-11-18 12:06:35.453 [main] INFO  base.BaseTest - Clicked on Agency option.
+2024-11-18 12:07:37.966 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 12:07:38.208 [main] INFO  pages.Agency - Clicked on Agencies button.
+2024-11-18 12:07:38.208 [main] INFO  base.BaseTest - Clicked on agencies button.
+2024-11-18 12:07:38.208 [main] INFO  base.BaseTest - Attempting to send agency code.
+2024-11-18 12:07:38.844 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
+-------------------------------------------------
+Log End: 2024-11-18T12:08:10.965000500
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-18T12:12:01.174856
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-18 12:12:02.701 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
+2024-11-18 12:12:02.703 [main] INFO  pages.LoginPage - Waiting for username field to be visible
+2024-11-18 12:12:08.892 [main] INFO  pages.LoginPage - Username field is now visible
+2024-11-18 12:12:08.989 [main] INFO  pages.LoginPage - Username inserted successfully
+2024-11-18 12:12:09.071 [main] INFO  pages.LoginPage - Password inserted successfully
+2024-11-18 12:12:20.970 [main] INFO  pages.LoginPage - Login button clicked
+2024-11-18 12:12:21.071 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
+2024-11-18 12:12:21.071 [main] INFO  base.BaseTest - Login successful.
+2024-11-18 12:12:21.087 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
+2024-11-18 12:12:21.251 [main] INFO  pages.MenuIcon - Menu icon clicked
+2024-11-18 12:12:21.251 [main] INFO  base.BaseTest - Clicked on menu icon.
+2024-11-18 12:12:26.397 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
+2024-11-18 12:12:38.346 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-11-18 12:12:38.346 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
+2024-11-18 12:12:38.346 [main] INFO  base.BaseTest - Switched to the new tab successfully.
+2024-11-18 12:12:39.164 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 12:12:39.164 [main] INFO  base.BaseTest - Waiting for the overlay to end
+2024-11-18 12:12:39.221 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 12:12:46.180 [main] INFO  pages.Agency - Home button is already clicked.
+2024-11-18 12:12:46.278 [main] INFO  pages.Agency - Agency button is already clicked.
+2024-11-18 12:12:46.279 [main] INFO  base.BaseTest - Clicked on Agency option.
+2024-11-18 12:12:46.294 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 12:12:46.468 [main] INFO  pages.Agency - Clicked on Agencies button.
+2024-11-18 12:12:46.469 [main] INFO  base.BaseTest - Clicked on agencies button.
+2024-11-18 12:12:46.469 [main] INFO  base.BaseTest - Attempting to send agency code.
+2024-11-18 12:12:46.992 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
+-------------------------------------------------
+Log End: 2024-11-18T12:13:18.982611400
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-18T12:17:11.668507600
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-18 12:17:13.194 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
+2024-11-18 12:17:13.196 [main] INFO  pages.LoginPage - Waiting for username field to be visible
+2024-11-18 12:17:16.918 [main] INFO  pages.LoginPage - Username field is now visible
+2024-11-18 12:17:16.987 [main] INFO  pages.LoginPage - Username inserted successfully
+2024-11-18 12:17:17.039 [main] INFO  pages.LoginPage - Password inserted successfully
+2024-11-18 12:17:17.405 [main] INFO  pages.LoginPage - Login button clicked
+2024-11-18 12:17:25.902 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
+2024-11-18 12:17:25.902 [main] INFO  base.BaseTest - Login successful.
+2024-11-18 12:17:25.928 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
+2024-11-18 12:17:26.062 [main] INFO  pages.MenuIcon - Menu icon clicked
+2024-11-18 12:17:26.062 [main] INFO  base.BaseTest - Clicked on menu icon.
+2024-11-18 12:17:31.273 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
+2024-11-18 12:17:40.928 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-11-18 12:17:40.928 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
+2024-11-18 12:17:40.928 [main] INFO  base.BaseTest - Switched to the new tab successfully.
+2024-11-18 12:17:41.592 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 12:17:41.592 [main] INFO  base.BaseTest - Waiting for the overlay to end
+2024-11-18 12:17:41.643 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 12:17:45.015 [main] INFO  pages.Agency - Home button is already clicked.
+2024-11-18 12:17:45.087 [main] INFO  pages.Agency - Agency button is already clicked.
+2024-11-18 12:17:45.088 [main] INFO  base.BaseTest - Clicked on Agency option.
+2024-11-18 12:18:45.671 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 12:18:45.928 [main] INFO  pages.Agency - Clicked on Agencies button.
+2024-11-18 12:18:45.928 [main] INFO  base.BaseTest - Clicked on agencies button.
+2024-11-18 12:18:45.928 [main] INFO  base.BaseTest - Attempting to send agency code.
+2024-11-18 12:18:46.501 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
+-------------------------------------------------
+Log End: 2024-11-18T12:19:18.770286600
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-18T12:19:58.259628600
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-18 12:19:59.817 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
+2024-11-18 12:19:59.819 [main] INFO  pages.LoginPage - Waiting for username field to be visible
+2024-11-18 12:20:03.140 [main] INFO  pages.LoginPage - Username field is now visible
+2024-11-18 12:20:03.224 [main] INFO  pages.LoginPage - Username inserted successfully
+2024-11-18 12:20:03.288 [main] INFO  pages.LoginPage - Password inserted successfully
+2024-11-18 12:20:03.687 [main] INFO  pages.LoginPage - Login button clicked
+2024-11-18 12:20:12.328 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
+2024-11-18 12:20:12.328 [main] INFO  base.BaseTest - Login successful.
+2024-11-18 12:20:12.362 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
+2024-11-18 12:20:12.541 [main] INFO  pages.MenuIcon - Menu icon clicked
+2024-11-18 12:20:12.541 [main] INFO  base.BaseTest - Clicked on menu icon.
+2024-11-18 12:20:17.703 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
+2024-11-18 12:20:30.223 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-11-18 12:20:30.223 [main] INFO  base.BaseTest - Clicked on 'CRS RCY' to open a new tab.
+2024-11-18 12:20:30.223 [main] INFO  base.BaseTest - Switched to the new tab successfully.
+2024-11-18 12:20:30.769 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 12:20:30.769 [main] INFO  base.BaseTest - Waiting for the overlay to end
+2024-11-18 12:20:30.815 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 12:20:33.823 [main] INFO  pages.Agency - Home button is already clicked.
+2024-11-18 12:20:33.890 [main] INFO  pages.Agency - Agency button is already clicked.
+2024-11-18 12:20:33.890 [main] INFO  base.BaseTest - Clicked on Agency option.
+2024-11-18 12:21:34.485 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 12:21:34.599 [main] INFO  pages.Agency - Clicked on Agencies button.
+2024-11-18 12:21:34.600 [main] INFO  base.BaseTest - Clicked on agencies button.
+2024-11-18 12:21:34.600 [main] INFO  base.BaseTest - Attempting to send agency code.
+2024-11-18 12:21:34.627 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
+2024-11-18 12:21:37.420 [main] INFO  pages.Agency - Agency code entered: C0001231Oct244444321
+2024-11-18 12:21:37.443 [main] INFO  pages.Agency - Waiting for search button to be clickable
+2024-11-18 12:21:37.527 [main] INFO  pages.Agency - Clicked on search button
+2024-11-18 12:21:37.527 [main] INFO  base.BaseTest - Clicked on agency code field.
+2024-11-18 12:21:41.756 [main] INFO  pages.Agency - Clicked on New Booking button.
+2024-11-18 12:21:41.756 [main] INFO  base.BaseTest - Clicked on new booking button.
+2024-11-18 12:21:41.770 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
+2024-11-18 12:21:47.223 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
+2024-11-18 12:21:47.224 [main] INFO  base.BaseTest - Verifying if the Voyage in the pipeline is selected
+2024-11-18 12:21:47.224 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
+2024-11-18 12:21:47.264 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
+2024-11-18 12:21:47.264 [main] INFO  pages.Voyage - Voyage tab is currently active.
+2024-11-18 12:21:47.491 [main] INFO  pages.Voyage - Clicked on search button in Voyage tab.
+2024-11-18 12:21:47.491 [main] INFO  base.BaseTest - Searching for available cruises.
+2024-11-18 12:21:51.463 [main] INFO  pages.Voyage - Checking cruise for availability and green mark.
+2024-11-18 12:21:51.988 [main] INFO  pages.Voyage - Selected a cruise with availability greater than 2.
+2024-11-18 12:21:51.988 [main] INFO  base.BaseTest - Random Available Cruise selected.
+2024-11-18 12:21:51.992 [main] INFO  pages.Package - Verifying if the UI is in the 'Package' tab.
+2024-11-18 12:22:01.528 [main] INFO  pages.Package - Package tab is correctly selected and highlighted in the pipeline.
+2024-11-18 12:22:01.528 [main] INFO  base.BaseTest - Verifying if the Package in the pipeline is selected
+2024-11-18 12:22:01.528 [main] INFO  pages.Package - Attempting to select a package. Attempt: 1
+2024-11-18 12:22:01.636 [main] INFO  pages.Package - Package selected successfully.
+2024-11-18 12:22:01.636 [main] INFO  base.BaseTest - Selected package
+2024-11-18 12:22:01.637 [main] INFO  pages.Package - Waiting for the 'Select Suite' button to be clickable.
+2024-11-18 12:22:01.883 [main] INFO  pages.Package - Select Suite button clicked successfully.
+2024-11-18 12:22:01.883 [main] INFO  base.BaseTest - Select Suite button clicked
+2024-11-18 12:22:01.888 [main] INFO  pages.Suite - Verifying if the UI is in the 'Suite(s)' tab.
+2024-11-18 12:22:02.025 [main] INFO  base.BaseTest - Verifying if the Suites in the pipeline is selected
+2024-11-18 12:22:02.025 [main] INFO  pages.Suite - Checking available suites.
+2024-11-18 12:22:02.025 [main] INFO  pages.Suite - Waiting for spinner to disappear.
+2024-11-18 12:23:18.784 [main] INFO  pages.Suite - Spinner disappeared.
+2024-11-18 12:23:19.162 [main] INFO  pages.Suite - Available suite selected successfully.
+2024-11-18 12:23:19.162 [main] INFO  base.BaseTest - Selected suites
+2024-11-18 12:23:19.162 [main] INFO  pages.Suite - Waiting for the Select Suite button to be clickable.
+2024-11-18 12:23:19.162 [main] INFO  pages.Suite - Waiting for spinner to disappear.
+2024-11-18 12:24:22.160 [main] INFO  pages.Suite - Spinner disappeared.
+2024-11-18 12:24:22.414 [main] INFO  pages.Suite - Select Suite button clicked successfully.
+2024-11-18 12:24:22.415 [main] INFO  base.BaseTest - Select Suite button clicked
+2024-11-18 12:24:22.444 [main] INFO  pages.PreviewOptions - Verifying if the UI is in the 'Preview/Options' tab.
+2024-11-18 12:24:35.233 [main] INFO  pages.PreviewOptions - Preview/Options tab is correctly selected and highlighted in the pipeline.
+2024-11-18 12:24:35.233 [main] INFO  base.BaseTest - Verifying if the Preview/Options in the pipeline is selected
+2024-11-18 12:24:35.233 [main] INFO  pages.PreviewOptions - Attempting to locate and select an item/option.
+2024-11-18 12:24:35.331 [main] INFO  pages.PreviewOptions - Item/Option selected successfully.
+2024-11-18 12:24:35.332 [main] INFO  base.BaseTest - Selected item
+2024-11-18 12:24:35.332 [main] INFO  pages.PreviewOptions - Attempting to click on 'Proceed to Booking' button.
+2024-11-18 12:24:35.843 [main] INFO  pages.PreviewOptions - Clicked on 'Proceed to Booking' button successfully.
+2024-11-18 12:24:35.843 [main] INFO  base.BaseTest - Select Proceed to booking button clicked
+-------------------------------------------------
+Log End: 2024-11-18T12:24:36.552735600
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-18T18:54:03.075314700
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-18 18:54:05.560 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
+2024-11-18 18:54:05.562 [main] INFO  pages.LoginPage - Waiting for username field to be visible
+2024-11-18 18:54:08.172 [main] INFO  pages.LoginPage - Username field is now visible
+2024-11-18 18:54:08.272 [main] INFO  pages.LoginPage - Username inserted successfully
+2024-11-18 18:54:08.351 [main] INFO  pages.LoginPage - Password inserted successfully
+2024-11-18 18:54:15.560 [main] INFO  pages.LoginPage - Login button clicked
+2024-11-18 18:54:15.576 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
+2024-11-18 18:54:15.576 [main] INFO  base.BaseTest - Login successful.
+2024-11-18 18:54:15.590 [main] INFO  base.BaseTest - Clicking on the menu icon.
+2024-11-18 18:54:15.593 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
+2024-11-18 18:54:15.716 [main] INFO  pages.MenuIcon - Menu icon clicked
+2024-11-18 18:54:15.716 [main] INFO  base.BaseTest - Menu icon clicked successfully.
+2024-11-18 18:54:15.723 [main] INFO  base.BaseTest - Interacting with Central Set Up.
+2024-11-18 18:54:15.813 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
+2024-11-18 18:54:18.790 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-11-18 18:54:18.790 [main] INFO  base.BaseTest - Central Set Up interaction completed successfully.
+2024-11-18 18:54:18.802 [main] INFO  base.BaseTest - Waiting for the overlay to disappear.
+2024-11-18 18:54:19.230 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 18:54:19.230 [main] INFO  base.BaseTest - Overlay disappeared successfully.
+2024-11-18 18:54:19.230 [main] INFO  base.BaseTest - Navigating to the Agency section.
+2024-11-18 18:54:19.255 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 18:54:20.962 [main] INFO  pages.Agency - Home button is already active.
+-------------------------------------------------
+Log End: 2024-11-18T18:54:23.299301500
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-18T22:06:05.222154100
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-18 22:06:07.314 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
+2024-11-18 22:06:07.316 [main] INFO  pages.LoginPage - Waiting for username field to be visible
+2024-11-18 22:06:10.875 [main] INFO  pages.LoginPage - Username field is now visible
+2024-11-18 22:06:10.980 [main] INFO  pages.LoginPage - Username inserted successfully
+2024-11-18 22:06:11.042 [main] INFO  pages.LoginPage - Password inserted successfully
+2024-11-18 22:06:11.519 [main] INFO  pages.LoginPage - Login button clicked
+2024-11-18 22:06:19.036 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
+2024-11-18 22:06:19.036 [main] INFO  base.BaseTest - Login successful.
+2024-11-18 22:06:19.049 [main] INFO  base.BaseTest - Clicking on the menu icon.
+2024-11-18 22:06:19.049 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
+2024-11-18 22:06:19.169 [main] INFO  pages.MenuIcon - Menu icon clicked
+2024-11-18 22:06:19.169 [main] INFO  base.BaseTest - Menu icon clicked successfully.
+2024-11-18 22:06:19.182 [main] INFO  base.BaseTest - Interacting with Central Set Up.
+2024-11-18 22:06:19.252 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
+2024-11-18 22:06:25.602 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-11-18 22:06:25.602 [main] INFO  base.BaseTest - Central Set Up interaction completed successfully.
+2024-11-18 22:06:25.610 [main] INFO  base.BaseTest - Waiting for the overlay to disappear.
+2024-11-18 22:06:26.234 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 22:06:26.234 [main] INFO  base.BaseTest - Overlay disappeared successfully.
+2024-11-18 22:06:26.234 [main] INFO  base.BaseTest - Navigating to the Agency section.
+2024-11-18 22:06:26.253 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 22:06:27.635 [main] INFO  pages.Agency - Home button is already active.
+-------------------------------------------------
+Log End: 2024-11-18T22:06:29.418988700
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-18T22:14:18.530189500
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-18 22:14:20.233 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
+2024-11-18 22:14:20.235 [main] INFO  pages.LoginPage - Waiting for username field to be visible
+2024-11-18 22:14:23.596 [main] INFO  pages.LoginPage - Username field is now visible
+2024-11-18 22:14:23.689 [main] INFO  pages.LoginPage - Username inserted successfully
+2024-11-18 22:14:23.749 [main] INFO  pages.LoginPage - Password inserted successfully
+2024-11-18 22:14:31.445 [main] INFO  pages.LoginPage - Login button clicked
+2024-11-18 22:14:31.628 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
+2024-11-18 22:14:31.628 [main] INFO  base.BaseTest - Login successful.
+2024-11-18 22:14:31.628 [main] INFO  base.BaseTest - Clicking on the menu icon.
+2024-11-18 22:14:31.628 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
+2024-11-18 22:14:31.767 [main] INFO  pages.MenuIcon - Menu icon clicked
+2024-11-18 22:14:31.767 [main] INFO  base.BaseTest - Menu icon clicked successfully.
+2024-11-18 22:14:31.769 [main] INFO  base.BaseTest - Interacting with Central Set Up.
+2024-11-18 22:14:36.902 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
+2024-11-18 22:14:53.741 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-11-18 22:14:53.741 [main] INFO  base.BaseTest - Central Set Up interaction completed successfully.
+2024-11-18 22:14:53.749 [main] INFO  base.BaseTest - Waiting for the overlay to disappear.
+2024-11-18 22:14:54.626 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 22:14:54.626 [main] INFO  base.BaseTest - Overlay disappeared successfully.
+2024-11-18 22:14:54.626 [main] INFO  base.BaseTest - Navigating to the Agency section.
+2024-11-18 22:14:57.940 [main] INFO  pages.Agency - Home button is not clicked. Clicking on Home button.
+-------------------------------------------------
+Log End: 2024-11-18T22:15:02.911473200
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-18T23:16:48.189299
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-18 23:16:50.489 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
+2024-11-18 23:16:50.491 [main] INFO  pages.LoginPage - Waiting for username field to be visible
+2024-11-18 23:16:54.086 [main] INFO  pages.LoginPage - Username field is now visible
+2024-11-18 23:16:54.183 [main] INFO  pages.LoginPage - Username inserted successfully
+2024-11-18 23:16:54.242 [main] INFO  pages.LoginPage - Password inserted successfully
+2024-11-18 23:16:54.630 [main] INFO  pages.LoginPage - Login button clicked
+2024-11-18 23:17:02.044 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
+2024-11-18 23:17:02.046 [main] INFO  base.BaseTest - Login successful.
+2024-11-18 23:17:02.046 [main] INFO  base.BaseTest - Clicking on the menu icon.
+2024-11-18 23:17:02.046 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
+2024-11-18 23:17:02.181 [main] INFO  pages.MenuIcon - Menu icon clicked
+2024-11-18 23:17:02.181 [main] INFO  base.BaseTest - Menu icon clicked successfully.
+2024-11-18 23:17:02.189 [main] INFO  base.BaseTest - Interacting with Central Set Up.
+2024-11-18 23:17:02.299 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
+2024-11-18 23:17:07.413 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-11-18 23:17:07.413 [main] INFO  base.BaseTest - Central Set Up interaction completed successfully.
+2024-11-18 23:17:07.413 [main] INFO  base.BaseTest - Waiting for the overlay to disappear.
+2024-11-18 23:17:07.946 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 23:17:07.946 [main] INFO  base.BaseTest - Overlay disappeared successfully.
+2024-11-18 23:17:07.946 [main] INFO  base.BaseTest - Navigating to the Agency section.
+2024-11-18 23:17:11.159 [main] INFO  pages.Agency - Home button is already clicked.
+2024-11-18 23:17:11.254 [main] INFO  pages.Agency - Agency button is already clicked.
+2024-11-18 23:17:11.254 [main] INFO  base.BaseTest - Agency section navigation successful.
+2024-11-18 23:17:11.254 [main] INFO  base.BaseTest - Navigating to the Agencies section.
+2024-11-18 23:17:11.509 [main] INFO  pages.Agency - Clicked on Agencies button.
+2024-11-18 23:17:13.514 [main] INFO  base.BaseTest - Agencies section navigation successful.
+2024-11-18 23:17:13.514 [main] INFO  base.BaseTest - Performing Agency search by code.
+2024-11-18 23:17:13.530 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
+2024-11-18 23:17:21.110 [main] INFO  pages.Agency - Waiting for search button to be clickable
+2024-11-18 23:17:24.191 [main] INFO  pages.Agency - Clicked on search button
+2024-11-18 23:17:24.191 [main] INFO  base.BaseTest - Agency search completed successfully.
+2024-11-18 23:17:24.191 [main] INFO  base.BaseTest - Clicking on the New Booking button.
+2024-11-18 23:17:26.140 [main] INFO  base.BaseTest - New Booking button clicked successfully.
+2024-11-18 23:17:26.143 [main] INFO  base.BaseTest - Verifying if Voyage tab is selected.
+2024-11-18 23:17:26.143 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
+2024-11-18 23:17:28.106 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
+2024-11-18 23:17:28.107 [main] INFO  base.BaseTest - Voyage tab is selected.
+2024-11-18 23:17:28.107 [main] INFO  base.BaseTest - Searching for available cruises.
+2024-11-18 23:17:28.107 [main] INFO  pages.Voyage - Verifying if the UI is in the 'Voyage' tab.
+2024-11-18 23:17:28.173 [main] INFO  pages.Voyage - Voyage tab is correctly selected and highlighted in the pipeline.
+2024-11-18 23:17:28.179 [main] INFO  pages.Voyage - Voyage tab is currently active.
+2024-11-18 23:17:28.805 [main] INFO  pages.Voyage - Clicked on search button in Voyage tab.
+2024-11-18 23:17:28.805 [main] INFO  base.BaseTest - Search for cruises initiated.
+2024-11-18 23:17:28.805 [main] INFO  base.BaseTest - Selecting a random available cruise.
+2024-11-18 23:17:30.178 [main] INFO  pages.Voyage - Checking cruise for availability and green mark.
+2024-11-18 23:17:30.490 [main] INFO  pages.Voyage - Selected a cruise with availability greater than 2.
+2024-11-18 23:17:30.490 [main] INFO  base.BaseTest - Cruise selected.
+2024-11-18 23:17:30.492 [main] INFO  base.BaseTest - Verifying if the Package tab is selected.
+2024-11-18 23:17:30.492 [main] INFO  pages.Package - Verifying if the UI is in the 'Package' tab.
+2024-11-18 23:17:35.445 [main] INFO  pages.Package - Package tab is correctly selected and highlighted in the pipeline.
+2024-11-18 23:17:35.445 [main] INFO  base.BaseTest - Package tab is selected.
+2024-11-18 23:17:35.445 [main] INFO  base.BaseTest - Selecting a package.
+2024-11-18 23:17:35.445 [main] INFO  pages.Package - Attempting to select a package. Attempt: 1
+2024-11-18 23:17:35.508 [main] INFO  pages.Package - Package selected successfully.
+2024-11-18 23:17:35.508 [main] INFO  base.BaseTest - Package selected successfully.
+2024-11-18 23:17:35.508 [main] INFO  base.BaseTest - Clicking on Select Suite button.
+2024-11-18 23:17:35.508 [main] INFO  pages.Package - Waiting for the 'Select Suite' button to be clickable.
+2024-11-18 23:17:35.602 [main] INFO  pages.Package - Select Suite button clicked successfully.
+2024-11-18 23:17:35.602 [main] INFO  base.BaseTest - Select Suite button clicked.
+2024-11-18 23:17:35.606 [main] INFO  base.BaseTest - Verifying if the Suite tab is selected.
+2024-11-18 23:17:35.606 [main] INFO  pages.Suite - Verifying if the UI is in the 'Suite(s)' tab.
+-------------------------------------------------
+Log End: 2024-11-18T23:17:36.551201900
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-18T23:20:38.901646800
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-18 23:20:40.596 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
+2024-11-18 23:20:40.598 [main] INFO  pages.LoginPage - Waiting for username field to be visible
+2024-11-18 23:20:43.885 [main] INFO  pages.LoginPage - Username field is now visible
+2024-11-18 23:20:43.973 [main] INFO  pages.LoginPage - Username inserted successfully
+2024-11-18 23:20:44.030 [main] INFO  pages.LoginPage - Password inserted successfully
+2024-11-18 23:20:53.094 [main] INFO  pages.LoginPage - Login button clicked
+2024-11-18 23:20:53.293 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
+2024-11-18 23:20:53.293 [main] INFO  base.BaseTest - Login successful.
+2024-11-18 23:20:53.293 [main] INFO  base.BaseTest - Clicking on the menu icon.
+2024-11-18 23:20:53.293 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
+2024-11-18 23:20:53.459 [main] INFO  pages.MenuIcon - Menu icon clicked
+2024-11-18 23:20:53.460 [main] INFO  base.BaseTest - Menu icon clicked successfully.
+2024-11-18 23:20:53.462 [main] INFO  base.BaseTest - Interacting with Central Set Up.
+2024-11-18 23:20:58.585 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
+2024-11-18 23:21:08.901 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS
+2024-11-18 23:21:08.901 [main] INFO  base.BaseTest - Central Set Up interaction completed successfully.
+2024-11-18 23:21:08.908 [main] INFO  base.BaseTest - Waiting for the overlay to disappear.
+2024-11-18 23:21:10.895 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 23:21:10.895 [main] INFO  base.BaseTest - Overlay disappeared successfully.
+2024-11-18 23:21:10.895 [main] INFO  base.BaseTest - Navigating to the Agency section.
+2024-11-18 23:21:13.181 [main] INFO  pages.Agency - Home button is already clicked.
+2024-11-18 23:21:13.221 [main] INFO  pages.Agency - Agency button is already clicked.
+2024-11-18 23:21:13.221 [main] INFO  base.BaseTest - Agency section navigation successful.
+2024-11-18 23:21:13.221 [main] INFO  base.BaseTest - Navigating to the Agencies section.
+-------------------------------------------------
+Log End: 2024-11-18T23:21:14.936187
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-18T23:22:02.486685700
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+
+2024-11-18 23:22:04.226 [main] INFO  base.BaseTest - Attempting to log in with provided credentials.
+2024-11-18 23:22:04.228 [main] INFO  pages.LoginPage - Waiting for username field to be visible
+2024-11-18 23:22:07.337 [main] INFO  pages.LoginPage - Username field is now visible
+2024-11-18 23:22:07.471 [main] INFO  pages.LoginPage - Username inserted successfully
+2024-11-18 23:22:07.532 [main] INFO  pages.LoginPage - Password inserted successfully
+2024-11-18 23:22:14.314 [main] INFO  pages.LoginPage - Login button clicked
+2024-11-18 23:22:14.612 [main] INFO  pages.LoginPage - Signed in successfully, redirected to dashboard.
+2024-11-18 23:22:14.612 [main] INFO  base.BaseTest - Login successful.
+2024-11-18 23:22:14.618 [main] INFO  base.BaseTest - Clicking on the menu icon.
+2024-11-18 23:22:14.618 [main] INFO  pages.MenuIcon - Waiting for menu icon to appear
+2024-11-18 23:22:14.776 [main] INFO  pages.MenuIcon - Menu icon clicked
+2024-11-18 23:22:14.776 [main] INFO  base.BaseTest - Menu icon clicked successfully.
+2024-11-18 23:22:14.781 [main] INFO  base.BaseTest - Interacting with Central Set Up.
+2024-11-18 23:22:19.901 [main] INFO  pages.CentralSetUp - CRS RCY menu clicked
+2024-11-18 23:22:32.918 [main] INFO  pages.CentralSetUp - Switched to new tab. The title of the new tab is: CruisePAL CRS - Home Page
+2024-11-18 23:22:32.918 [main] INFO  base.BaseTest - Central Set Up interaction completed successfully.
+2024-11-18 23:22:32.918 [main] INFO  base.BaseTest - Waiting for the overlay to disappear.
+2024-11-18 23:22:32.944 [main] INFO  pages.Agency - Overlay disappeared.
+2024-11-18 23:22:32.944 [main] INFO  base.BaseTest - Overlay disappeared successfully.
+2024-11-18 23:22:32.944 [main] INFO  base.BaseTest - Navigating to the Agency section.
+2024-11-18 23:22:36.364 [main] INFO  pages.Agency - Home button is already clicked.
+2024-11-18 23:22:36.392 [main] INFO  pages.Agency - Agency button is already clicked.
+2024-11-18 23:22:36.393 [main] INFO  base.BaseTest - Agency section navigation successful.
+2024-11-18 23:22:36.393 [main] INFO  base.BaseTest - Navigating to the Agencies section.
+2024-11-18 23:22:36.709 [main] INFO  pages.Agency - Clicked on Agencies button.
+2024-11-18 23:22:38.720 [main] INFO  base.BaseTest - Agencies section navigation successful.
+2024-11-18 23:22:38.720 [main] INFO  base.BaseTest - Performing Agency search by code.
+2024-11-18 23:22:38.743 [main] INFO  pages.Agency - Waiting for agency code field to be clickable
+2024-11-18 23:22:46.342 [main] INFO  pages.Agency - Waiting for search button to be clickable
+2024-11-18 23:22:49.458 [main] INFO  pages.Agency - Clicked on search button
+2024-11-18 23:22:49.458 [main] INFO  base.BaseTest - Agency search completed successfully.
+2024-11-18 23:22:49.458 [main] INFO  base.BaseTest - Clicking on the New Booking button.
+-------------------------------------------------
+Log End: 2024-11-18T23:22:52.217021
+-------------------------------------------------
+
+-------------------------------------------------
+Name: supportuser2
+Log Start: 2024-11-19T11:00:41.006280500
+Java Version: 23.0.1
+Operating System: Windows 11
+System Name: DESKTOP-KR6B0UD
+-------------------------------------------------
+

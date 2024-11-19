@@ -4,24 +4,25 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import base.BaseTest;
-import pages.Agency;
-import pages.CentralSetUp;
-import pages.LoginPage;
-import pages.MenuIcon;
+import pages.*;
 import pages.Package;
-import pages.PreviewOptions;
-import pages.Suite;
-import pages.Voyage;
-
 
 public class BookingTest extends BaseTest {
 
     private static final Logger log = LogManager.getLogger(BaseTest.class);
     private static final Logger eLogger = LogManager.getLogger("com.demo.ng_crs.error"); // For ERROR logs
 
-//login
+    // Helper method for error handling
+    private void handleError(String action, Exception e, SoftAssert softAssert) {
+        eLogger.error("{} failed: {}", action, e.getMessage(), e);
+        softAssert.fail(action + " failed: " + e.getMessage());
+    }
+    SoftAssert softAssert = new SoftAssert();
+
+    // Login Test
     @Test
     public void login() {
         LoginPage loginPage = new LoginPage(driver);
@@ -31,203 +32,211 @@ public class BookingTest extends BaseTest {
             loginPage.login(config.getProperty("username"), config.getProperty("password"));
             log.info("Login successful.");
         } catch (Exception e) {
-            eLogger.error("Login failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at login: " + e.getMessage());
+            handleError("Login", e, softAssert);
         }
     }
 
- //menu
+    // Menu Test
     @Test(dependsOnMethods = "login")
     public void menu() {
-        MenuIcon menuicon = new MenuIcon(driver);
+        MenuIcon menuIcon = new MenuIcon(driver);
 
         try {
-            Thread.sleep(4000); // Better replaced with explicit waits
-            menuicon.menu();
-            log.info("Clicked on menu icon.");
+            log.info("Clicking on the menu icon.");
+            menuIcon.menu();
+            log.info("Menu icon clicked successfully.");
         } catch (Exception e) {
-        	eLogger.error("Menu icon interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at Menu Icon: " + e.getMessage());
+            handleError("Menu Icon", e, softAssert);
+
         }
     }
-    
- //central setup
 
+    // Central Setup Test
     @Test(dependsOnMethods = "menu")
     public void csu() {
-        CentralSetUp centralsetup = new CentralSetUp(driver);
+        CentralSetUp centralSetup = new CentralSetUp(driver);
 
-        // Click on Central Set Up (CRS RCY)
         try {
-            Thread.sleep(4000); // Better replaced with explicit waits
-            centralsetup.csu();
-            log.info("Clicked on 'CRS RCY' to open a new tab.");
-            log.info("Switched to the new tab successfully.");
+            log.info("Interacting with Central Set Up.");
+            centralSetup.csu();
+            log.info("Central Set Up interaction completed successfully.");
         } catch (Exception e) {
-        	eLogger.error("Central Set Up interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at Central Set Up: " + e.getMessage());
+            handleError("CSU", e, softAssert);
+
         }
     }
 
- //Agent
+    // Agent Test
     @Test(dependsOnMethods = "csu")
     public void agent() {
         Agency agency = new Agency(driver);
-        
+
+
         try {
-        	agency.waitForOverlayToDisappear();
-        	log.info("Waiting for the overlay to end");
-        }catch(Exception e) {
-        	eLogger.error("Overlay spinner is problematic at:"+e.getMessage(),e);
-        	Assert.fail("Test failed at overlaymethod: "+e.getMessage());
+            log.info("Waiting for the overlay to disappear.");
+            agency.waitForOverlayToDisappear();
+            log.info("Overlay disappeared successfully.");
+        } catch (Exception e) {
+            handleError("Overlay wait", e, softAssert);
         }
-        
+
         try {
+            log.info("Navigating to the Agency section.");
             agency.agency();
-            log.info("Clicked on Agency option.");
+            log.info("Agency section navigation successful.");
         } catch (Exception e) {
-        	eLogger.error("Agency interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at agency button: " + e.getMessage());
+            handleError("Agency section navigation", e, softAssert);
         }
         
         try {
+            log.info("Navigating to the Agencies section.");
             agency.agencies();
-            log.info("Clicked on agencies button.");
+            log.info("Agencies section navigation successful.");
         } catch (Exception e) {
-        	eLogger.error("Agencies interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at agencies button: " + e.getMessage());
+            handleError("Agencies section navigation", e, softAssert);
         }
-        
         try {
-            log.info("Attempting to send agency code.");
+            log.info("Passing Agency code.");
             agency.searchAgent(config.getProperty("agencyCode"));
-            log.info("Clicked on agency code field.");
+            log.info("Agency code passed successfully.");
         } catch (Exception e) {
-        	eLogger.error("Agency code field interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at agency code field: " + e.getMessage());
+            handleError("Agency code", e, softAssert);
         }
         
         try {
-            agency.newBooking();
-            log.info("Clicked on new booking button.");
+            log.info("Passing Agency code.");
+            agency.search();
+            log.info("Search button clicked successfully.");
         } catch (Exception e) {
-        	eLogger.error("New Booking interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at new booking button: " + e.getMessage());
+            handleError("Search button", e, softAssert);
         }
 
-
+        try {
+            log.info("Clicking on the New Booking button.");
+            agency.newBooking();
+            log.info("New Booking button clicked successfully.");
+        } catch (Exception e) {
+            handleError("New Booking button click", e, softAssert);
+        }
     }
-    
+    // Voyage Tab Test
     @Test(dependsOnMethods = "agent")
     public void voyageTab() {
-        Voyage voyages = new Voyage(driver);
-        
+        Voyage voyage = new Voyage(driver);
+
         try {
-            voyages.isVoyageTabSelected();
-            log.info("Verifying if the Voyage in the pipeline is selected");
+            log.info("Verifying if Voyage tab is selected.");
+            Assert.assertTrue(voyage.isVoyageTabSelected(), "Voyage tab not selected.");
+            log.info("Voyage tab is selected.");
         } catch (Exception e) {
-        	eLogger.error("Voyage tab interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at voyage tab: " + e.getMessage());
+            handleError("Voyage tab", e, softAssert);
         }
 
         try {
-            voyages.voyageTab();
             log.info("Searching for available cruises.");
+            voyage.voyageTab();
+            log.info("Search for cruises initiated.");
         } catch (Exception e) {
-        	eLogger.error("Cruise searching interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at VoyageTab: " + e.getMessage());
+            handleError("Cruise Seacrh", e, softAssert);
         }
-        
+
         try {
-            voyages.availableCruise();
-            log.info("Random Available Cruise selected.");
+            log.info("Selecting a random available cruise.");
+            voyage.availableCruise();
+            log.info("Cruise selected.");
         } catch (Exception e) {
-        	eLogger.error("Cruise selection interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at VoyageTab: " + e.getMessage());
+            handleError("Available cruises", e, softAssert);
         }
-      
     }
-    
+
+    // Package Tab Test
     @Test(dependsOnMethods = "voyageTab")
     public void packageTab() {
-    	Package packageVoy= new Package(driver);
-    	try {
-            packageVoy.isPackageTabSelected();
-            log.info("Verifying if the Package in the pipeline is selected");
+        Package packageVoy = new Package(driver);
+
+        try {
+            log.info("Verifying if the Package tab is selected.");
+            Assert.assertTrue(packageVoy.isPackageTabSelected(), "Package tab not selected.");
+            log.info("Package tab is selected.");
         } catch (Exception e) {
-        	eLogger.error("Package tab interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at package tab: " + e.getMessage());
+            handleError("Packgae Tab", e, softAssert);
+
         }
-    	try {
-    		packageVoy.packages();
-    		log.info("Selected package");
-    	}catch(Exception e) {
-    		eLogger.error("Package selection interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at PackageTab: " + e.getMessage());
-    	}
-    	
-    	try {
-    		packageVoy.selectSuite();
-    		log.info("Select Suite button clicked");
-    	}catch(Exception e) {
-    		eLogger.error("Select suite button interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at Select suite in package: " + e.getMessage());
-    	}
+
+        try {
+            log.info("Selecting a package.");
+            packageVoy.packages();
+            log.info("Package selected successfully.");
+        } catch (Exception e) {
+            handleError("Available packages", e, softAssert);
+        }
+
+        try {
+            log.info("Clicking on Select Suite button.");
+            packageVoy.selectSuite();
+            log.info("Select Suite button clicked.");
+        } catch (Exception e) {
+            handleError("Select Suite button", e, softAssert);
+        }
     }
-    
+
+    // Suite Tab Test
     @Test(dependsOnMethods = "packageTab")
     public void suiteTab() {
-    	Suite suites= new Suite(driver);
-    	
-    	
-    	try {
-            suites.isSuiteTabSelected();
-            log.info("Verifying if the Suites in the pipeline is selected");
+        Suite suite = new Suite(driver);
+
+        try {
+            log.info("Verifying if the Suite tab is selected.");
+            Assert.assertTrue(suite.isSuiteTabSelected(), "Suite tab not selected.");
+            log.info("Suite tab is selected.");
         } catch (Exception e) {
-        	eLogger.error("Suites tab interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at suites tab: " + e.getMessage());
+            handleError("Suite Tab", e, softAssert);
         }
-    	try {
-    		suites.suites();
-    		log.info("Selected suites");
-    	}catch(Exception e) {
-    		eLogger.error("Suites selection interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at SuitesTab: " + e.getMessage());
-    	}
-    	
-    	try {
-    		suites.selectSuite();
-    		log.info("Select Suite button clicked");
-    	}catch(Exception e) {
-    		eLogger.error("Select suite button interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at Select suite in package: " + e.getMessage());
-    	}
+
+        try {
+            log.info("Selecting a suite.");
+            suite.suites();
+            log.info("Suite selected successfully.");
+        } catch (Exception e) {
+            handleError("Avaiable suites ", e, softAssert);
+        }
+
+        try {
+            log.info("Clicking on Select Suite button.");
+            suite.selectSuite();
+            log.info("Select Suite button clicked.");
+        } catch (Exception e) {
+            handleError("Select suite button", e, softAssert);
+        }
     }
-    
+
+    // Preview Tab Test
     @Test(dependsOnMethods = "suiteTab")
     public void previewTab() {
-    	PreviewOptions options= new PreviewOptions(driver);
-    	try {
-            options.isPreviewOptionsTabSelected();
-            log.info("Verifying if the Preview/Options in the pipeline is selected");
+        PreviewOptions options = new PreviewOptions(driver);
+
+        try {
+            log.info("Verifying if the Preview/Options tab is selected.");
+            Assert.assertTrue(options.isPreviewOptionsTabSelected(), "Preview/Options tab not selected.");
+            log.info("Preview/Options tab is selected.");
         } catch (Exception e) {
-        	eLogger.error("Preview/Options tab interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at Preview/Options tab: " + e.getMessage());
+            handleError("Preview Tab", e, softAssert);
         }
-    	try {
-    		options.options();
-    		log.info("Selected item");
-    	}catch(Exception e) {
-    		eLogger.error("Item selection interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at Preview/OptionsTab: " + e.getMessage());
-    	}
-    	
-    	try {
-    		options.proceedToBooking();
-    		log.info("Select Proceed to booking button clicked");
-    	}catch(Exception e) {
-    		eLogger.error("Proceed to booking button interaction failed at: " + e.getMessage(), e);
-            Assert.fail("Test failed at Proceed to booking in Preview/Options: " + e.getMessage());
-    	}
+
+        try {
+            log.info("Interacting with options.");
+            options.options();
+            log.info("Options selected successfully.");
+        } catch (Exception e) {
+            handleError("Avaiable options", e, softAssert);
+        }
+
+        try {
+            log.info("Clicking on Proceed to Booking button.");
+            options.proceedToBooking();
+            log.info("Proceed to Booking button clicked.");
+        } catch (Exception e) {
+            handleError("Proceed to booking button", e, softAssert);
+        }
     }
 }

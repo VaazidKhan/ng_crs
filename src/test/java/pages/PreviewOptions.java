@@ -2,35 +2,40 @@ package pages;
 
 import java.time.Duration;
 import java.util.List;
-
+import java.util.NoSuchElementException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 
 public class PreviewOptions {
 
     WebDriver driver;
-    WebDriverWait wait;
+    Wait<WebDriver> wait;
 
     private static final Logger log = LogManager.getLogger(PreviewOptions.class); // Updated logger
     private static final Logger errorLogger = LogManager.getLogger("com.demo.ng_crs.error"); // For ERROR logs
 
-    // Constructor to initialize WebDriver and WebDriverWait
+    // Constructor to initialize WebDriver and FluentWait
     public PreviewOptions(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(30)); // Explicit wait
+        this.wait = new FluentWait<>(driver)
+                        .withTimeout(Duration.ofSeconds(30))
+                        .pollingEvery(Duration.ofSeconds(5))
+                        .ignoring(NoSuchElementException.class, StaleElementReferenceException.class);
     }
 
     // Locators
-    private static final By PREVIEW_PIPE = By.xpath("//li[@role='tab' and @aria-controls='k-tabstrip-tabpanel-3' and .//span[text()='Preview/Options']]");
-    private static final By TAB = By.xpath("//div[@class='d-flex gap-3']/span");
-    private static final By OPTIONS_FIELD = By.xpath("//div[@class='preview-item']");
-    private static final By PROCEED_TO_BOOKING_BUTTON = By.xpath("//button[@class='btn btn-primary text-nowrap']");
+    By PREVIEW_PIPE = By.xpath("//li[@role='tab' and @aria-controls='k-tabstrip-tabpanel-3' and .//span[text()='Preview/Options']]");
+    By TAB = By.xpath("//div[@class='d-flex gap-3']/span");
+    By OPTIONS_FIELD = By.xpath("//div[@class='preview-item']");
+    By PROCEED_TO_BOOKING_BUTTON = By.xpath("//button[@class='btn btn-primary text-nowrap']");
 
     // Method to verify if "Preview/Options" tab is selected
     public boolean isPreviewOptionsTabSelected() {
@@ -60,7 +65,6 @@ public class PreviewOptions {
     // Method to select an option/item
     public void options() {
         try {
-        	Thread.sleep(3000);
             log.info("Attempting to locate and select an item/option.");
             List<WebElement> optionsElements = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(OPTIONS_FIELD));
 

@@ -1,205 +1,39 @@
-2024-11-18 10:39:00.424 [main] ERROR com.demo.ng_crs.error - Suites tab is not selected as expected. aria-selected: false, Tab Text: Suite(s)
-2024-11-18 10:39:03.076 [main] ERROR com.demo.ng_crs.error - Error selecting suite: element click intercepted: Element <span _ngcontent-sot-c759="" kendotooltip="" class="status status-approve ng-star-inserted" title="Available">...</span> is not clickable at point (905, 319). Other element would receive the click: <div _ngcontent-sot-c462="" class="ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
-  (Session info: chrome=130.0.6723.119)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c960f94d9ac22846506ec2d41a8a186, clickElement {id=f.FB1C4632BB64AD0943A9D5BD75105F07.d.BA170F459700D17FBEE15A93D44B4267.e.780}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61913}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61913/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6c960f94d9ac22846506ec2d41a8a186)] -> xpath: //span[@title='Available']]
-Session ID: 6c960f94d9ac22846506ec2d41a8a186
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span _ngcontent-sot-c759="" kendotooltip="" class="status status-approve ng-star-inserted" title="Available">...</span> is not clickable at point (905, 319). Other element would receive the click: <div _ngcontent-sot-c462="" class="ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
-  (Session info: chrome=130.0.6723.119)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6c960f94d9ac22846506ec2d41a8a186, clickElement {id=f.FB1C4632BB64AD0943A9D5BD75105F07.d.BA170F459700D17FBEE15A93D44B4267.e.780}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61913}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61913/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (6c960f94d9ac22846506ec2d41a8a186)] -> xpath: //span[@title='Available']]
-Session ID: 6c960f94d9ac22846506ec2d41a8a186
-	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
-	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501) ~[?:?]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:485) ~[?:?]
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.25.0.jar:?]
-	at pages.Suite.suites(Suite.java:79) ~[test-classes/:?]
-	at tests.BookingTest.suiteTab(BookingTest.java:191) ~[test-classes/:?]
-	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.0.jar:7.10.0]
-	at java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
-	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.0.jar:7.10.0]
-	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.0.jar:7.10.0]
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.0.jar:7.10.0]
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.0.jar:7.10.0]
-	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.0.jar:7.10.0]
-	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.0.jar:7.10.0]
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-19 11:04:28.839 [main] ERROR com.demo.ng_crs.error - Suites tab is not selected. aria-selected: false, Tab Text: Suite(s)
 -------------------------------------------------
-Log End: 2024-11-18T10:39:04.807388100
+Log End: 2024-11-19T11:04:29.705515900
 -------------------------------------------------
 
 -------------------------------------------------
 Name: supportuser2
-Log Start: 2024-11-18T10:40:18.158653700
+Log Start: 2024-11-19T11:14:29.415146500
 Java Version: 23.0.1
 Operating System: Windows 11
 System Name: DESKTOP-KR6B0UD
 -------------------------------------------------
 
-2024-11-18 10:41:21.720 [main] ERROR com.demo.ng_crs.error - Suites tab is not selected as expected. aria-selected: false, Tab Text: Suite(s)
-2024-11-18 10:41:24.270 [main] ERROR com.demo.ng_crs.error - Error selecting suite: element click intercepted: Element <span _ngcontent-dgb-c759="" kendotooltip="" class="status status-approve ng-star-inserted" title="Available">...</span> is not clickable at point (905, 319). Other element would receive the click: <div _ngcontent-dgb-c462="" class="ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
-  (Session info: chrome=130.0.6723.119)
-Build info: version: '4.25.0', revision: '8a8aea2337'
+2024-11-19 11:17:06.764 [main] ERROR com.demo.ng_crs.error - Error occurred in the new booking method: element click intercepted: Element <button _ngcontent-dpt-c628="" class="btn btn-primary pe-auto" title="">...</button> is not clickable at point (1454, 91). Other element would receive the click: <div _ngcontent-dpt-c462="" class="ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=131.0.6778.70)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3bfd9a773b103f645e3c33a0f060c530, clickElement {id=f.9806F308E37A8FDAFC998942B670CE6A.d.698381A80D34F09B6D842713C0D0905B.e.777}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61948}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61948/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (3bfd9a773b103f645e3c33a0f060c530)] -> xpath: //span[@title='Available']]
-Session ID: 3bfd9a773b103f645e3c33a0f060c530
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span _ngcontent-dgb-c759="" kendotooltip="" class="status status-approve ng-star-inserted" title="Available">...</span> is not clickable at point (905, 319). Other element would receive the click: <div _ngcontent-dgb-c462="" class="ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
-  (Session info: chrome=130.0.6723.119)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3bfd9a773b103f645e3c33a0f060c530, clickElement {id=f.9806F308E37A8FDAFC998942B670CE6A.d.698381A80D34F09B6D842713C0D0905B.e.777}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61948}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61948/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (3bfd9a773b103f645e3c33a0f060c530)] -> xpath: //span[@title='Available']]
-Session ID: 3bfd9a773b103f645e3c33a0f060c530
-	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
-	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501) ~[?:?]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:485) ~[?:?]
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.25.0.jar:?]
-	at pages.Suite.suites(Suite.java:79) ~[test-classes/:?]
-	at tests.BookingTest.suiteTab(BookingTest.java:191) ~[test-classes/:?]
-	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.0.jar:7.10.0]
-	at java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
-	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.0.jar:7.10.0]
-	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.0.jar:7.10.0]
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.0.jar:7.10.0]
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.0.jar:7.10.0]
-	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.0.jar:7.10.0]
-	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.0.jar:7.10.0]
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Command: [e893881db756cf207d51456a3e9a9d9c, clickElement {id=f.7D0B36419E28CF4CFFC0C70738B5353E.d.CE46142E2BEED1D4B6F3AC914DD6AF0B.e.205}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55894}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55894/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e893881db756cf207d51456a3e9a9d9c)] -> xpath: //button[normalize-space()='New Booking']]
+Session ID: e893881db756cf207d51456a3e9a9d9c
 -------------------------------------------------
-Log End: 2024-11-18T10:41:25.134126300
+Log End: 2024-11-19T11:17:07.559268
 -------------------------------------------------
 
 -------------------------------------------------
 Name: supportuser2
-Log Start: 2024-11-18T10:43:10.296262500
+Log Start: 2024-11-19T11:34:48.649947500
 Java Version: 23.0.1
 Operating System: Windows 11
 System Name: DESKTOP-KR6B0UD
 -------------------------------------------------
 
-2024-11-18 10:44:12.376 [main] ERROR com.demo.ng_crs.error - Suites tab is not selected as expected. aria-selected: false, Tab Text: Suite(s)
-2024-11-18 10:44:17.004 [main] ERROR com.demo.ng_crs.error - Error selecting suite: element click intercepted: Element <span _ngcontent-mbj-c759="" kendotooltip="" class="status status-approve ng-star-inserted" title="Available">...</span> is not clickable at point (905, 319). Other element would receive the click: <div _ngcontent-mbj-c462="" class="ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
-  (Session info: chrome=130.0.6723.119)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [85bbdf43f2d1e4fb45693e695e91ec33, clickElement {id=f.EBC2EB1B6731F2B0597127676DA37BC2.d.323BA71A61FFB61AC115728CFD0BAE5A.e.771}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61987}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61987/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (85bbdf43f2d1e4fb45693e695e91ec33)] -> xpath: //span[@title='Available']]
-Session ID: 85bbdf43f2d1e4fb45693e695e91ec33
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span _ngcontent-mbj-c759="" kendotooltip="" class="status status-approve ng-star-inserted" title="Available">...</span> is not clickable at point (905, 319). Other element would receive the click: <div _ngcontent-mbj-c462="" class="ngx-spinner-overlay ng-tns-c462-0 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
-  (Session info: chrome=130.0.6723.119)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [85bbdf43f2d1e4fb45693e695e91ec33, clickElement {id=f.EBC2EB1B6731F2B0597127676DA37BC2.d.323BA71A61FFB61AC115728CFD0BAE5A.e.771}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\EFFIAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61987}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61987/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (85bbdf43f2d1e4fb45693e695e91ec33)] -> xpath: //span[@title='Available']]
-Session ID: 85bbdf43f2d1e4fb45693e695e91ec33
-	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
-	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501) ~[?:?]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:485) ~[?:?]
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.25.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.25.0.jar:?]
-	at pages.Suite.suites(Suite.java:80) ~[test-classes/:?]
-	at tests.BookingTest.suiteTab(BookingTest.java:191) ~[test-classes/:?]
-	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.10.0.jar:7.10.0]
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.10.0.jar:7.10.0]
-	at java.util.ArrayList.forEach(ArrayList.java:1597) [?:?]
-	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.0.jar:7.10.0]
-	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.0.jar:7.10.0]
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.0.jar:7.10.0]
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.0.jar:7.10.0]
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.0.jar:7.10.0]
-	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.0.jar:7.10.0]
-	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.0.jar:7.10.0]
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-11-19 11:36:34.782 [main] ERROR com.demo.ng_crs.error - Suites tab is not selected. aria-selected: false, Tab Text: Suite(s)
 -------------------------------------------------
-Log End: 2024-11-18T10:44:17.450234300
+Log End: 2024-11-19T11:36:35.679698600
 -------------------------------------------------
 
