@@ -7,8 +7,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
@@ -27,8 +27,7 @@ public class BaseTest {
     @BeforeClass
     public void setup() throws IOException {
         // Initialize logger
-        log = Logger.getLogger(BaseTest.class);
-        PropertyConfigurator.configure(xmlfilePath);
+        log = LogManager.getLogger(BaseTest.class);
 
         // Load config properties
         config = new Properties();

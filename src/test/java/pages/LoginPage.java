@@ -8,13 +8,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
+import org.testng.Assert;
 
 public class LoginPage {
 
     WebDriver driver;
     Wait<WebDriver> wait;
     private static final Logger infoLogger = LogManager.getLogger(LoginPage.class); // For INFO logs
-    private static final Logger errorLogger = LogManager.getLogger("com.demo.ng_crs.error"); // For ERROR logs
+    private static final Logger errorLogger = LogManager.getLogger(LoginPage.class); // For ERROR logs
 
     By usernameField = By.xpath("//input[@id='Username']");
     By passwordField = By.xpath("//input[@id='Password']");
@@ -50,13 +51,14 @@ public class LoginPage {
         } catch (Exception e) {
             if (isElementPresent(errorMsg)) {
                 errorLogger.error("Login failed: Error message displayed");
-                throw new Exception("Login failed due to incorrect credentials.");
+                Assert.fail("Login failed: Incorrect credentials.");
             } else {
                 errorLogger.error("Login failed: Unknown issue, no redirection or error message.");
-                throw new Exception("Login failed due to an unknown issue.");
+                Assert.fail("Login failed: Unknown issue.");
             }
         }
     }
+
 
     public boolean isElementPresent(By locator) {
         try {

@@ -12,8 +12,8 @@ import pages.Package;
 
 public class BookingTest extends BaseTest {
 
-    private static final Logger log = LogManager.getLogger(BaseTest.class);
-    private static final Logger eLogger = LogManager.getLogger("com.demo.ng_crs.error"); // For ERROR logs
+    private static final Logger log = LogManager.getLogger(BookingTest.class);
+    private static final Logger eLogger = LogManager.getLogger(BookingTest.class); // For ERROR logs
 
     // Helper method for error handling
     private void handleError(String action, Exception e, SoftAssert softAssert) {

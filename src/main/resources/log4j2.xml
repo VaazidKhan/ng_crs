@@ -31,18 +31,19 @@
 
     <Loggers>
         <!-- Application-specific Logger for INFO and higher levels, excluding ERROR -->
-        <Logger name="com.demo.ng_crs" level="info" additivity="false">
+        <Logger name="pages" level="info" additivity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="InfoFile"/>
         </Logger>
 
         <!-- Dedicated Logger for ERROR-level logs only -->
-        <Logger name="com.demo.ng_crs.error" level="error" additivity="false">
+        <Logger name="pages" level="error" additivity="false">
+            <AppenderRef ref="Console"/>
             <AppenderRef ref="ErrorFile"/>
         </Logger>
 
-        <!-- Root Logger for general logging at INFO level -->
-        <Root level="info">
+        <!-- Root Logger for general logging -->
+        <Root level="info" additivity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="InfoFile"/>
         </Root>
